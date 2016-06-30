@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[添加音乐]]></title>
+      <url>http://carryguan.com/2016/06/30/%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90/</url>
+      <content type="html"><![CDATA[<p>以前觉得网页嵌入播放器很牛逼的感觉，原来就是一句代码的事儿！感谢外连接，感谢开源，让这个世界变得更美好。</p>
+<p>markdown语法是完全兼容html代码的，直接把html代码扔进去就oook咯。</p>
+<p>添加豆瓣音乐</p>
+<p>复制下面代码到你的博文任意位置，然后Hexo s预览。</p>
+<p>加入豆瓣音乐 歌曲是随机播放，游客可切歌，不能定制播哪首歌，而且不能按钮停止，只能音量调到0，无语，有利有弊的吧。</p>
+<p>尽量放在最下面，如果你放在最上面，很有可能别人还未点击进入博文，你的博客就有了背景音乐了，要想赶紧播放音乐的另说。</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=29722263&auto=0&height=66"></iframe>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[today 6月25号]]></title>
+      <url>http://carryguan.com/2016/06/25/today-6%E6%9C%8825%E5%8F%B7/</url>
+      <content type="html"><![CDATA[<p>我关凯丽来测试主题</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[今天半夜不睡觉]]></title>
+      <url>http://carryguan.com/2016/06/23/%E4%BB%8A%E5%A4%A9%E5%8D%8A%E5%A4%9C%E4%B8%8D%E7%9D%A1%E8%A7%89/</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[测试]]></title>
+      <url>http://carryguan.com/2016/06/23/%E6%B5%8B%E8%AF%95/</url>
+      <content type="html"><![CDATA[<p>我是关凯丽</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[今天是个好日子]]></title>
+      <url>http://carryguan.com/2016/06/23/%E4%BB%8A%E5%A4%A9%E6%98%AF%E4%B8%AA%E5%A5%BD%E6%97%A5%E5%AD%90/</url>
+      <content type="html"><![CDATA[<blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
+<footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[new article]]></title>
+      <url>http://carryguan.com/2016/06/07/new-article/</url>
+      <content type="html"><![CDATA[<p><strong>大家好，Test</strong></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>http://carryguan.com/2016/06/07/hello-world/</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    </entry>
+    
+  
+  
+</search>
