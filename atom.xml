@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://carryguan.com/"/>
-  <updated>2016-06-30T08:22:25.543Z</updated>
+  <updated>2016-06-30T08:23:47.575Z</updated>
   <id>http://carryguan.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://carryguan.com/2016/06/30/%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90/"/>
     <id>http://carryguan.com/2016/06/30/添加音乐/</id>
     <published>2016-06-30T03:32:17.000Z</published>
-    <updated>2016-06-30T08:22:25.543Z</updated>
+    <updated>2016-06-30T08:23:47.575Z</updated>
     
     <content type="html">&lt;p&gt;以前觉得网页嵌入播放器很牛逼的感觉，原来就是一句代码的事儿！感谢外连接，感谢开源，让这个世界变得更美好。&lt;/p&gt;
 &lt;p&gt;markdown语法是完全兼容html代码的，直接把html代码扔进去就oook咯。&lt;/p&gt;
@@ -28,7 +28,7 @@
 &lt;p&gt;复制下面代码到你的博文任意位置，然后Hexo s预览。&lt;/p&gt;
 &lt;p&gt;加入豆瓣音乐 歌曲是随机播放，游客可切歌，不能定制播哪首歌，而且不能按钮停止，只能音量调到0，无语，有利有弊的吧。&lt;/p&gt;
 &lt;p&gt;尽量放在最下面，如果你放在最上面，很有可能别人还未点击进入博文，你的博客就有了背景音乐了，要想赶紧播放音乐的另说。&lt;/p&gt;
-&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=2&amp;id=29722263&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;
+&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=2&amp;id=29722263&amp;auto=1&amp;height=66&quot;&gt;&lt;/iframe&gt;
 </content>
     
     <summary type="html">
