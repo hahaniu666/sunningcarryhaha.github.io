@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://carryguan.com/"/>
-  <updated>2016-06-30T08:23:47.575Z</updated>
+  <updated>2016-06-30T08:26:42.918Z</updated>
   <id>http://carryguan.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://carryguan.com/2016/06/30/%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90/"/>
     <id>http://carryguan.com/2016/06/30/添加音乐/</id>
     <published>2016-06-30T03:32:17.000Z</published>
-    <updated>2016-06-30T08:23:47.575Z</updated>
+    <updated>2016-06-30T08:26:42.918Z</updated>
     
     <content type="html">&lt;p&gt;以前觉得网页嵌入播放器很牛逼的感觉，原来就是一句代码的事儿！感谢外连接，感谢开源，让这个世界变得更美好。&lt;/p&gt;
 &lt;p&gt;markdown语法是完全兼容html代码的，直接把html代码扔进去就oook咯。&lt;/p&gt;
