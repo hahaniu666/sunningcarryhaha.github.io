@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://carryguan.com/"/>
-  <updated>2016-06-30T08:26:42.918Z</updated>
+  <updated>2016-07-01T13:22:38.836Z</updated>
   <id>http://carryguan.com/</id>
   
   <author>
@@ -14,6 +14,87 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>详细 hexo-GithubPages-搭建博客</title>
+    <link href="http://carryguan.com/2016/06/30/hexo-gihubpages-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://carryguan.com/2016/06/30/hexo-gihubpages-搭建博客/</id>
+    <published>2016-06-30T08:59:25.000Z</published>
+    <updated>2016-07-01T13:22:38.836Z</updated>
+    
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;为什么选择hexo？&lt;/li&gt;
+&lt;li&gt;搭建博客的基本步骤&lt;/li&gt;
+&lt;li&gt;部署到Github Pages&lt;/li&gt;
+&lt;li&gt;域名解析&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;为什么选择hexo？&quot;&gt;&lt;a href=&quot;#为什么选择hexo？&quot; class=&quot;headerlink&quot; title=&quot;为什么选择hexo？&quot;&gt;&lt;/a&gt;为什么选择hexo？&lt;/h2&gt;&lt;p&gt;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Markdown&lt;/a&gt;（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;搭建博客的基本步骤&quot;&gt;&lt;a href=&quot;#搭建博客的基本步骤&quot; class=&quot;headerlink&quot; title=&quot;搭建博客的基本步骤&quot;&gt;&lt;/a&gt;搭建博客的基本步骤&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;购买域名&lt;/li&gt;
+&lt;li&gt;安装hexo&lt;/li&gt;
+&lt;li&gt;注册github&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;一：购买域名&quot;&gt;&lt;a href=&quot;#一：购买域名&quot; class=&quot;headerlink&quot; title=&quot;一：购买域名&quot;&gt;&lt;/a&gt;一：购买域名&lt;/h4&gt;&lt;p&gt;   若小胖友们想把个人博客挂到属于自己的域名上，博主在这里建议大家提前把域名买好。&lt;br&gt;博主购买域名的地方是&lt;a href=&quot;https://wanwang.aliyun.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;万网&lt;/a&gt;,注册登录后，填写你想要的域名&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-a9273887335cde2a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;br&gt;选择完自己域名后，付费就可以了！&lt;br&gt;(博主建议个人域名选择.me为后缀的较好-博主的域名就为&lt;a href=&quot;http://carryguan.me&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;carryguan.me&lt;/a&gt;)&lt;/p&gt;
+&lt;h4 id=&quot;二：安装hexo&quot;&gt;&lt;a href=&quot;#二：安装hexo&quot; class=&quot;headerlink&quot; title=&quot;二：安装hexo&quot;&gt;&lt;/a&gt;二：安装hexo&lt;/h4&gt;&lt;p&gt;  装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：&lt;br&gt;&lt;a href=&quot;http://git-scm.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://nodejs.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Node.js&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; 若你是IT小白，安装git/node没成功,博主carry给你个福利贴士&lt;br&gt; (博主就是这样一点点过来的 （＃￣▽￣＃）)&lt;br&gt;&lt;a href=&quot;http://jingyan.baidu.com/article/90895e0fb3495f64ed6b0b50.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;windows安装git&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://jingyan.baidu.com/article/b0b63dbfca599a4a483070a5.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;windows安装node.js&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如果您的电脑中已经安装上述必备程序，那么恭喜您！接下来只需要使用 npm 即可完成 Hexo 的安装。&lt;/p&gt;
+&lt;p&gt;先进入一个文件夹路径：例如我的&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-0ed5aa999ec2a49d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;br&gt;再执行下面的命令&lt;br&gt;&lt;code&gt;$ npm install -g hexo-cli&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;初始化框架&lt;br&gt;1：第一步执行如下语句&lt;br&gt;&lt;code&gt;hexo init blog&lt;/code&gt;  (blog是我自己建立的用来装博客的文件夹)&lt;br&gt;2：再执行&lt;br&gt;&lt;code&gt;cd blog&lt;/code&gt;&lt;br&gt;3:最后执行&lt;br&gt; &lt;code&gt;npm install&lt;/code&gt;&lt;br&gt;以上三条语句执行完毕后， 你会在blog文件夹里看到如下:  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;├── _config.yml //网站的配置信息，您可以在此配置大部分的参数。&lt;br&gt; ├── package.json&lt;br&gt; ├── scaffolds //模版文件夹。当您新建文章时，Hexo 会根据 scaffold 来建立文件。&lt;br&gt; ├── source //资源文件夹是存放用户资源的地方。&lt;br&gt;  | ├── _drafts&lt;br&gt;  | └── _posts&lt;br&gt; └── themes //主题文件夹。Hexo会根据主题来生成静态页面。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;######最后看看你自己的个人网站：&lt;br&gt;在blog目录下执行gitbash命令:&lt;/p&gt;
+&lt;p&gt;1：新建一篇文章（我的第一篇文章）&lt;br&gt;&lt;code&gt;hexo new &amp;quot;我的第一篇文章&amp;quot;&lt;/code&gt;&lt;br&gt;会在/source/_post里自动生成了“我的第一篇文章.md”文件，之后新建的文章都将存放在此目录下。编辑“我的第一篇文章.md”文件可修改内容。&lt;/p&gt;
+&lt;p&gt;2：生成网站&lt;br&gt;&lt;code&gt;hexo generate&lt;/code&gt;(可简写成 hexo g)&lt;/p&gt;
+&lt;p&gt;3:启动本地服务器&lt;br&gt;&lt;code&gt;hexo server&lt;/code&gt;(可简写成 hexo s)&lt;/p&gt;
+&lt;p&gt;4:在浏览器输入&lt;a href=&quot;http://localhost:4000/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:4000&lt;/a&gt; 即可查看网站。&lt;/p&gt;
+&lt;h4 id=&quot;三：注册github&quot;&gt;&lt;a href=&quot;#三：注册github&quot; class=&quot;headerlink&quot; title=&quot;三：注册github&quot;&gt;&lt;/a&gt;三：注册github&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;github&lt;/a&gt;&lt;br&gt;填写完相应信息，注册成功后，重新登录，进入到这个页面&lt;br&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-646f469a1cda4d25.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;br&gt;点击图片中所圈位置出现了如下：&lt;br&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-d241f8f2632c41cd.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;br&gt;Repository name里填写:你的用户名.github.io&lt;br&gt;(例如我的用户名是&lt;a href=&quot;https://github.com/sunningcarryhaha&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;sunningcarryhaha&lt;/a&gt;,所以我的Repository name:sunningcarryhaha.github.io)&lt;br&gt;Description里随便填一下你的描述就好&lt;br&gt;Public选中&lt;br&gt;选中Initilize this respository with a README&lt;br&gt;最后点击绿色按钮创建&lt;br&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-7dbd92b9e985ac30.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;br&gt;创建成功后&lt;/p&gt;
+&lt;p&gt;配置SSH-Key&lt;br&gt;&lt;a href=&quot;http://jingyan.baidu.com/article/a65957f4e91ccf24e77f9b11.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;详细步骤请点击此文章&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;将blog部署到Github-Pages-上&quot;&gt;&lt;a href=&quot;#将blog部署到Github-Pages-上&quot; class=&quot;headerlink&quot; title=&quot;将blog部署到Github Pages 上&quot;&gt;&lt;/a&gt;将blog部署到Github Pages 上&lt;/h2&gt;&lt;h4 id=&quot;两种方法&quot;&gt;&lt;a href=&quot;#两种方法&quot; class=&quot;headerlink&quot; title=&quot;两种方法:&quot;&gt;&lt;/a&gt;两种方法:&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;使用hexo deploy部署&lt;/li&gt;
+&lt;li&gt;使用git push 部署&lt;h5 id=&quot;1：hexo-deploy部署&quot;&gt;&lt;a href=&quot;#1：hexo-deploy部署&quot; class=&quot;headerlink&quot; title=&quot;1：hexo deploy部署&quot;&gt;&lt;/a&gt;1：hexo deploy部署&lt;/h5&gt;找到blog目录下的配置文件_config.yml,用编辑器打开此文件&lt;br&gt;找到此文件中的deploy字段，按照以下配置&lt;pre&gt;&lt;code&gt;deploy: 
+ type: git 
+ repo: git@github.com:sunningcarryhaha/sunningcarryhaha.github.io.git   
+ branch: master
+&lt;/code&gt;&lt;/pre&gt;注意需要提前安装一个扩展：&lt;pre&gt;&lt;code&gt;$ npm install hexo-deployer-git --save
+&lt;/code&gt;&lt;/pre&gt;然后在命令行中执行&lt;pre&gt;&lt;code&gt;hexo d
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;不幸的是，上述命令虽然简单方便，但是偶尔会有莫名其妙的问题出现，因此，我们也可以追本溯源，使用git命令来完成部署的工作。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;2-使用git-push来部署&quot;&gt;&lt;a href=&quot;#2-使用git-push来部署&quot; class=&quot;headerlink&quot; title=&quot;2:使用git push来部署&quot;&gt;&lt;/a&gt;2:使用git push来部署&lt;/h5&gt;&lt;p&gt;不幸的是，上述命令虽然简单方便，但是偶尔会有莫名其妙的问题出现，因此，我们也可以追本溯源，使用git命令来完成部署的工作。&lt;br&gt;从github上克隆你刚刚建立的repository&lt;/p&gt;
+&lt;p&gt;详细的步骤可参考此&lt;a href=&quot;http://blog.csdn.net/steven6977/article/details/10567719&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;github push&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;部署成功以后，在浏览器中输入你的repository名字：例如我的sunningcarryhaha.github.io&lt;br&gt;就可以看到你的网站了&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;域名解析&quot;&gt;&lt;a href=&quot;#域名解析&quot; class=&quot;headerlink&quot; title=&quot;域名解析&quot;&gt;&lt;/a&gt;域名解析&lt;/h2&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;为什么选择hexo？&lt;/li&gt;
+&lt;li&gt;搭建博客的基本步骤&lt;/li&gt;
+&lt;li&gt;部署到Github Pages&lt;/li&gt;
+&lt;li&gt;域名解析&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;为什么选择hexo？&quot;&gt;&lt;a href=&quot;#为什么选择hexo？&quot; clas
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://carryguan.com/tags/hexo/"/>
+    
+      <category term="blog" scheme="http://carryguan.com/tags/blog/"/>
+    
+      <category term="githubpages" scheme="http://carryguan.com/tags/githubpages/"/>
+    
+      <category term="博客" scheme="http://carryguan.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>添加音乐</title>

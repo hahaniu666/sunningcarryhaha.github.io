@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title><![CDATA[详细 hexo-GithubPages-搭建博客]]></title>
+      <url>http://carryguan.com/2016/06/30/hexo-gihubpages-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
+      <content type="html"><![CDATA[<ul>
+<li>为什么选择hexo？</li>
+<li>搭建博客的基本步骤</li>
+<li>部署到Github Pages</li>
+<li>域名解析</li>
+</ul>
+<hr>
+<h2 id="为什么选择hexo？"><a href="#为什么选择hexo？" class="headerlink" title="为什么选择hexo？"></a>为什么选择hexo？</h2><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="external">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<hr>
+<h2 id="搭建博客的基本步骤"><a href="#搭建博客的基本步骤" class="headerlink" title="搭建博客的基本步骤"></a>搭建博客的基本步骤</h2><ul>
+<li>购买域名</li>
+<li>安装hexo</li>
+<li>注册github</li>
+</ul>
+<h4 id="一：购买域名"><a href="#一：购买域名" class="headerlink" title="一：购买域名"></a>一：购买域名</h4><p>   若小胖友们想把个人博客挂到属于自己的域名上，博主在这里建议大家提前把域名买好。<br>博主购买域名的地方是<a href="https://wanwang.aliyun.com/" target="_blank" rel="external">万网</a>,注册登录后，填写你想要的域名<img src="http://upload-images.jianshu.io/upload_images/2377897-a9273887335cde2a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>选择完自己域名后，付费就可以了！<br>(博主建议个人域名选择.me为后缀的较好-博主的域名就为<a href="http://carryguan.me" target="_blank" rel="external">carryguan.me</a>)</p>
+<h4 id="二：安装hexo"><a href="#二：安装hexo" class="headerlink" title="二：安装hexo"></a>二：安装hexo</h4><p>  装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：<br><a href="http://git-scm.com/" target="_blank" rel="external">Git</a><br><a href="http://nodejs.org/" target="_blank" rel="external">Node.js</a></p>
+<p> 若你是IT小白，安装git/node没成功,博主carry给你个福利贴士<br> (博主就是这样一点点过来的 （＃￣▽￣＃）)<br><a href="http://jingyan.baidu.com/article/90895e0fb3495f64ed6b0b50.html" target="_blank" rel="external">windows安装git</a><br><a href="http://jingyan.baidu.com/article/b0b63dbfca599a4a483070a5.html" target="_blank" rel="external">windows安装node.js</a></p>
+<p>如果您的电脑中已经安装上述必备程序，那么恭喜您！接下来只需要使用 npm 即可完成 Hexo 的安装。</p>
+<p>先进入一个文件夹路径：例如我的<img src="http://upload-images.jianshu.io/upload_images/2377897-0ed5aa999ec2a49d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>再执行下面的命令<br><code>$ npm install -g hexo-cli</code></p>
+<p>初始化框架<br>1：第一步执行如下语句<br><code>hexo init blog</code>  (blog是我自己建立的用来装博客的文件夹)<br>2：再执行<br><code>cd blog</code><br>3:最后执行<br> <code>npm install</code><br>以上三条语句执行完毕后， 你会在blog文件夹里看到如下:  </p>
+<blockquote>
+<p>├── _config.yml //网站的配置信息，您可以在此配置大部分的参数。<br> ├── package.json<br> ├── scaffolds //模版文件夹。当您新建文章时，Hexo 会根据 scaffold 来建立文件。<br> ├── source //资源文件夹是存放用户资源的地方。<br>  | ├── _drafts<br>  | └── _posts<br> └── themes //主题文件夹。Hexo会根据主题来生成静态页面。</p>
+</blockquote>
+<p>######最后看看你自己的个人网站：<br>在blog目录下执行gitbash命令:</p>
+<p>1：新建一篇文章（我的第一篇文章）<br><code>hexo new &quot;我的第一篇文章&quot;</code><br>会在/source/_post里自动生成了“我的第一篇文章.md”文件，之后新建的文章都将存放在此目录下。编辑“我的第一篇文章.md”文件可修改内容。</p>
+<p>2：生成网站<br><code>hexo generate</code>(可简写成 hexo g)</p>
+<p>3:启动本地服务器<br><code>hexo server</code>(可简写成 hexo s)</p>
+<p>4:在浏览器输入<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000</a> 即可查看网站。</p>
+<h4 id="三：注册github"><a href="#三：注册github" class="headerlink" title="三：注册github"></a>三：注册github</h4><p><a href="https://github.com/" target="_blank" rel="external">github</a><br>填写完相应信息，注册成功后，重新登录，进入到这个页面<br><img src="http://upload-images.jianshu.io/upload_images/2377897-646f469a1cda4d25.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>点击图片中所圈位置出现了如下：<br><img src="http://upload-images.jianshu.io/upload_images/2377897-d241f8f2632c41cd.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>Repository name里填写:你的用户名.github.io<br>(例如我的用户名是<a href="https://github.com/sunningcarryhaha" target="_blank" rel="external">sunningcarryhaha</a>,所以我的Repository name:sunningcarryhaha.github.io)<br>Description里随便填一下你的描述就好<br>Public选中<br>选中Initilize this respository with a README<br>最后点击绿色按钮创建<br><img src="http://upload-images.jianshu.io/upload_images/2377897-7dbd92b9e985ac30.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>创建成功后</p>
+<p>配置SSH-Key<br><a href="http://jingyan.baidu.com/article/a65957f4e91ccf24e77f9b11.html" target="_blank" rel="external">详细步骤请点击此文章</a></p>
+<hr>
+<h2 id="将blog部署到Github-Pages-上"><a href="#将blog部署到Github-Pages-上" class="headerlink" title="将blog部署到Github Pages 上"></a>将blog部署到Github Pages 上</h2><h4 id="两种方法"><a href="#两种方法" class="headerlink" title="两种方法:"></a>两种方法:</h4><ul>
+<li>使用hexo deploy部署</li>
+<li>使用git push 部署<h5 id="1：hexo-deploy部署"><a href="#1：hexo-deploy部署" class="headerlink" title="1：hexo deploy部署"></a>1：hexo deploy部署</h5>找到blog目录下的配置文件_config.yml,用编辑器打开此文件<br>找到此文件中的deploy字段，按照以下配置<pre><code>deploy: 
+ type: git 
+ repo: git@github.com:sunningcarryhaha/sunningcarryhaha.github.io.git   
+ branch: master
+</code></pre>注意需要提前安装一个扩展：<pre><code>$ npm install hexo-deployer-git --save
+</code></pre>然后在命令行中执行<pre><code>hexo d
+</code></pre><blockquote>
+<p>不幸的是，上述命令虽然简单方便，但是偶尔会有莫名其妙的问题出现，因此，我们也可以追本溯源，使用git命令来完成部署的工作。</p>
+</blockquote>
+</li>
+</ul>
+<h5 id="2-使用git-push来部署"><a href="#2-使用git-push来部署" class="headerlink" title="2:使用git push来部署"></a>2:使用git push来部署</h5><p>不幸的是，上述命令虽然简单方便，但是偶尔会有莫名其妙的问题出现，因此，我们也可以追本溯源，使用git命令来完成部署的工作。<br>从github上克隆你刚刚建立的repository</p>
+<p>详细的步骤可参考此<a href="http://blog.csdn.net/steven6977/article/details/10567719" target="_blank" rel="external">github push</a></p>
+<p>部署成功以后，在浏览器中输入你的repository名字：例如我的sunningcarryhaha.github.io<br>就可以看到你的网站了</p>
+<hr>
+<h2 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h2>]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[添加音乐]]></title>
       <url>http://carryguan.com/2016/06/30/%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90/</url>
       <content type="html"><![CDATA[<p>以前觉得网页嵌入播放器很牛逼的感觉，原来就是一句代码的事儿！感谢外连接，感谢开源，让这个世界变得更美好。</p>
