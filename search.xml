@@ -29,8 +29,7 @@
 <h3 id="初始化框架"><a href="#初始化框架" class="headerlink" title="初始化框架"></a>初始化框架</h3><h4 id="1执行如下语句"><a href="#1执行如下语句" class="headerlink" title="1执行如下语句"></a>1执行如下语句</h4><pre><code> hexo init blog</code></pre>
 
 <p> (blog是我自己建立的用来装博客的文件夹)</p>
-<p>####2：再执行</p>
-<pre><code>cd blog</code></pre> 
+<h4 id="2：再执行"><a href="#2：再执行" class="headerlink" title="2：再执行"></a>2：再执行</h4><pre><code>cd blog</code></pre> 
 
 
 
