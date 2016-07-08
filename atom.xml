@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://carryguan.com/"/>
-  <updated>2016-07-08T11:02:38.701Z</updated>
+  <updated>2016-07-08T12:30:16.525Z</updated>
   <id>http://carryguan.com/</id>
   
   <author>
@@ -20,13 +20,13 @@
     <link href="http://carryguan.com/2016/07/02/hexo-gihubpages-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://carryguan.com/2016/07/02/hexo-gihubpages-搭建博客/</id>
     <published>2016-07-01T16:00:00.000Z</published>
-    <updated>2016-07-08T11:02:38.701Z</updated>
+    <updated>2016-07-08T12:30:16.525Z</updated>
     
     <content type="html">&lt;ul&gt;
 &lt;li&gt;为什么选择hexo？&lt;/li&gt;
 &lt;li&gt;搭建博客的基本步骤&lt;/li&gt;
 &lt;li&gt;部署到Github Pages&lt;/li&gt;
-&lt;li&gt;域名解析&lt;/li&gt;
+&lt;li&gt;域名解析&lt;br&gt;(原谅博主carry比较变态，在博文加了歌曲，不想听歌的小胖友们可以到博文底部关闭 )&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&quot;为什么选择hexo？&quot;&gt;&lt;a href=&quot;#为什么选择hexo？&quot; class=&quot;headerlink&quot; title=&quot;为什么选择hexo？&quot;&gt;&lt;/a&gt;为什么选择hexo？&lt;/h2&gt;&lt;p&gt;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Markdown&lt;/a&gt;（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。&lt;/p&gt;
@@ -36,9 +36,12 @@
 &lt;li&gt;安装hexo&lt;/li&gt;
 &lt;li&gt;注册github&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;一：购买域名&quot;&gt;&lt;a href=&quot;#一：购买域名&quot; class=&quot;headerlink&quot; title=&quot;一：购买域名&quot;&gt;&lt;/a&gt;一：购买域名&lt;/h3&gt;&lt;p&gt;   若小胖友们想把个人博客挂到属于自己的域名上，博主在这里建议大家提前把域名买好。&lt;br&gt;博主购买域名的地方是&lt;a href=&quot;https://wanwang.aliyun.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;万网&lt;/a&gt;,注册登录后，填写你想要的域名&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-a9273887335cde2a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;br&gt;选择完自己域名后，付费就可以了！&lt;br&gt;(博主建议个人域名选择.me为后缀的较好-博主的域名就为&lt;a href=&quot;http://carryguan.me&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;carryguan.me&lt;/a&gt;)&lt;/p&gt;
+&lt;h3 id=&quot;一：购买域名&quot;&gt;&lt;a href=&quot;#一：购买域名&quot; class=&quot;headerlink&quot; title=&quot;一：购买域名&quot;&gt;&lt;/a&gt;一：购买域名&lt;/h3&gt;&lt;p&gt;   若小胖友们想把个人博客挂到属于自己的域名上，博主在这里建议大家提前把域名买好。&lt;br&gt;博主购买域名的地方是&lt;a href=&quot;https://wanwang.aliyun.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;万网&lt;/a&gt;,注册登录后，填写你想要的域名&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-a9273887335cde2a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;br&gt;选择完自己域名后，付费就可以了！&lt;br&gt;(博主建议个人域名选择.me为后缀的较好-博主的域名就为&lt;a href=&quot;http://carryguan.me&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;carryguan.me&lt;/a&gt;)&lt;/p&gt;
 &lt;h3 id=&quot;二：安装hexo&quot;&gt;&lt;a href=&quot;#二：安装hexo&quot; class=&quot;headerlink&quot; title=&quot;二：安装hexo&quot;&gt;&lt;/a&gt;二：安装hexo&lt;/h3&gt;&lt;p&gt;  装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：&lt;br&gt;&lt;a href=&quot;http://git-scm.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://nodejs.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Node.js&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt; 若你是IT小白，安装git/node没成功,博主carry给你个福利贴士&lt;br&gt; (博主就是这样一点点过来的 （＃￣▽￣＃）)&lt;br&gt;&lt;a href=&quot;http://jingyan.baidu.com/article/90895e0fb3495f64ed6b0b50.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;windows安装git&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://jingyan.baidu.com/article/b0b63dbfca599a4a483070a5.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;windows安装node.js&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在这里建议小胖友们，先预习一下:&lt;br&gt;  &lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;git入门教程&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.zhihu.com/question/20070065&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;github趣味详解&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;如果您的电脑中已经安装上述必备程序，那么恭喜您！接下来只需要使用 npm 即可完成 Hexo 的安装。&lt;br&gt;先进入一个文件夹路径：例如我的&lt;img src=&quot;http://ww3.sinaimg.cn/large/005vGbJ7jw1f5fbuje1hjj30l50bd75k.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;再执行下面的命令:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;npm install -g hexo-cli&lt;/code&gt;&lt;/pre&gt; 
 
@@ -123,7 +126,7 @@ cd public
 &lt;p&gt;如果以上步骤都进行完毕的话，博主carry恭喜你:bowtie:,小胖友你zen棒，现在在浏览器输入你的域名，就可以成功的看到你的个人网站啦！&lt;br&gt;当然这个网站还可以换主题，美化！这方面的文章敬请期待，博主会继续出博文的!&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&quot;博主感想&quot;&gt;&lt;a href=&quot;#博主感想&quot; class=&quot;headerlink&quot; title=&quot;博主感想&quot;&gt;&lt;/a&gt;博主感想&lt;/h2&gt;&lt;p&gt;这个博客博主搭建了好久，走了好多弯路(原谅博主比较笨，呜呜！)&lt;br&gt;期间出了好多问题，最根本的原因是博主git方面不基础不好,所以建议小胖友们多练习一下git&lt;br&gt;这里推荐:&lt;br&gt;     &lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;git入门教程&lt;/a&gt;&lt;br&gt;    &lt;a href=&quot;http://www.runoob.com/nodejs/nodejs-install-setup.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;node.js安装菜鸟教程&lt;/a&gt;&lt;br&gt;   &lt;a href=&quot;https://hexo.io/zh-cn/docs/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo官网&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.jianshu.com/p/1e402922ee32/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;markdown入门&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.zhihu.com/question/24422335/answer/46357100&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo主题推荐&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://theme-next.iissnan.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;next-hexo主题&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://wp.huangshiyang.com/hexo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo常见问题解决方案&lt;/a&gt;&lt;/p&gt;
-&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=2&amp;id=415792881&amp;auto=1&amp;height=66&quot;&gt;&lt;/iframe&gt;
+&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=2&amp;id=3412579&amp;auto=1&amp;height=66&quot;&gt;&lt;/iframe&gt;
 </content>
     
     <summary type="html">
@@ -132,10 +135,17 @@ cd public
 &lt;li&gt;为什么选择hexo？&lt;/li&gt;
 &lt;li&gt;搭建博客的基本步骤&lt;/li&gt;
 &lt;li&gt;部署到Github Pages&lt;/li&gt;
-&lt;li&gt;域名解析&lt;/li&gt;
+&lt;li&gt;域名解析&lt;br&gt;(原谅博主carry比较变态，在博文加了歌曲，不想听歌的小胖友们可以到博文底部关闭 )&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;为什么选择hexo？&quot;&gt;&lt;a href=&quot;#为什么选择hexo？&quot; clas
+&lt;h2 id=&quot;为什么选择hexo？&quot;&gt;&lt;a href=&quot;#为什么选择hexo？&quot; class=&quot;headerlink&quot; title=&quot;为什么选择hexo？&quot;&gt;&lt;/a&gt;为什么选择hexo？&lt;/h2&gt;&lt;p&gt;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;搭建博客的基本步骤&quot;&gt;&lt;a href=&quot;#搭建博客的基本步骤&quot; class=&quot;headerlink&quot; title=&quot;搭建博客的基本步骤&quot;&gt;&lt;/a&gt;搭建博客的基本步骤&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;购买域名&lt;/li&gt;
+&lt;li&gt;安装hexo&lt;/li&gt;
+&lt;li&gt;注册github&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;一：购买域名&quot;&gt;&lt;a href=&quot;#一：购买域名&quot; class=&quot;headerlink&quot; title=&quot;一：购买域名&quot;&gt;&lt;/a&gt;一：购买域名&lt;/h3&gt;&lt;p&gt;   若小胖友们想把个人博客挂到属于自己的域名上，博主在这里建议大家提前把域名买好。&lt;br&gt;博主购买域名的地方是&lt;a href=&quot;https://wanwang.aliyun.com/&quot;&gt;万网&lt;/a&gt;,注册登录后，填写你想要的域名&lt;br&gt;
     
     </summary>
     

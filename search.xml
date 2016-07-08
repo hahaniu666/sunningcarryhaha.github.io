@@ -10,7 +10,7 @@
 <li>为什么选择hexo？</li>
 <li>搭建博客的基本步骤</li>
 <li>部署到Github Pages</li>
-<li>域名解析</li>
+<li>域名解析<br>(原谅博主carry比较变态，在博文加了歌曲，不想听歌的小胖友们可以到博文底部关闭 )</li>
 </ul>
 <hr>
 <h2 id="为什么选择hexo？"><a href="#为什么选择hexo？" class="headerlink" title="为什么选择hexo？"></a>为什么选择hexo？</h2><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="external">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
@@ -20,9 +20,12 @@
 <li>安装hexo</li>
 <li>注册github</li>
 </ul>
-<h3 id="一：购买域名"><a href="#一：购买域名" class="headerlink" title="一：购买域名"></a>一：购买域名</h3><p>   若小胖友们想把个人博客挂到属于自己的域名上，博主在这里建议大家提前把域名买好。<br>博主购买域名的地方是<a href="https://wanwang.aliyun.com/" target="_blank" rel="external">万网</a>,注册登录后，填写你想要的域名<img src="http://upload-images.jianshu.io/upload_images/2377897-a9273887335cde2a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>选择完自己域名后，付费就可以了！<br>(博主建议个人域名选择.me为后缀的较好-博主的域名就为<a href="http://carryguan.me" target="_blank" rel="external">carryguan.me</a>)</p>
+<h3 id="一：购买域名"><a href="#一：购买域名" class="headerlink" title="一：购买域名"></a>一：购买域名</h3><p>   若小胖友们想把个人博客挂到属于自己的域名上，博主在这里建议大家提前把域名买好。<br>博主购买域名的地方是<a href="https://wanwang.aliyun.com/" target="_blank" rel="external">万网</a>,注册登录后，填写你想要的域名<br><a id="more"></a><br><img src="http://upload-images.jianshu.io/upload_images/2377897-a9273887335cde2a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>选择完自己域名后，付费就可以了！<br>(博主建议个人域名选择.me为后缀的较好-博主的域名就为<a href="http://carryguan.me" target="_blank" rel="external">carryguan.me</a>)</p>
 <h3 id="二：安装hexo"><a href="#二：安装hexo" class="headerlink" title="二：安装hexo"></a>二：安装hexo</h3><p>  装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：<br><a href="http://git-scm.com/" target="_blank" rel="external">Git</a><br><a href="http://nodejs.org/" target="_blank" rel="external">Node.js</a></p>
 <p> 若你是IT小白，安装git/node没成功,博主carry给你个福利贴士<br> (博主就是这样一点点过来的 （＃￣▽￣＃）)<br><a href="http://jingyan.baidu.com/article/90895e0fb3495f64ed6b0b50.html" target="_blank" rel="external">windows安装git</a><br><a href="http://jingyan.baidu.com/article/b0b63dbfca599a4a483070a5.html" target="_blank" rel="external">windows安装node.js</a></p>
+<blockquote>
+<p>在这里建议小胖友们，先预习一下:<br>  <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">git入门教程</a><br><a href="https://www.zhihu.com/question/20070065" target="_blank" rel="external">github趣味详解</a></p>
+</blockquote>
 <p>如果您的电脑中已经安装上述必备程序，那么恭喜您！接下来只需要使用 npm 即可完成 Hexo 的安装。<br>先进入一个文件夹路径：例如我的<img src="http://ww3.sinaimg.cn/large/005vGbJ7jw1f5fbuje1hjj30l50bd75k.jpg" alt=""><br>再执行下面的命令:</p>
 <pre><code>npm install -g hexo-cli</code></pre> 
 
@@ -107,7 +110,7 @@ cd public
 <p>如果以上步骤都进行完毕的话，博主carry恭喜你:bowtie:,小胖友你zen棒，现在在浏览器输入你的域名，就可以成功的看到你的个人网站啦！<br>当然这个网站还可以换主题，美化！这方面的文章敬请期待，博主会继续出博文的!</p>
 <hr>
 <h2 id="博主感想"><a href="#博主感想" class="headerlink" title="博主感想"></a>博主感想</h2><p>这个博客博主搭建了好久，走了好多弯路(原谅博主比较笨，呜呜！)<br>期间出了好多问题，最根本的原因是博主git方面不基础不好,所以建议小胖友们多练习一下git<br>这里推荐:<br>     <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">git入门教程</a><br>    <a href="http://www.runoob.com/nodejs/nodejs-install-setup.html" target="_blank" rel="external">node.js安装菜鸟教程</a><br>   <a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="external">hexo官网</a><br><a href="http://www.jianshu.com/p/1e402922ee32/" target="_blank" rel="external">markdown入门</a><br><a href="https://www.zhihu.com/question/24422335/answer/46357100" target="_blank" rel="external">hexo主题推荐</a><br><a href="http://theme-next.iissnan.com/" target="_blank" rel="external">next-hexo主题</a><br><a href="http://wp.huangshiyang.com/hexo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88" target="_blank" rel="external">hexo常见问题解决方案</a></p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=415792881&auto=1&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=3412579&auto=1&height=66"></iframe>
 ]]></content>
     </entry>
     
