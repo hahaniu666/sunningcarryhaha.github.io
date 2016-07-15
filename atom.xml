@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://carryguan.com/"/>
-  <updated>2016-07-08T12:38:23.235Z</updated>
+  <updated>2016-07-15T05:20:22.536Z</updated>
   <id>http://carryguan.com/</id>
   
   <author>
@@ -14,6 +14,49 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>github预览demo</title>
+    <link href="http://carryguan.com/2016/07/15/github%E9%A2%84%E8%A7%88demo/"/>
+    <id>http://carryguan.com/2016/07/15/github预览demo/</id>
+    <published>2016-07-15T05:18:04.000Z</published>
+    <updated>2016-07-15T05:20:22.536Z</updated>
+    
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;问题所在？&lt;/li&gt;
+&lt;li&gt;解决办法？&lt;/li&gt;
+&lt;li&gt;博主建议？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;一：问题的所在&quot;&gt;&lt;a href=&quot;#一：问题的所在&quot; class=&quot;headerlink&quot; title=&quot;一：问题的所在&quot;&gt;&lt;/a&gt;一：问题的所在&lt;/h2&gt;&lt;p&gt;相信很多小胖友们在把自己的网页上传到github仓库中，都会有一个疑问？是什么呢？&lt;br&gt;那就是上传完网页后，自己的仓库中是这个样子的&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-44104fdfe222e566.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;，点进去相应的html文件是出来的是代码&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-933438f6e1551351.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;br&gt;可是自己想在网上看到自己仓库中的demo(也就是网页的效果)&lt;br&gt;下面博猪为您解答 (^~^)&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;二：解决问题的方法&quot;&gt;&lt;a href=&quot;#二：解决问题的方法&quot; class=&quot;headerlink&quot; title=&quot;二：解决问题的方法&quot;&gt;&lt;/a&gt;二：解决问题的方法&lt;/h2&gt;&lt;h4 id=&quot;1-使用-Githubpages&quot;&gt;&lt;a href=&quot;#1-使用-Githubpages&quot; class=&quot;headerlink&quot; title=&quot;1: 使用 Githubpages&quot;&gt;&lt;/a&gt;1: 使用 Githubpages&lt;/h4&gt;&lt;p&gt;   比如我要上传&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-5b4113b7f687b1e5.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;br&gt;   按照如下四个步骤上传到名为:flexSupplement的仓库中&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;     git init (初始化本地仓库)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     git add .  （将本地所有文件加到仓库里）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     git commit -m &amp;quot;message&amp;quot; （设置提交信息）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     git remote add origin   git@github.com:sunningcarryhaha/flexSupplement.git（本地仓库链接远程仓库）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     git push -u origin master （push文件到仓库中）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;``` &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;上传成功后是这个效果![]()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;重头戏来了哟！&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;我们现在点击这个html文件，出现的效果全是代码![]![](http://upload-images.jianshu.io/upload_images/2377897-933438f6e1551351.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)()，没有咱们想要的demo效果&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;此时呢，应该植入咱们github爸爸的一个好东西，那就是-githubPages&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;第一步：找到Settings&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ![](http://upload-images.jianshu.io/upload_images/2377897-0a301fa6cbc3d33f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;第二布：找到githubPages&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;![](http://upload-images.jianshu.io/upload_images/2377897-5033f61187c659c7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;第三步：预览githubPages&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;![](http://upload-images.jianshu.io/upload_images/2377897-794ba43a2fadab1d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;小胖友们看到这里一定会有疑问，预览到的是githubpages的效果，并不是你自己网页的效果，没关系，我下面为你们解答&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;第四步：查看你的分支&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;![](http://upload-images.jianshu.io/upload_images/2377897-2fdf9314d74b1a05.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;注意：我们生成githubPages的目的就是需要生成一个gh-pages分支(咱们正常情况下只有一个master分支)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;第五步：将远程仓库克隆到本地&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;$ git clone git@github.com:sunningcarryhaha/flexSupplement.git&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;第六步：将分支切换到gh-Pages&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;  $ cd flexSupplement （进入到你克隆仓库的本地文件夹）&lt;br&gt;  $ git checkout gh-pages（将master分支切换到gh-pages分支上）&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;第七步：并重新上传到github上&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;将本地克隆的文件删了，只留下.git,然后把你想要展示demo页面相关的文件粘进去&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;接着，执行以下语句&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt; git add . （将本地所有文件加到仓库里）&lt;br&gt; git commit -m “message” （设置提交信息）&lt;br&gt; git remote add origin git@github.com:sunningcarryhaha/flexSupplement.git（本地仓库链接远程仓库）&lt;br&gt; git push -u origin gh-pages （push文件到仓库中）&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;第八步：修改地址&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;我的GithubPages地址是这个：http://carryguan.me/flex-add&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;我要预览flex-add中的fb1.html&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;我最后预览的地址应该是这个：http://carryguan.me/flex-add/fb1.html&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;第九步：添加read.me&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;把地址放到read.me中&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&quot;flex-add&quot;&gt;&lt;a href=&quot;#flex-add&quot; class=&quot;headerlink&quot; title=&quot;flex-add&quot;&gt;&lt;/a&gt;flex-add&lt;/h1&gt;&lt;p&gt;这是一个关于flexbox基础的骰子布局&lt;/p&gt;
+&lt;h3 id=&quot;demo&quot;&gt;&lt;a href=&quot;#demo&quot; class=&quot;headerlink&quot; title=&quot;demo&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://carryguan.me/flex-add/fb1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;demo&lt;/a&gt;&lt;/h3&gt;&lt;h4 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot; &quot;&gt;&lt;/a&gt; &lt;/h4&gt;&lt;p&gt;```&lt;br&gt;2: 增加路径前缀&lt;br&gt;在地址前加&lt;a href=&quot;http://htmlpreview.github.io/?前缀（不建议用这个，会更改css样式）&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://htmlpreview.github.io/?前缀（不建议用这个，会更改css样式）&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;三：博主感想&quot;&gt;&lt;a href=&quot;#三：博主感想&quot; class=&quot;headerlink&quot; title=&quot;三：博主感想&quot;&gt;&lt;/a&gt;三：博主感想&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;希望有更多小胖友提出宝贵意见,若有关于前端的问题，或者关于大学方面的感想可以私聊我(^~^)：&lt;br&gt;&lt;a href=&quot;https://github.com/sunningcarryhaha&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;github&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.zhihu.com/people/guan-kai-li-88&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;知乎&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.jianshu.com/users/0293a04839f0/latest_articles&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;简书&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://weibo.com/u/5048785433/home?wvr=5&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;微博&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;问题所在？&lt;/li&gt;
+&lt;li&gt;解决办法？&lt;/li&gt;
+&lt;li&gt;博主建议？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;一：问题的所在&quot;&gt;&lt;a href=&quot;#一：问题的所在&quot; class=&quot;headerlink&quot; title=&quot;一：问题的所在&quot;&gt;&lt;/a&gt;一：问题
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>最详尽-hexo+GithubPages搭建博客</title>
