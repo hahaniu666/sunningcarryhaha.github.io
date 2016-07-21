@@ -4,6 +4,15 @@
   
     
     <entry>
+      <title><![CDATA[mysql语法]]></title>
+      <url>http://carryguan.com/2016/07/21/mysql%E8%AF%AD%E6%B3%95/</url>
+      <content type="html"><![CDATA[<p>mysql sql 语句<br>字符集选 utf-8<br>我需要学 增删改查 事物 联合</p>
+<hr>
+<p>mysql -u root -p;启动数据库<br>show databases;查看数据库<br>//进入数据库<br>use one ;<br>//展示所有表<br>show tables;<br>//<br>//创建个名为user的表<br>create table user(<br>id int,<br>name  varchar(30),//字符串长度最长是30<br>pass varchar(30)<br>);<br><a id="more"></a><br>//查看表结构<br>desc user;<br>//查看数据从表里面<br>select <em> from user;<br>//我可以随意增加，插入数据到表中 insert into table(ct1,ct2,ct3) values(num,”str”,”str”)<br>insert into user(id,name,pass) values(1,”leiwei”,”123”)<br>//形成了下表<br>mysql&gt; select </em> from user;<br>+——+———–+——+<br>| id   | name      | pass |<br>+——+———–+——+<br>|    1 | leiwei    | 123  |<br>|    2 | yujie     | 13   |<br>|    3 | qiancheng | 456  |<br>+——+———–+——+<br>3 rows in set (0.00 sec)<br>//我可以随意查找 select from table where…<br>select <em> from user where id=2;<br>select </em> from user where pass=13;<br>//我可以随意删除 delete from table where…<br>delete from user where name=”yujie”;<br>delete from user where id=3;<br>//我可以随意更改 update user set charct where ….<br>update user set name=”billin” where id=1;<br>update user set id=5 where name=”billin”;<br>//我可以随意选取子字段 select like<br>select <em> from user where name like ‘%carry%’;//选取中间含有carry字段的数据<br>+——+———-+——+<br>| id   | name     | pass |<br>+——+———-+——+<br>|    5 | carryone | 123  |<br>|    2 | carry    | 571  |<br>+——+———-+——+<br>select </em> from user where name like ‘%one’;//选取以one结束的字段<br>+——+———-+——+<br>| id   | name     | pass |<br>+——+———-+——+<br>|    5 | carryone | 123  |<br>+——+———-+——+<br>//我们可以随意排序数据 select order by<br>select <em> from user order by name; //默认是升序（asc）<br>select </em> from user order by id desc;//desc为降序排列</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Github预览demo]]></title>
       <url>http://carryguan.com/2016/07/15/github%E9%A2%84%E8%A7%88demo/</url>
       <content type="html"><![CDATA[<ul>

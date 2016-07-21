@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://carryguan.com/"/>
-  <updated>2016-07-16T07:30:09.964Z</updated>
+  <updated>2016-07-21T06:00:57.631Z</updated>
   <id>http://carryguan.com/</id>
   
   <author>
@@ -14,6 +14,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mysql语法</title>
+    <link href="http://carryguan.com/2016/07/21/mysql%E8%AF%AD%E6%B3%95/"/>
+    <id>http://carryguan.com/2016/07/21/mysql语法/</id>
+    <published>2016-07-21T05:57:37.000Z</published>
+    <updated>2016-07-21T06:00:57.631Z</updated>
+    
+    <content type="html">&lt;p&gt;mysql sql 语句&lt;br&gt;字符集选 utf-8&lt;br&gt;我需要学 增删改查 事物 联合&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;mysql -u root -p;启动数据库&lt;br&gt;show databases;查看数据库&lt;br&gt;//进入数据库&lt;br&gt;use one ;&lt;br&gt;//展示所有表&lt;br&gt;show tables;&lt;br&gt;//&lt;br&gt;//创建个名为user的表&lt;br&gt;create table user(&lt;br&gt;id int,&lt;br&gt;name  varchar(30),//字符串长度最长是30&lt;br&gt;pass varchar(30)&lt;br&gt;);&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;//查看表结构&lt;br&gt;desc user;&lt;br&gt;//查看数据从表里面&lt;br&gt;select &lt;em&gt; from user;&lt;br&gt;//我可以随意增加，插入数据到表中 insert into table(ct1,ct2,ct3) values(num,”str”,”str”)&lt;br&gt;insert into user(id,name,pass) values(1,”leiwei”,”123”)&lt;br&gt;//形成了下表&lt;br&gt;mysql&amp;gt; select &lt;/em&gt; from user;&lt;br&gt;+——+———–+——+&lt;br&gt;| id   | name      | pass |&lt;br&gt;+——+———–+——+&lt;br&gt;|    1 | leiwei    | 123  |&lt;br&gt;|    2 | yujie     | 13   |&lt;br&gt;|    3 | qiancheng | 456  |&lt;br&gt;+——+———–+——+&lt;br&gt;3 rows in set (0.00 sec)&lt;br&gt;//我可以随意查找 select from table where…&lt;br&gt;select &lt;em&gt; from user where id=2;&lt;br&gt;select &lt;/em&gt; from user where pass=13;&lt;br&gt;//我可以随意删除 delete from table where…&lt;br&gt;delete from user where name=”yujie”;&lt;br&gt;delete from user where id=3;&lt;br&gt;//我可以随意更改 update user set charct where ….&lt;br&gt;update user set name=”billin” where id=1;&lt;br&gt;update user set id=5 where name=”billin”;&lt;br&gt;//我可以随意选取子字段 select like&lt;br&gt;select &lt;em&gt; from user where name like ‘%carry%’;//选取中间含有carry字段的数据&lt;br&gt;+——+———-+——+&lt;br&gt;| id   | name     | pass |&lt;br&gt;+——+———-+——+&lt;br&gt;|    5 | carryone | 123  |&lt;br&gt;|    2 | carry    | 571  |&lt;br&gt;+——+———-+——+&lt;br&gt;select &lt;/em&gt; from user where name like ‘%one’;//选取以one结束的字段&lt;br&gt;+——+———-+——+&lt;br&gt;| id   | name     | pass |&lt;br&gt;+——+———-+——+&lt;br&gt;|    5 | carryone | 123  |&lt;br&gt;+——+———-+——+&lt;br&gt;//我们可以随意排序数据 select order by&lt;br&gt;select &lt;em&gt; from user order by name; //默认是升序（asc）&lt;br&gt;select &lt;/em&gt; from user order by id desc;//desc为降序排列&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;mysql sql 语句&lt;br&gt;字符集选 utf-8&lt;br&gt;我需要学 增删改查 事物 联合&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;mysql -u root -p;启动数据库&lt;br&gt;show databases;查看数据库&lt;br&gt;//进入数据库&lt;br&gt;use one ;&lt;br&gt;//展示所有表&lt;br&gt;show tables;&lt;br&gt;//&lt;br&gt;//创建个名为user的表&lt;br&gt;create table user(&lt;br&gt;id int,&lt;br&gt;name  varchar(30),//字符串长度最长是30&lt;br&gt;pass varchar(30)&lt;br&gt;);&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="sql" scheme="http://carryguan.com/tags/sql/"/>
+    
+      <category term="mysql" scheme="http://carryguan.com/tags/mysql/"/>
+    
+      <category term="后台" scheme="http://carryguan.com/tags/%E5%90%8E%E5%8F%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>Github预览demo</title>
