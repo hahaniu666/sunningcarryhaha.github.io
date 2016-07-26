@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://carryguan.com/"/>
-  <updated>2016-07-21T06:00:57.631Z</updated>
+  <updated>2016-07-26T01:43:48.348Z</updated>
   <id>http://carryguan.com/</id>
   
   <author>
@@ -16,22 +16,96 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>mysql语法</title>
+    <title>Mysql-sql语法(入门)</title>
     <link href="http://carryguan.com/2016/07/21/mysql%E8%AF%AD%E6%B3%95/"/>
     <id>http://carryguan.com/2016/07/21/mysql语法/</id>
     <published>2016-07-21T05:57:37.000Z</published>
-    <updated>2016-07-21T06:00:57.631Z</updated>
+    <updated>2016-07-26T01:43:48.348Z</updated>
     
-    <content type="html">&lt;p&gt;mysql sql 语句&lt;br&gt;字符集选 utf-8&lt;br&gt;我需要学 增删改查 事物 联合&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/large/005vGbJ7jw1f671ikpgnhj30s20as0v3.jpg&quot; alt=&quot;young&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mysql-sql 语句  &lt;/li&gt;
+&lt;li&gt;字符集选utf-8&lt;/li&gt;
+&lt;li&gt;我需要学增删改查, 事物, 联合&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;mysql -u root -p;启动数据库&lt;br&gt;show databases;查看数据库&lt;br&gt;//进入数据库&lt;br&gt;use one ;&lt;br&gt;//展示所有表&lt;br&gt;show tables;&lt;br&gt;//&lt;br&gt;//创建个名为user的表&lt;br&gt;create table user(&lt;br&gt;id int,&lt;br&gt;name  varchar(30),//字符串长度最长是30&lt;br&gt;pass varchar(30)&lt;br&gt;);&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;//查看表结构&lt;br&gt;desc user;&lt;br&gt;//查看数据从表里面&lt;br&gt;select &lt;em&gt; from user;&lt;br&gt;//我可以随意增加，插入数据到表中 insert into table(ct1,ct2,ct3) values(num,”str”,”str”)&lt;br&gt;insert into user(id,name,pass) values(1,”leiwei”,”123”)&lt;br&gt;//形成了下表&lt;br&gt;mysql&amp;gt; select &lt;/em&gt; from user;&lt;br&gt;+——+———–+——+&lt;br&gt;| id   | name      | pass |&lt;br&gt;+——+———–+——+&lt;br&gt;|    1 | leiwei    | 123  |&lt;br&gt;|    2 | yujie     | 13   |&lt;br&gt;|    3 | qiancheng | 456  |&lt;br&gt;+——+———–+——+&lt;br&gt;3 rows in set (0.00 sec)&lt;br&gt;//我可以随意查找 select from table where…&lt;br&gt;select &lt;em&gt; from user where id=2;&lt;br&gt;select &lt;/em&gt; from user where pass=13;&lt;br&gt;//我可以随意删除 delete from table where…&lt;br&gt;delete from user where name=”yujie”;&lt;br&gt;delete from user where id=3;&lt;br&gt;//我可以随意更改 update user set charct where ….&lt;br&gt;update user set name=”billin” where id=1;&lt;br&gt;update user set id=5 where name=”billin”;&lt;br&gt;//我可以随意选取子字段 select like&lt;br&gt;select &lt;em&gt; from user where name like ‘%carry%’;//选取中间含有carry字段的数据&lt;br&gt;+——+———-+——+&lt;br&gt;| id   | name     | pass |&lt;br&gt;+——+———-+——+&lt;br&gt;|    5 | carryone | 123  |&lt;br&gt;|    2 | carry    | 571  |&lt;br&gt;+——+———-+——+&lt;br&gt;select &lt;/em&gt; from user where name like ‘%one’;//选取以one结束的字段&lt;br&gt;+——+———-+——+&lt;br&gt;| id   | name     | pass |&lt;br&gt;+——+———-+——+&lt;br&gt;|    5 | carryone | 123  |&lt;br&gt;+——+———-+——+&lt;br&gt;//我们可以随意排序数据 select order by&lt;br&gt;select &lt;em&gt; from user order by name; //默认是升序（asc）&lt;br&gt;select &lt;/em&gt; from user order by id desc;//desc为降序排列&lt;/p&gt;
+&lt;h2 id=&quot;启动数据库&quot;&gt;&lt;a href=&quot;#启动数据库&quot; class=&quot;headerlink&quot; title=&quot;启动数据库&quot;&gt;&lt;/a&gt;启动数据库&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
+mysql -u root -p（root是用户名）
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;查看数据库（所有）&quot;&gt;&lt;a href=&quot;#查看数据库（所有）&quot; class=&quot;headerlink&quot; title=&quot;查看数据库（所有）&quot;&gt;&lt;/a&gt;查看数据库（所有）&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
+show databases
+&lt;/code&gt;&lt;/pre&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+## 进入数据库
+&lt;pre&gt;&lt;code&gt;
+use one ;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;展示当前数据库的所有表&quot;&gt;&lt;a href=&quot;#展示当前数据库的所有表&quot; class=&quot;headerlink&quot; title=&quot;展示当前数据库的所有表&quot;&gt;&lt;/a&gt;展示当前数据库的所有表&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
+show tables;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;创建个名为user的表的结构&quot;&gt;&lt;a href=&quot;#创建个名为user的表的结构&quot; class=&quot;headerlink&quot; title=&quot;创建个名为user的表的结构&quot;&gt;&lt;/a&gt;创建个名为user的表的结构&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
+create table user(
+id int,
+name  varchar(30),
+pass varchar(30)
+);（字符串长度最长是30）
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;查看表结构&quot;&gt;&lt;a href=&quot;#查看表结构&quot; class=&quot;headerlink&quot; title=&quot;查看表结构&quot;&gt;&lt;/a&gt;查看表结构&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
+desc user; 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;查看数据从表里面&quot;&gt;&lt;a href=&quot;#查看数据从表里面&quot; class=&quot;headerlink&quot; title=&quot;查看数据从表里面&quot;&gt;&lt;/a&gt;查看数据从表里面&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
+select * from user;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;insert-增（我可以随意增加，插入数据到表中）&quot;&gt;&lt;a href=&quot;#insert-增（我可以随意增加，插入数据到表中）&quot; class=&quot;headerlink&quot; title=&quot;insert 增（我可以随意增加，插入数据到表中）&quot;&gt;&lt;/a&gt;insert 增（我可以随意增加，插入数据到表中）&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
+ insert into table(ct1,ct2,ct3) values(num,&quot;str&quot;,&quot;str&quot;)
+ insert into user(id,name,pass) values(1,&quot;leiwei&quot;,&quot;123&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;形成了下表&quot;&gt;&lt;a href=&quot;#形成了下表&quot; class=&quot;headerlink&quot; title=&quot;形成了下表&quot;&gt;&lt;/a&gt;形成了下表&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mysql&amp;gt; select * from user;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;+------+-----------+------+&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;| id   | name      | pass |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;+------+-----------+------+&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|    1 | leiwei    | 123  |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|    2 | yujie     | 13   |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|    3 | qiancheng | 456  |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;+------+-----------+------+&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3 rows in set (0.00 sec)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;select-查（我可以随意查找-select-from-table-where…）&quot;&gt;&lt;a href=&quot;#select-查（我可以随意查找-select-from-table-where…）&quot; class=&quot;headerlink&quot; title=&quot;select 查（我可以随意查找 select from table where…）&quot;&gt;&lt;/a&gt;select 查（我可以随意查找 select from table where…）&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
+select * from user where id=2;
+select * from user where pass=13;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;select-like-子段（-我可以随意选取子字段-）&quot;&gt;&lt;a href=&quot;#select-like-子段（-我可以随意选取子字段-）&quot; class=&quot;headerlink&quot; title=&quot;select like 子段（ 我可以随意选取子字段 ）&quot;&gt;&lt;/a&gt;select like 子段（ 我可以随意选取子字段 ）&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;select * from user where name like &amp;apos;%carry%&amp;apos;;//选取中间含有carry字段的数据&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;+------+----------+------+&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;| id   | name     | pass |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;+------+----------+------+&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|    5 | carryone | 123  |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|    2 | carry    | 571  |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;+------+----------+------+&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;选取以one结束的字段&quot;&gt;&lt;a href=&quot;#选取以one结束的字段&quot; class=&quot;headerlink&quot; title=&quot;选取以one结束的字段&quot;&gt;&lt;/a&gt;选取以one结束的字段&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;select * from user where name like &amp;apos;%one&amp;apos;;//&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;+------+----------+------+&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;| id   | name     | pass |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;+------+----------+------+&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|    5 | carryone | 123  |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;+------+----------+------+&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;select-order-by（排序我们可以随意排序数据）&quot;&gt;&lt;a href=&quot;#select-order-by（排序我们可以随意排序数据）&quot; class=&quot;headerlink&quot; title=&quot;select order by（排序我们可以随意排序数据）&quot;&gt;&lt;/a&gt;select order by（排序我们可以随意排序数据）&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
+        select * from user order by name; //默认是升序  
+         select * from user order by id desc;//desc为降序排列
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;delete-删-（我可以随意删除-delete-from-table-where…）&quot;&gt;&lt;a href=&quot;#delete-删-（我可以随意删除-delete-from-table-where…）&quot; class=&quot;headerlink&quot; title=&quot;delete 删 （我可以随意删除 delete from table where…）&quot;&gt;&lt;/a&gt;delete 删 （我可以随意删除 delete from table where…）&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
+delete from user where name=&quot;yujie&quot;;
+delete from user where id=3;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;update-我可以随意更改-update-user-set-charct-where-…&quot;&gt;&lt;a href=&quot;#update-我可以随意更改-update-user-set-charct-where-…&quot; class=&quot;headerlink&quot; title=&quot;update (我可以随意更改 update user set charct where ….)&quot;&gt;&lt;/a&gt;update (我可以随意更改 update user set charct where ….)&lt;/h2&gt;&lt;p&gt;&lt;pre&gt;&lt;code&gt;&lt;br&gt;update user set name=”billin” where id=1;&lt;br&gt;update user set id=5 where name=”billin”;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=2&amp;id=5179544&amp;auto=1&amp;height=66&quot;&gt;&lt;/iframe&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;mysql sql 语句&lt;br&gt;字符集选 utf-8&lt;br&gt;我需要学 增删改查 事物 联合&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/large/005vGbJ7jw1f671ikpgnhj30s20as0v3.jpg&quot; alt=&quot;young&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mysql-sql 语句  &lt;/li&gt;
+&lt;li&gt;字符集选utf-8&lt;/li&gt;
+&lt;li&gt;我需要学增删改查, 事物, 联合&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;mysql -u root -p;启动数据库&lt;br&gt;show databases;查看数据库&lt;br&gt;//进入数据库&lt;br&gt;use one ;&lt;br&gt;//展示所有表&lt;br&gt;show tables;&lt;br&gt;//&lt;br&gt;//创建个名为user的表&lt;br&gt;create table user(&lt;br&gt;id int,&lt;br&gt;name  varchar(30),//字符串长度最长是30&lt;br&gt;pass varchar(30)&lt;br&gt;);&lt;br&gt;
+&lt;h2 id=&quot;启动数据库&quot;&gt;&lt;a href=&quot;#启动数据库&quot; class=&quot;headerlink&quot; title=&quot;启动数据库&quot;&gt;&lt;/a&gt;启动数据库&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
+mysql -u root -p（root是用户名）
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;查看数据库（所有）&quot;&gt;&lt;a href=&quot;#查看数据库（所有）&quot; class=&quot;headerlink&quot; title=&quot;查看数据库（所有）&quot;&gt;&lt;/a&gt;查看数据库（所有）&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
+show databases
+&lt;/code&gt;&lt;/pre&gt;
     
     </summary>
     
@@ -49,9 +123,10 @@
     <link href="http://carryguan.com/2016/07/15/github%E9%A2%84%E8%A7%88demo/"/>
     <id>http://carryguan.com/2016/07/15/github预览demo/</id>
     <published>2016-07-15T05:18:04.000Z</published>
-    <updated>2016-07-16T07:30:09.964Z</updated>
+    <updated>2016-07-26T01:39:20.854Z</updated>
     
-    <content type="html">&lt;ul&gt;
+    <content type="html">&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-fc915701514c515c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;young&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;问题所在？&lt;/li&gt;
 &lt;li&gt;解决办法？&lt;/li&gt;
 &lt;li&gt;博主建议？&lt;br&gt;(原谅博主carry比较变态，在博文加了歌曲，不想听歌的小胖友们可以到博文底部关闭 ^~^)&lt;br&gt;图片无法加载可以点击&lt;a href=&quot;http://www.jianshu.com/p/75e30889e70a&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;图片爸爸&lt;/a&gt;&lt;/li&gt;
@@ -85,12 +160,13 @@ git push -u origin master （push文件到仓库中）
 &lt;p&gt;希望有更多小胖友提出宝贵意见,若有关于前端的问题，或者关于大学方面的感想可以私聊我(^~^)：&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/sunningcarryhaha&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;github&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.zhihu.com/people/guan-kai-li-88&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;知乎&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.jianshu.com/users/0293a04839f0/latest_articles&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;简书&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://weibo.com/u/5048785433/home?wvr=5&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;微博&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=2&amp;id=28613217&amp;auto=1&amp;height=66&quot;&gt;&lt;/iframe&gt;
+&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=2&amp;id=28756834&amp;auto=1&amp;height=66&quot;&gt;&lt;/iframe&gt;
 </content>
     
     <summary type="html">
     
-      &lt;ul&gt;
+      &lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-fc915701514c515c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;young&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;问题所在？&lt;/li&gt;
 &lt;li&gt;解决办法？&lt;/li&gt;
 &lt;li&gt;博主建议？&lt;br&gt;(原谅博主carry比较变态，在博文加了歌曲，不想听歌的小胖友们可以到博文底部关闭 ^~^)&lt;br&gt;图片无法加载可以点击&lt;a href=&quot;http://www.jianshu.com/p/75e30889e70a&quot;&gt;图片爸爸&lt;/a&gt;&lt;/li&gt;
