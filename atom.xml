@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>关凯丽的博客</title>
-  <subtitle>前端空城师</subtitle>
+  <subtitle>前端打杂</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://carryguan.com/"/>
-  <updated>2016-07-26T01:43:48.348Z</updated>
+  <updated>2016-07-26T01:44:21.906Z</updated>
   <id>http://carryguan.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://carryguan.com/2016/07/21/mysql%E8%AF%AD%E6%B3%95/"/>
     <id>http://carryguan.com/2016/07/21/mysql语法/</id>
     <published>2016-07-21T05:57:37.000Z</published>
-    <updated>2016-07-26T01:43:48.348Z</updated>
+    <updated>2016-07-26T01:44:21.906Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/large/005vGbJ7jw1f671ikpgnhj30s20as0v3.jpg&quot; alt=&quot;young&quot;&gt;&lt;/p&gt;
 &lt;ul&gt;
