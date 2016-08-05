@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://carryguan.com/"/>
-  <updated>2016-08-05T02:30:33.613Z</updated>
+  <updated>2016-08-05T02:41:30.527Z</updated>
   <id>http://carryguan.com/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <link href="http://carryguan.com/2016/08/05/js%E9%87%8D%E8%A6%81%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
     <id>http://carryguan.com/2016/08/05/js重要知识点/</id>
     <published>2016-08-05T01:59:02.000Z</published>
-    <updated>2016-08-05T02:30:33.613Z</updated>
+    <updated>2016-08-05T02:41:30.527Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-2a12c8caef6e4f37.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;前端进阶-（以下是豪大大的干货）&quot;&gt;&lt;a href=&quot;#前端进阶-（以下是豪大大的干货）&quot; class=&quot;headerlink&quot; title=&quot;前端进阶: （以下是豪大大的干货）&quot;&gt;&lt;/a&gt;前端进阶: （以下是豪大大的干货）&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3600308.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;第一阶段&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3601666.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;第二阶段&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3604459.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;第三阶段&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3607133.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;第四阶段&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3611394.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;第五阶段&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3632392.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;第六阶段&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;前端进阶-（以下是豪大大的干货）&quot;&gt;&lt;a href=&quot;#前端进阶-（以下是豪大大的干货）&quot; class=&quot;headerlink&quot; title=&quot;前端进阶: （以下是豪大大的干货）&quot;&gt;&lt;/a&gt;前端进阶: （以下是豪大大的干货）&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3600308.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;第一阶段&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3601666.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;第二阶段&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3604459.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;第三阶段&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3607133.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;第四阶段&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3611394.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;第五阶段&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3632392.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;第六阶段&lt;/a&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;本文目前依据是菜鸟教程：&lt;br&gt;&lt;a href=&quot;http://www.runoob.com/js/js-functions.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;JS菜鸟&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.w3school.com.cn/js/index.asp&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;JSw3c&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -48,11 +48,17 @@
 &lt;p&gt;5、搭建服务器，弄个傻瓜服务器比如wamp，phpstudy等软件，可以一键建立一个apache+php+mysql的服务器，前期可以把你的静态页发布到本地服务器，使用本地服务器配合ajax学习。&lt;/p&gt;
 &lt;p&gt;6、学点服务器端，建议php+mysql  (博主学的是nodejs+mysql)&lt;br&gt;服务器端脚本其实很简单，总结起来就是4个东西：SESSION、COOKIE、Request、Response，结合http协议理解如何从Request取得数据，经过处理后Response给客户端。这就是整个过程。&lt;br&gt;至于mysql也就是基本的sql语句。如何使用php进行CURD操作。这块其实很难总结，基本上以实现业务为主。&lt;/p&gt;
 &lt;p&gt;7、来点框架，理解MVC模式、推荐个比较流行的MVC框架：ThinkPHP，简洁好用不解释，国人弄的，文档和例子什么的非常丰富。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;博主感想&quot;&gt;&lt;a href=&quot;#博主感想&quot; class=&quot;headerlink&quot; title=&quot;博主感想&quot;&gt;&lt;/a&gt;博主感想&lt;/h2&gt;&lt;p&gt;希望有更多小胖友提出宝贵意见,若有关于前端的问题，或者关于大学方面的感想可以私聊我(^~^)：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/sunningcarryhaha&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;github&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.zhihu.com/people/guan-kai-li-88&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;知乎&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.jianshu.com/users/0293a04839f0/latest_articles&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;简书&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://weibo.com/u/5048785433/home?wvr=5&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;微博&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=2&amp;id=32737469&amp;auto=1&amp;height=66&quot;&gt;&lt;/iframe&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-2a12c8caef6e4f37.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; 
+      &lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-2a12c8caef6e4f37.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;前端进阶-（以下是豪大大的干货）&quot;&gt;&lt;a href=&quot;#前端进阶-（以下是豪大大的干货）&quot; class=&quot;headerlink&quot; title=&quot;前端进阶: （以下是豪大大的干货）&quot;&gt;&lt;/a&gt;前端进阶: （以下是豪大大的干货）&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3600308.html&quot;&gt;第一阶段&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3601666.html&quot;&gt;第二阶段&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3604459.html&quot;&gt;第三阶段&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3607133.html&quot;&gt;第四阶段&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3611394.html&quot;&gt;第五阶段&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3632392.html&quot;&gt;第六阶段&lt;/a&gt;&lt;br&gt;
     
     </summary>
     
@@ -376,63 +382,6 @@ cd public
       <category term="hexo" scheme="http://carryguan.com/tags/hexo/"/>
     
       <category term="blog" scheme="http://carryguan.com/tags/blog/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>添加音乐</title>
-    <link href="http://carryguan.com/2016/06/30/%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90/"/>
-    <id>http://carryguan.com/2016/06/30/添加音乐/</id>
-    <published>2016-06-30T03:32:17.000Z</published>
-    <updated>2016-07-02T01:51:38.168Z</updated>
-    
-    <content type="html">&lt;p&gt;以前觉得网页嵌入播放器很牛逼的感觉，原来就是一句代码的事儿！感谢外连接，感谢开源，让这个世界变得更美好。&lt;/p&gt;
-&lt;p&gt;markdown语法是完全兼容html代码的，直接把html代码扔进去就oook咯。&lt;/p&gt;
-&lt;p&gt;添加豆瓣音乐&lt;/p&gt;
-&lt;p&gt;复制下面代码到你的博文任意位置，然后Hexo s预览。&lt;/p&gt;
-&lt;p&gt;加入豆瓣音乐 歌曲是随机播放，游客可切歌，不能定制播哪首歌，而且不能按钮停止，只能音量调到0，无语，有利有弊的吧。&lt;/p&gt;
-&lt;p&gt;尽量放在最下面，如果你放在最上面，很有可能别人还未点击进入博文，你的博客就有了背景音乐了，要想赶紧播放音乐的另说。&lt;/p&gt;
-&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=2&amp;id=29722263&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;以前觉得网页嵌入播放器很牛逼的感觉，原来就是一句代码的事儿！感谢外连接，感谢开源，让这个世界变得更美好。&lt;/p&gt;
-&lt;p&gt;markdown语法是完全兼容html代码的，直接把html代码扔进去就oook咯。&lt;/p&gt;
-&lt;p&gt;添加豆瓣音乐&lt;/p&gt;
-&lt;p&gt;复制下面代码到你的博文任意
-    
-    </summary>
-    
-    
-      <category term="music" scheme="http://carryguan.com/tags/music/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://carryguan.com/2016/06/07/hello-world/"/>
-    <id>http://carryguan.com/2016/06/07/hello-world/</id>
-    <published>2016-06-07T12:19:45.485Z</published>
-    <updated>2016-06-07T12:19:45.486Z</updated>
-    
-    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-    
-    </summary>
-    
     
   </entry>
   
