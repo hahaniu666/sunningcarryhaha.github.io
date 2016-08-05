@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://carryguan.com/"/>
-  <updated>2016-07-26T01:44:21.906Z</updated>
+  <updated>2016-08-05T02:30:33.613Z</updated>
   <id>http://carryguan.com/</id>
   
   <author>
@@ -14,6 +14,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS进阶以及重要知识点</title>
+    <link href="http://carryguan.com/2016/08/05/js%E9%87%8D%E8%A6%81%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    <id>http://carryguan.com/2016/08/05/js重要知识点/</id>
+    <published>2016-08-05T01:59:02.000Z</published>
+    <updated>2016-08-05T02:30:33.613Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-2a12c8caef6e4f37.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;前端进阶-（以下是豪大大的干货）&quot;&gt;&lt;a href=&quot;#前端进阶-（以下是豪大大的干货）&quot; class=&quot;headerlink&quot; title=&quot;前端进阶: （以下是豪大大的干货）&quot;&gt;&lt;/a&gt;前端进阶: （以下是豪大大的干货）&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3600308.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;第一阶段&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3601666.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;第二阶段&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3604459.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;第三阶段&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3607133.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;第四阶段&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3611394.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;第五阶段&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/jikey/p/3632392.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;第六阶段&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;本文目前依据是菜鸟教程：&lt;br&gt;&lt;a href=&quot;http://www.runoob.com/js/js-functions.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;JS菜鸟&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.w3school.com.cn/js/index.asp&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;JSw3c&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;JS基本编程语法&quot;&gt;&lt;a href=&quot;#JS基本编程语法&quot; class=&quot;headerlink&quot; title=&quot;JS基本编程语法&quot;&gt;&lt;/a&gt;JS基本编程语法&lt;/h2&gt;&lt;p&gt;变量&lt;br&gt;运算&lt;br&gt;流程控制&lt;br&gt;数组&lt;br&gt;调用函数&lt;br&gt;自定义函数&lt;br&gt;自定义对象&lt;br&gt;string对象原型(prototype)&lt;br&gt;this事件&lt;br&gt;json&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;JS函数&quot;&gt;&lt;a href=&quot;#JS函数&quot; class=&quot;headerlink&quot; title=&quot;JS函数&quot;&gt;&lt;/a&gt;JS函数&lt;/h2&gt;&lt;p&gt;函数定义&lt;br&gt;函数调用&lt;br&gt;函数的参数&lt;br&gt;闭包&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;JS-HTML-DOM&quot;&gt;&lt;a href=&quot;#JS-HTML-DOM&quot; class=&quot;headerlink&quot; title=&quot;JS HTML DOM&quot;&gt;&lt;/a&gt;JS HTML DOM&lt;/h2&gt;&lt;p&gt;目前来看都要&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;JS高级教程&quot;&gt;&lt;a href=&quot;#JS高级教程&quot; class=&quot;headerlink&quot; title=&quot;JS高级教程&quot;&gt;&lt;/a&gt;JS高级教程&lt;/h2&gt;&lt;p&gt;string,prototype&lt;br&gt;array&lt;br&gt;regExp&lt;br&gt;Boolean&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;js继承(call,prototype,apply)//红皮书第六章&lt;br&gt;js的执行顺序&lt;br&gt;js事件机制(委托，绑定，监听，冒泡和阻止冒泡，兼容性)//红皮书13章&lt;br&gt;了解ajax的xmlhttprequest及其创建方法(多浏览器兼容)，跨域，明白其工作原理，http协议(get,post;如何传递参数，设置cookie)&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;前端学习计划推荐：&quot;&gt;&lt;a href=&quot;#前端学习计划推荐：&quot; class=&quot;headerlink&quot; title=&quot;前端学习计划推荐：&quot;&gt;&lt;/a&gt;前端学习计划推荐：&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;以下都是我从知乎里面找到的干货&lt;br&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-e5c3d5a2eed28410.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;计算机行业很多都符合82定律，也就是20%的东西的使用频率占到80%，所以很适合囫囵吞枣，我们的重点就是把这20%学起来，而首先要做的就是把这20%的东西找出来。&lt;br&gt;在我看来前端这20%的东西大概就是常用的html标签，css的盒子模型，基本的原生js，以及熟练使用jquery，ajax，常见浏览器的兼容。&lt;br&gt;拿下这些东西意义非凡，一方面证明你适合做前端这份工作，另一方面这些技能能让你找到一份工作。让你能够从容地去学习剩下的80%。&lt;br&gt;总之就是专心对付最重要的东西，那些什么less、sass、angular这类的东西，当你把我之前说的基础打好之后，学习起来畅通无阻，随学随用。&lt;br&gt;最后我觉得最难的就是实践，只有实践才能学到真正的技术，新人很难参与一些有价值有意义的项目，没有这些项目又很难成长，所以自己有项目可参与应该珍惜，没项目应该多造一些有价值的轮子。&lt;/p&gt;
+&lt;p&gt;1.html的语法、格式，常用的标签极其作用，理解标签的嵌套，学习使用firefox+firebug或者chrom的调试工具，能够使用这些工具调试html、css、js、断点调试、抓包&lt;/p&gt;
+&lt;p&gt;2.如何引入css、js（有多少种方法，各种方法有什么区别），理解id、class属性的区别，学会css的常用选择器，理解盒子模型（padding，margin，border，width，height，），css坐标系，css布局（position的absolute、relative 、fixed、static），css浮动（float：left、right ）和清除浮动（clear）,display:inline、block、inline-block、flex&lt;/p&gt;
+&lt;p&gt;3.js的执行顺序，基本的编程基础（变量、运算、流程控制、数组、调用函数、自定义函数、对象）、json、js的dom操作、js的事件机制（委托、绑定、监听，冒泡和阻止冒泡，兼容性），了解ajax的xmlhttprequest及其创建方法（多浏览器兼容）、跨域，明白其工作原理，评论里有朋友说http协议，确实是我疏忽，在学习ajax这部分免不了需要懂点http协议，比如什么是get和post，这两种如何传递参数，设置cookie等&lt;/p&gt;
+&lt;p&gt;4、使用jquery解放你的开发工作，学会jq选择器，修改属性、监听事件、修改css，学会写jquery插件。这一步我觉得可以和第3步穿插学习&lt;/p&gt;
+&lt;p&gt;5、搭建服务器，弄个傻瓜服务器比如wamp，phpstudy等软件，可以一键建立一个apache+php+mysql的服务器，前期可以把你的静态页发布到本地服务器，使用本地服务器配合ajax学习。&lt;/p&gt;
+&lt;p&gt;6、学点服务器端，建议php+mysql  (博主学的是nodejs+mysql)&lt;br&gt;服务器端脚本其实很简单，总结起来就是4个东西：SESSION、COOKIE、Request、Response，结合http协议理解如何从Request取得数据，经过处理后Response给客户端。这就是整个过程。&lt;br&gt;至于mysql也就是基本的sql语句。如何使用php进行CURD操作。这块其实很难总结，基本上以实现业务为主。&lt;/p&gt;
+&lt;p&gt;7、来点框架，理解MVC模式、推荐个比较流行的MVC框架：ThinkPHP，简洁好用不解释，国人弄的，文档和例子什么的非常丰富。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-2a12c8caef6e4f37.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; 
+    
+    </summary>
+    
+    
+      <category term="javascrpt" scheme="http://carryguan.com/tags/javascrpt/"/>
+    
+      <category term="前端" scheme="http://carryguan.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="进阶" scheme="http://carryguan.com/tags/%E8%BF%9B%E9%98%B6/"/>
+    
+      <category term="js知识点" scheme="http://carryguan.com/tags/js%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    
+  </entry>
   
   <entry>
     <title>Mysql-sql语法(入门)</title>
