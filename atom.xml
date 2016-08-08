@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://carryguan.com/"/>
-  <updated>2016-08-08T08:10:05.451Z</updated>
+  <updated>2016-08-08T08:17:18.834Z</updated>
   <id>http://carryguan.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://carryguan.com/2016/08/08/%E6%9C%80%E7%81%AB%E7%9A%84Javascript%E9%83%BD%E8%83%BD%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F/"/>
     <id>http://carryguan.com/2016/08/08/最火的Javascript都能做什么？/</id>
     <published>2016-08-08T07:50:50.000Z</published>
-    <updated>2016-08-08T08:10:05.451Z</updated>
+    <updated>2016-08-08T08:17:18.834Z</updated>
     
     <content type="html">&lt;p&gt;JS的应用场景&lt;/p&gt;
 &lt;ul&gt;
@@ -36,7 +36,7 @@
 &lt;li&gt;&lt;strong&gt;操作系统&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-bc22cd5fcf7b236a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-bc22cd5fcf7b236a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;数据可视化&quot;&gt;&lt;a href=&quot;#数据可视化&quot; class=&quot;headerlink&quot; title=&quot;数据可视化&quot;&gt;&lt;/a&gt;数据可视化&lt;/h1&gt;&lt;h2 id=&quot;processing-js&quot;&gt;&lt;a href=&quot;#processing-js&quot; class=&quot;headerlink&quot; title=&quot;processing.js&quot;&gt;&lt;/a&gt;processing.js&lt;/h2&gt;&lt;p&gt;Processing.js作者是John Resig，这是继Jquery之后，他的第二个力作。&lt;br&gt;Processing.js使用JavaScript绘制形状sharp和操作HTML5 canvas元素产生图像动画。&lt;br&gt;Processing.js是轻量，易于了解掌握，并提出一个理想的工具，可视化的数据，创建用户界面和开发基于Web的游戏。&lt;br&gt;&lt;a href=&quot;http://blog.jobbole.com/1525/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;processing.js简介&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://blog.csdn.net/bugknightyyp/article/details/8666831&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;processing.js快速入门&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;D3-js&quot;&gt;&lt;a href=&quot;#D3-js&quot; class=&quot;headerlink&quot; title=&quot;D3.js&quot;&gt;&lt;/a&gt;D3.js&lt;/h2&gt;&lt;p&gt;D3.js是一个JavaScript库，它可以通过数据来操作文档。D3可以通过使用HTML、SVG和CSS把数据鲜活形象地展现出来。D3严格遵循Web标准，因而可以让你的程序轻松兼容现代主流浏览器并避免对特定框架的依赖。同时，它提供了强大的可视化组件，可以让使用者以数据驱动的方式去操作DOM。&lt;br&gt;&lt;a href=&quot;http://www.jianshu.com/p/c3800c61d2fb&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;D3.js入门指南&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://javascript.ruanyifeng.com/library/d3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;D3.js入门教程&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;移动应用&quot;&gt;&lt;a href=&quot;#移动应用&quot; class=&quot;headerlink&quot; title=&quot;移动应用&quot;&gt;&lt;/a&gt;移动应用&lt;/h1&gt;&lt;h2 id=&quot;Cordova-phoneGap-ionic&quot;&gt;&lt;a href=&quot;#Cordova-phoneGap-ionic&quot; class=&quot;headerlink&quot; title=&quot;Cordova+phoneGap+ionic&quot;&gt;&lt;/a&gt;Cordova+phoneGap+ionic&lt;/h2&gt;&lt;h3 id=&quot;Cordova&quot;&gt;&lt;a href=&quot;#Cordova&quot; class=&quot;headerlink&quot; title=&quot;Cordova&quot;&gt;&lt;/a&gt;Cordova&lt;/h3&gt;&lt;p&gt;Cordova提供了一组设备相关的API，通过这组API，移动应用能够以JavaScript访问原生的设备功能，如摄像头、麦克风等。&lt;br&gt;Cordova还提供了一组统一的JavaScript类库，以及为这些类库所用的设备相关的原生后台代码。&lt;br&gt;&lt;a href=&quot;http://www.zhoujingen.cn/blog/7027.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt; Cordova教程&lt;/a&gt;&lt;/p&gt;
@@ -69,7 +69,16 @@
 &lt;li&gt;&lt;strong&gt;数据可视化&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;移动应用&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;服务端&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;桌面应用&lt;/strong&gt;&lt;/
+&lt;li&gt;&lt;strong&gt;桌面应用&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;游戏&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;VR&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AR&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;物联网&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;硬件&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;操作系统&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-bc22cd5fcf7b236a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;br&gt;
     
     </summary>
     
