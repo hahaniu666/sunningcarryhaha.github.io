@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://carryguan.com/"/>
-  <updated>2016-08-08T08:17:18.834Z</updated>
+  <updated>2016-08-16T02:39:37.777Z</updated>
   <id>http://carryguan.com/</id>
   
   <author>
@@ -16,11 +16,49 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>MyVocation</title>
+    <link href="http://carryguan.com/2016/08/16/MyVocation/"/>
+    <id>http://carryguan.com/2016/08/16/MyVocation/</id>
+    <published>2016-08-16T01:09:04.000Z</published>
+    <updated>2016-08-16T02:39:37.777Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;一共四周：&quot;&gt;&lt;a href=&quot;#一共四周：&quot; class=&quot;headerlink&quot; title=&quot;一共四周：&quot;&gt;&lt;/a&gt;一共四周：&lt;/h1&gt;&lt;p&gt;第一周：了解一下做的是啥，学习mysql,node.js,coffeescript,socket&lt;br&gt;第二周 : 写了缺货提醒的接口(warehouse-coffee-lib–timer-newStocksInfor),获得缺货详细列表的接口(warehouse-coffee-lib-getStocksList)&lt;br&gt;第三周：写了获得缺货门店的信息接口(warehouse-coffee-lib-AreaLacks)&lt;br&gt;第四周：学express,node.js搭建网站，写后台&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;后台工作流程：&quot;&gt;&lt;a href=&quot;#后台工作流程：&quot; class=&quot;headerlink&quot; title=&quot;后台工作流程：&quot;&gt;&lt;/a&gt;后台工作流程：&lt;/h1&gt;&lt;h2 id=&quot;一：搭建服务器&quot;&gt;&lt;a href=&quot;#一：搭建服务器&quot; class=&quot;headerlink&quot; title=&quot;一：搭建服务器&quot;&gt;&lt;/a&gt;一：搭建服务器&lt;/h2&gt;&lt;h2 id=&quot;二：数据处理：&quot;&gt;&lt;a href=&quot;#二：数据处理：&quot; class=&quot;headerlink&quot; title=&quot;二：数据处理：&quot;&gt;&lt;/a&gt;二：数据处理：&lt;/h2&gt;&lt;p&gt;数据库（mysql）,redis,memcache&lt;/p&gt;
+&lt;h2 id=&quot;三：本机启动后台系统&quot;&gt;&lt;a href=&quot;#三：本机启动后台系统&quot; class=&quot;headerlink&quot; title=&quot;三：本机启动后台系统&quot;&gt;&lt;/a&gt;三：本机启动后台系统&lt;/h2&gt;&lt;p&gt;node main.js/supervisor main.js/NODE_ENV=DEV &amp;amp;&amp;amp;supervisor main.j&lt;/p&gt;
+&lt;h2 id=&quot;四：与客户端的连接&quot;&gt;&lt;a href=&quot;#四：与客户端的连接&quot; class=&quot;headerlink&quot; title=&quot;四：与客户端的连接&quot;&gt;&lt;/a&gt;四：与客户端的连接&lt;/h2&gt;&lt;h3 id=&quot;1&quot;&gt;&lt;a href=&quot;#1&quot; class=&quot;headerlink&quot; title=&quot;1:&quot;&gt;&lt;/a&gt;1:&lt;/h3&gt;&lt;p&gt;此客户端可以为android,ios,web前台（前端）&lt;/p&gt;
+&lt;h3 id=&quot;2&quot;&gt;&lt;a href=&quot;#2&quot; class=&quot;headerlink&quot; title=&quot;2:&quot;&gt;&lt;/a&gt;2:&lt;/h3&gt;&lt;p&gt;客户端需要知道后台的ip,进行 ping连接&lt;/p&gt;
+&lt;h3 id=&quot;3&quot;&gt;&lt;a href=&quot;#3&quot; class=&quot;headerlink&quot; title=&quot;3:&quot;&gt;&lt;/a&gt;3:&lt;/h3&gt;&lt;p&gt;客户端也需要知道与后台进行交互的那个接口&lt;/p&gt;
+&lt;h2 id=&quot;五：和客户端的交互&quot;&gt;&lt;a href=&quot;#五：和客户端的交互&quot; class=&quot;headerlink&quot; title=&quot;五：和客户端的交互&quot;&gt;&lt;/a&gt;五：和客户端的交互&lt;/h2&gt;&lt;p&gt;后台需要写好接口功能，并把数据通过这个接口传输给客户端(socket.on)&lt;br&gt;后台自己定义好功能（一般是客户端的系统信息推送）自发起一个接口(socket.emit),客户端soket.on接口和数据&lt;/p&gt;
+&lt;h2 id=&quot;六：注意&quot;&gt;&lt;a href=&quot;#六：注意&quot; class=&quot;headerlink&quot; title=&quot;六：注意&quot;&gt;&lt;/a&gt;六：注意&lt;/h2&gt;&lt;p&gt;从github拽下来的文件，需要进入其跟目录进行npm install,原因是将package.json中的dependencies依赖包进行下载；&lt;/p&gt;
+&lt;h1 id=&quot;More&quot;&gt;&lt;a href=&quot;#More&quot; class=&quot;headerlink&quot; title=&quot;More&quot;&gt;&lt;/a&gt;More&lt;/h1&gt;&lt;p&gt;真的特别感谢公司给的这次机会，让我学到了好多新知识，还结交到了几位盆友，跟他们这样有多年开发经验的人沟通，了解了开发方式与模式，扩展了知识面&lt;/p&gt;
+&lt;h1 id=&quot;最后&quot;&gt;&lt;a href=&quot;#最后&quot; class=&quot;headerlink&quot; title=&quot;最后&quot;&gt;&lt;/a&gt;最后&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/25e89c1ad4ab&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;图片爸爸加载&lt;/a&gt;&lt;br&gt;放一张我男神BI照片来开心一下（原谅博主少女心）&lt;br&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-895ca3735e03828e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;br&gt;再放一张博主我的（表杀我，咩咩）&lt;br&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-1e9289634631a1cc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;一共四周：&quot;&gt;&lt;a href=&quot;#一共四周：&quot; class=&quot;headerlink&quot; title=&quot;一共四周：&quot;&gt;&lt;/a&gt;一共四周：&lt;/h1&gt;&lt;p&gt;第一周：了解一下做的是啥，学习mysql,node.js,coffeescript,socket&lt;br&gt;第二周 : 写了缺货提醒的接口(warehouse-coffee-lib–timer-newStocksInfor),获得缺货详细列表的接口(warehouse-coffee-lib-getStocksList)&lt;br&gt;第三周：写了获得缺货门店的信息接口(warehouse-coffee-lib-AreaLacks)&lt;br&gt;第四周：学express,node.js搭建网站，写后台&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="vocation" scheme="http://carryguan.com/tags/vocation/"/>
+    
+      <category term="life" scheme="http://carryguan.com/tags/life/"/>
+    
+      <category term="work" scheme="http://carryguan.com/tags/work/"/>
+    
+      <category term="vocation summing" scheme="http://carryguan.com/tags/vocation-summing/"/>
+    
+      <category term="暑假生活" scheme="http://carryguan.com/tags/%E6%9A%91%E5%81%87%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>最流行的Javascript都能做什么？</title>
     <link href="http://carryguan.com/2016/08/08/%E6%9C%80%E7%81%AB%E7%9A%84Javascript%E9%83%BD%E8%83%BD%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F/"/>
     <id>http://carryguan.com/2016/08/08/最火的Javascript都能做什么？/</id>
     <published>2016-08-08T07:50:50.000Z</published>
-    <updated>2016-08-08T08:17:18.834Z</updated>
+    <updated>2016-08-16T02:22:38.110Z</updated>
     
     <content type="html">&lt;p&gt;JS的应用场景&lt;/p&gt;
 &lt;ul&gt;
@@ -36,7 +74,7 @@
 &lt;li&gt;&lt;strong&gt;操作系统&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-bc22cd5fcf7b236a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;若图片无法加载请点击&lt;a href=&quot;http://www.jianshu.com/p/66e05cc8201d&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;图片爸爸&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-bc22cd5fcf7b236a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;数据可视化&quot;&gt;&lt;a href=&quot;#数据可视化&quot; class=&quot;headerlink&quot; title=&quot;数据可视化&quot;&gt;&lt;/a&gt;数据可视化&lt;/h1&gt;&lt;h2 id=&quot;processing-js&quot;&gt;&lt;a href=&quot;#processing-js&quot; class=&quot;headerlink&quot; title=&quot;processing.js&quot;&gt;&lt;/a&gt;processing.js&lt;/h2&gt;&lt;p&gt;Processing.js作者是John Resig，这是继Jquery之后，他的第二个力作。&lt;br&gt;Processing.js使用JavaScript绘制形状sharp和操作HTML5 canvas元素产生图像动画。&lt;br&gt;Processing.js是轻量，易于了解掌握，并提出一个理想的工具，可视化的数据，创建用户界面和开发基于Web的游戏。&lt;br&gt;&lt;a href=&quot;http://blog.jobbole.com/1525/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;processing.js简介&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://blog.csdn.net/bugknightyyp/article/details/8666831&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;processing.js快速入门&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;D3-js&quot;&gt;&lt;a href=&quot;#D3-js&quot; class=&quot;headerlink&quot; title=&quot;D3.js&quot;&gt;&lt;/a&gt;D3.js&lt;/h2&gt;&lt;p&gt;D3.js是一个JavaScript库，它可以通过数据来操作文档。D3可以通过使用HTML、SVG和CSS把数据鲜活形象地展现出来。D3严格遵循Web标准，因而可以让你的程序轻松兼容现代主流浏览器并避免对特定框架的依赖。同时，它提供了强大的可视化组件，可以让使用者以数据驱动的方式去操作DOM。&lt;br&gt;&lt;a href=&quot;http://www.jianshu.com/p/c3800c61d2fb&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;D3.js入门指南&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://javascript.ruanyifeng.com/library/d3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;D3.js入门教程&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;移动应用&quot;&gt;&lt;a href=&quot;#移动应用&quot; class=&quot;headerlink&quot; title=&quot;移动应用&quot;&gt;&lt;/a&gt;移动应用&lt;/h1&gt;&lt;h2 id=&quot;Cordova-phoneGap-ionic&quot;&gt;&lt;a href=&quot;#Cordova-phoneGap-ionic&quot; class=&quot;headerlink&quot; title=&quot;Cordova+phoneGap+ionic&quot;&gt;&lt;/a&gt;Cordova+phoneGap+ionic&lt;/h2&gt;&lt;h3 id=&quot;Cordova&quot;&gt;&lt;a href=&quot;#Cordova&quot; class=&quot;headerlink&quot; title=&quot;Cordova&quot;&gt;&lt;/a&gt;Cordova&lt;/h3&gt;&lt;p&gt;Cordova提供了一组设备相关的API，通过这组API，移动应用能够以JavaScript访问原生的设备功能，如摄像头、麦克风等。&lt;br&gt;Cordova还提供了一组统一的JavaScript类库，以及为这些类库所用的设备相关的原生后台代码。&lt;br&gt;&lt;a href=&quot;http://www.zhoujingen.cn/blog/7027.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt; Cordova教程&lt;/a&gt;&lt;/p&gt;
@@ -78,7 +116,7 @@
 &lt;li&gt;&lt;strong&gt;操作系统&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-bc22cd5fcf7b236a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;p&gt;若图片无法加载请点击&lt;a href=&quot;http://www.jianshu.com/p/66e05cc8201d&quot;&gt;图片爸爸&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-bc22cd5fcf7b236a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;br&gt;
     
     </summary>
     
