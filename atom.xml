@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://carryguan.com/"/>
-  <updated>2016-08-16T02:39:37.777Z</updated>
+  <updated>2016-08-16T03:41:02.679Z</updated>
   <id>http://carryguan.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://carryguan.com/2016/08/16/MyVocation/"/>
     <id>http://carryguan.com/2016/08/16/MyVocation/</id>
     <published>2016-08-16T01:09:04.000Z</published>
-    <updated>2016-08-16T02:39:37.777Z</updated>
+    <updated>2016-08-16T03:41:02.679Z</updated>
     
     <content type="html">&lt;h1 id=&quot;一共四周：&quot;&gt;&lt;a href=&quot;#一共四周：&quot; class=&quot;headerlink&quot; title=&quot;一共四周：&quot;&gt;&lt;/a&gt;一共四周：&lt;/h1&gt;&lt;p&gt;第一周：了解一下做的是啥，学习mysql,node.js,coffeescript,socket&lt;br&gt;第二周 : 写了缺货提醒的接口(warehouse-coffee-lib–timer-newStocksInfor),获得缺货详细列表的接口(warehouse-coffee-lib-getStocksList)&lt;br&gt;第三周：写了获得缺货门店的信息接口(warehouse-coffee-lib-AreaLacks)&lt;br&gt;第四周：学express,node.js搭建网站，写后台&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;后台工作流程：&quot;&gt;&lt;a href=&quot;#后台工作流程：&quot; class=&quot;headerlink&quot; title=&quot;后台工作流程：&quot;&gt;&lt;/a&gt;后台工作流程：&lt;/h1&gt;&lt;h2 id=&quot;一：搭建服务器&quot;&gt;&lt;a href=&quot;#一：搭建服务器&quot; class=&quot;headerlink&quot; title=&quot;一：搭建服务器&quot;&gt;&lt;/a&gt;一：搭建服务器&lt;/h2&gt;&lt;h2 id=&quot;二：数据处理：&quot;&gt;&lt;a href=&quot;#二：数据处理：&quot; class=&quot;headerlink&quot; title=&quot;二：数据处理：&quot;&gt;&lt;/a&gt;二：数据处理：&lt;/h2&gt;&lt;p&gt;数据库（mysql）,redis,memcache&lt;/p&gt;
@@ -30,8 +30,12 @@
 &lt;h3 id=&quot;3&quot;&gt;&lt;a href=&quot;#3&quot; class=&quot;headerlink&quot; title=&quot;3:&quot;&gt;&lt;/a&gt;3:&lt;/h3&gt;&lt;p&gt;客户端也需要知道与后台进行交互的那个接口&lt;/p&gt;
 &lt;h2 id=&quot;五：和客户端的交互&quot;&gt;&lt;a href=&quot;#五：和客户端的交互&quot; class=&quot;headerlink&quot; title=&quot;五：和客户端的交互&quot;&gt;&lt;/a&gt;五：和客户端的交互&lt;/h2&gt;&lt;p&gt;后台需要写好接口功能，并把数据通过这个接口传输给客户端(socket.on)&lt;br&gt;后台自己定义好功能（一般是客户端的系统信息推送）自发起一个接口(socket.emit),客户端soket.on接口和数据&lt;/p&gt;
 &lt;h2 id=&quot;六：注意&quot;&gt;&lt;a href=&quot;#六：注意&quot; class=&quot;headerlink&quot; title=&quot;六：注意&quot;&gt;&lt;/a&gt;六：注意&lt;/h2&gt;&lt;p&gt;从github拽下来的文件，需要进入其跟目录进行npm install,原因是将package.json中的dependencies依赖包进行下载；&lt;/p&gt;
-&lt;h1 id=&quot;More&quot;&gt;&lt;a href=&quot;#More&quot; class=&quot;headerlink&quot; title=&quot;More&quot;&gt;&lt;/a&gt;More&lt;/h1&gt;&lt;p&gt;真的特别感谢公司给的这次机会，让我学到了好多新知识，还结交到了几位盆友，跟他们这样有多年开发经验的人沟通，了解了开发方式与模式，扩展了知识面&lt;/p&gt;
-&lt;h1 id=&quot;最后&quot;&gt;&lt;a href=&quot;#最后&quot; class=&quot;headerlink&quot; title=&quot;最后&quot;&gt;&lt;/a&gt;最后&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/25e89c1ad4ab&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;图片爸爸加载&lt;/a&gt;&lt;br&gt;放一张我男神BI照片来开心一下（原谅博主少女心）&lt;br&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-895ca3735e03828e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;br&gt;再放一张博主我的（表杀我，咩咩）&lt;br&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-1e9289634631a1cc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;More&quot;&gt;&lt;a href=&quot;#More&quot; class=&quot;headerlink&quot; title=&quot;More&quot;&gt;&lt;/a&gt;More&lt;/h1&gt;&lt;p&gt;真的特别感谢公司给的这次机会，让我学到了好多新知识，还结交到了几位盆友，跟他们这样有多年开发经验的人沟通，了解了开发方式与模式，扩展了知识面&lt;br&gt;&lt;!-- # 最后
+[图片爸爸加载](http://www.jianshu.com/p/25e89c1ad4ab)
+放一张我男神BI照片来开心一下（原谅博主少女心）
+![](http://upload-images.jianshu.io/upload_images/2377897-895ca3735e03828e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+再放一张博主我的（表杀我，咩咩）
+![](http://upload-images.jianshu.io/upload_images/2377897-1e9289634631a1cc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) --&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
