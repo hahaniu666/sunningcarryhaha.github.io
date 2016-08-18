@@ -4,6 +4,13 @@
   
     
     <entry>
+      <title><![CDATA[test]]></title>
+      <url>http://carryguan.com/2016/08/18/test/</url>
+      <content type="html"><![CDATA[<p>啦啦啦</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[MyVocation]]></title>
       <url>http://carryguan.com/2016/08/16/MyVocation/</url>
       <content type="html"><![CDATA[<h1 id="一共四周："><a href="#一共四周：" class="headerlink" title="一共四周："></a>一共四周：</h1><p>第一周：了解一下做的是啥，学习mysql,node.js,coffeescript,socket<br>第二周 : 写了缺货提醒的接口(warehouse-coffee-lib–timer-newStocksInfor),获得缺货详细列表的接口(warehouse-coffee-lib-getStocksList)<br>第三周：写了获得缺货门店的信息接口(warehouse-coffee-lib-AreaLacks)<br>第四周：学express,node.js搭建网站，写后台<br><a id="more"></a></p>

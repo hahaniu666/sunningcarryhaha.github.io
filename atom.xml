@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://carryguan.com/"/>
-  <updated>2016-08-16T03:46:31.787Z</updated>
+  <updated>2016-08-18T02:31:37.829Z</updated>
   <id>http://carryguan.com/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://carryguan.com/2016/08/18/test/"/>
+    <id>http://carryguan.com/2016/08/18/test/</id>
+    <published>2016-08-18T02:25:38.000Z</published>
+    <updated>2016-08-18T02:31:37.829Z</updated>
+    
+    <content type="html">&lt;p&gt;啦啦啦&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;啦啦啦&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>MyVocation</title>
