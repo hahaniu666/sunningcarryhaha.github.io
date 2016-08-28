@@ -4,6 +4,20 @@
   
     
     <entry>
+      <title><![CDATA[Cookie和Session]]></title>
+      <url>http://carryguan.com/2016/08/28/Cookie%E5%92%8CSession/</url>
+      <content type="html"><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/2377897-144ce8776fdd3f93.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="来由"><a href="#来由" class="headerlink" title="来由"></a>来由</h2><p>http协议是stateless的,一旦和后台响应了，就断开了和请求的连接，这时若我们想要了解哪个客户发来的请求，这就需要借助服务器端的session,和浏览器端的cookie  –（可以用express中间件）</p>
+<h3 id="1：cookie-amp-session"><a href="#1：cookie-amp-session" class="headerlink" title="1：cookie&amp;session"></a>1：cookie&amp;session</h3><p><a href="http://blog.csdn.net/fangaoxin/article/details/6952954" target="_blank" rel="external">cookie,session</a>会话跟踪是Web程序中常用的技术，用来<strong>跟踪用户的整个会话</strong>。常用的会话跟踪技术是Cookie与Session。<strong>Cookie通过在客户端记录信息确定用户身份</strong>，<strong>Session通过在服务器端记录信息确定用户身份</strong>。</p>
+<h3 id="2：Cookie"><a href="#2：Cookie" class="headerlink" title="2：Cookie"></a>2：Cookie</h3><p>Cookie实际上是一小段的文本信息。客户端请求服务器，如果服务器需要记录该用户状态，就使用response向客户端浏览器颁发一个Cookie。客户端浏览器会把Cookie保存起来。当浏览器再请求该网站时，浏览器把请求的网址连同该Cookie一同提交给服务器。服务器检查该Cookie，以此来辨认用户状态。服务器还可以根据需要修改Cookie的内容。</p>
+<h3 id="3：-Session"><a href="#3：-Session" class="headerlink" title="3： Session"></a>3： Session</h3><p>Session是另一种记录客户状态的机制，不同的是Cookie保存在客户端浏览器中，而Session保存在服务器上。客户端浏览器访问服务器的时候，服务器把客户端信息以某种形式记录在服务器上。这就是Session。客户端浏览器再次访问时只需要从该Session中查找该客户的状态就可以了。<br>如果说Cookie机制是通过检查客户身上的“通行证”来确定客户身份的话，那么Session机制就是通过检查服务器上的“客户明细表”来确认客户身份。Session相当于程序在服务器上建立的一份客户档案，客户来访的时候只需要查询客户档案表就可以了。</p>
+<hr>
+<p> #博主感想</p>
+<p>希望有更多小胖友提出宝贵意见,若有关于前端的问题，或者关于大学方面的感想可以私聊我(^~^)：<br><a href="http://carryguan.me/" target="_blank" rel="external">个人网站</a><br><a href="https://github.com/sunningcarryhaha" target="_blank" rel="external">github</a><br><a href="https://www.zhihu.com/people/guan-kai-li-88" target="_blank" rel="external">知乎</a><br><a href="http://www.jianshu.com/users/0293a04839f0/latest_articles" target="_blank" rel="external">简书</a><br><a href="http://weibo.com/u/5048785433/home?wvr=5" target="_blank" rel="external">微博</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[前端攻城狮的标准]]></title>
       <url>http://carryguan.com/2016/08/28/%E5%89%8D%E7%AB%AF%E6%94%BB%E5%9F%8E%E7%8B%AE%E7%9A%84%E6%A0%87%E5%87%86/</url>
       <content type="html"><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/2377897-df83d5ec13fe30e8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
@@ -25,13 +39,6 @@
 <p>希望有更多小胖友提出宝贵意见,若有关于前端的问题，或者关于大学方面的感想可以私聊我(^~^)：<br><a href="http://carryguan.me/" target="_blank" rel="external">个人网站</a><br><a href="https://github.com/sunningcarryhaha" target="_blank" rel="external">github</a><br><a href="https://www.zhihu.com/people/guan-kai-li-88" target="_blank" rel="external">知乎</a><br><a href="http://www.jianshu.com/users/0293a04839f0/latest_articles" target="_blank" rel="external">简书</a><br><a href="http://weibo.com/u/5048785433/home?wvr=5" target="_blank" rel="external">微博</a></p>
 <hr>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=408332973&auto=1&height=66"></iframe>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[test]]></title>
-      <url>http://carryguan.com/2016/08/18/test/</url>
-      <content type="html"><![CDATA[<p>啦啦啦</p>
 ]]></content>
     </entry>
     
