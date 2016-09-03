@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://carryguan.com/"/>
-  <updated>2016-08-28T13:20:21.424Z</updated>
+  <updated>2016-09-03T06:39:31.470Z</updated>
   <id>http://carryguan.com/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <link href="http://carryguan.com/2016/08/28/Cookie%E5%92%8CSession/"/>
     <id>http://carryguan.com/2016/08/28/Cookie和Session/</id>
     <published>2016-08-28T13:18:20.000Z</published>
-    <updated>2016-08-28T13:20:21.424Z</updated>
+    <updated>2016-09-03T06:39:31.470Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-144ce8776fdd3f93.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;来由&quot;&gt;&lt;a href=&quot;#来由&quot; class=&quot;headerlink&quot; title=&quot;来由&quot;&gt;&lt;/a&gt;来由&lt;/h2&gt;&lt;p&gt;http协议是stateless的,一旦和后台响应了，就断开了和请求的连接，这时若我们想要了解哪个客户发来的请求，这就需要借助服务器端的session,和浏览器端的cookie  –（可以用express中间件）&lt;/p&gt;
+&lt;h2 id=&quot;来由&quot;&gt;&lt;a href=&quot;#来由&quot; class=&quot;headerlink&quot; title=&quot;来由&quot;&gt;&lt;/a&gt;来由&lt;/h2&gt;&lt;p&gt;http协议是stateless的,一旦和后台响应了，就断开了和请求的连接，这时若我们想要了解哪个客户发来的请求，这就需要借助服务器端的session,和浏览器端的cookie  –（可以用express中间件）&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;1：cookie-amp-session&quot;&gt;&lt;a href=&quot;#1：cookie-amp-session&quot; class=&quot;headerlink&quot; title=&quot;1：cookie&amp;amp;session&quot;&gt;&lt;/a&gt;1：cookie&amp;amp;session&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://blog.csdn.net/fangaoxin/article/details/6952954&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;cookie,session&lt;/a&gt;会话跟踪是Web程序中常用的技术，用来&lt;strong&gt;跟踪用户的整个会话&lt;/strong&gt;。常用的会话跟踪技术是Cookie与Session。&lt;strong&gt;Cookie通过在客户端记录信息确定用户身份&lt;/strong&gt;，&lt;strong&gt;Session通过在服务器端记录信息确定用户身份&lt;/strong&gt;。&lt;/p&gt;
 &lt;h3 id=&quot;2：Cookie&quot;&gt;&lt;a href=&quot;#2：Cookie&quot; class=&quot;headerlink&quot; title=&quot;2：Cookie&quot;&gt;&lt;/a&gt;2：Cookie&lt;/h3&gt;&lt;p&gt;Cookie实际上是一小段的文本信息。客户端请求服务器，如果服务器需要记录该用户状态，就使用response向客户端浏览器颁发一个Cookie。客户端浏览器会把Cookie保存起来。当浏览器再请求该网站时，浏览器把请求的网址连同该Cookie一同提交给服务器。服务器检查该Cookie，以此来辨认用户状态。服务器还可以根据需要修改Cookie的内容。&lt;/p&gt;
 &lt;h3 id=&quot;3：-Session&quot;&gt;&lt;a href=&quot;#3：-Session&quot; class=&quot;headerlink&quot; title=&quot;3： Session&quot;&gt;&lt;/a&gt;3： Session&lt;/h3&gt;&lt;p&gt;Session是另一种记录客户状态的机制，不同的是Cookie保存在客户端浏览器中，而Session保存在服务器上。客户端浏览器访问服务器的时候，服务器把客户端信息以某种形式记录在服务器上。这就是Session。客户端浏览器再次访问时只需要从该Session中查找该客户的状态就可以了。&lt;br&gt;如果说Cookie机制是通过检查客户身上的“通行证”来确定客户身份的话，那么Session机制就是通过检查服务器上的“客户明细表”来确认客户身份。Session相当于程序在服务器上建立的一份客户档案，客户来访的时候只需要查询客户档案表就可以了。&lt;/p&gt;
@@ -34,7 +34,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-144ce8776fdd3f93.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; 
+      &lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-144ce8776fdd3f93.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;来由&quot;&gt;&lt;a href=&quot;#来由&quot; class=&quot;headerlink&quot; title=&quot;来由&quot;&gt;&lt;/a&gt;来由&lt;/h2&gt;&lt;p&gt;http协议是stateless的,一旦和后台响应了，就断开了和请求的连接，这时若我们想要了解哪个客户发来的请求，这就需要借助服务器端的session,和浏览器端的cookie  –（可以用express中间件）&lt;br&gt;
     
     </summary>
     
@@ -54,11 +55,11 @@
     <link href="http://carryguan.com/2016/08/28/%E5%89%8D%E7%AB%AF%E6%94%BB%E5%9F%8E%E7%8B%AE%E7%9A%84%E6%A0%87%E5%87%86/"/>
     <id>http://carryguan.com/2016/08/28/前端攻城狮的标准/</id>
     <published>2016-08-28T12:47:25.000Z</published>
-    <updated>2016-08-28T13:02:32.108Z</updated>
+    <updated>2016-09-03T06:39:38.685Z</updated>
     
-    <content type="html">&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-df83d5ec13fe30e8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img src=&quot;前端/1.jpg&quot; alt=&quot;logo&quot;&gt;&lt;/p&gt;
 &lt;h1 id=&quot;前端工程师该达到的要求&quot;&gt;&lt;a href=&quot;#前端工程师该达到的要求&quot; class=&quot;headerlink&quot; title=&quot;前端工程师该达到的要求&quot;&gt;&lt;/a&gt;前端工程师该达到的要求&lt;/h1&gt;&lt;h2 id=&quot;1-基本功&quot;&gt;&lt;a href=&quot;#1-基本功&quot; class=&quot;headerlink&quot; title=&quot;1 基本功&quot;&gt;&lt;/a&gt;1 基本功&lt;/h2&gt;&lt;p&gt;HTML、CSS、JavaScript基本功，数学、算法、数据结构、操作系统、编译原理基本功。&lt;/p&gt;
-&lt;h2 id=&quot;2-资源请求&quot;&gt;&lt;a href=&quot;#2-资源请求&quot; class=&quot;headerlink&quot; title=&quot;2 资源请求&quot;&gt;&lt;/a&gt;2 资源请求&lt;/h2&gt;&lt;p&gt;了解 DNS 解析，充分利用 CDN，使用多个域名来完成资源的请求以缩短加载时间；&lt;/p&gt;
+&lt;h2 id=&quot;2-资源请求&quot;&gt;&lt;a href=&quot;#2-资源请求&quot; class=&quot;headerlink&quot; title=&quot;2 资源请求&quot;&gt;&lt;/a&gt;2 资源请求&lt;/h2&gt;&lt;p&gt;了解 DNS 解析，充分利用&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;CDN，使用多个域名来完成资源的请求以缩短加载时间；&lt;/p&gt;
 &lt;p&gt;##3 http&lt;br&gt;设置 HTTP Headers（Expires, Cache-Control, If-Modified-Since）；&lt;/p&gt;
 &lt;h2 id=&quot;4-遵循hpw规则&quot;&gt;&lt;a href=&quot;#4-遵循hpw规则&quot; class=&quot;headerlink&quot; title=&quot;4 遵循hpw规则&quot;&gt;&lt;/a&gt;4 遵循hpw规则&lt;/h2&gt;&lt;p&gt;遵循 Steve Souders 给出的全部规则（High Performance Websites）&lt;/p&gt;
 &lt;h2 id=&quot;5-解决显示的问题&quot;&gt;&lt;a href=&quot;#5-解决显示的问题&quot; class=&quot;headerlink&quot; title=&quot;5 解决显示的问题&quot;&gt;&lt;/a&gt;5 解决显示的问题&lt;/h2&gt;&lt;p&gt;知道如何解决 PageSpeed、YSlow、Chrome Dev Tools Audit、Chrome Dev Tools Timeline 显示的所有问题；&lt;/p&gt;
@@ -79,7 +80,9 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-df83d5ec13fe30e8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; 
+      &lt;p&gt;&lt;img src=&quot;前端/1.jpg&quot; alt=&quot;logo&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;前端工程师该达到的要求&quot;&gt;&lt;a href=&quot;#前端工程师该达到的要求&quot; class=&quot;headerlink&quot; title=&quot;前端工程师该达到的要求&quot;&gt;&lt;/a&gt;前端工程师该达到的要求&lt;/h1&gt;&lt;h2 id=&quot;1-基本功&quot;&gt;&lt;a href=&quot;#1-基本功&quot; class=&quot;headerlink&quot; title=&quot;1 基本功&quot;&gt;&lt;/a&gt;1 基本功&lt;/h2&gt;&lt;p&gt;HTML、CSS、JavaScript基本功，数学、算法、数据结构、操作系统、编译原理基本功。&lt;/p&gt;
+&lt;h2 id=&quot;2-资源请求&quot;&gt;&lt;a href=&quot;#2-资源请求&quot; class=&quot;headerlink&quot; title=&quot;2 资源请求&quot;&gt;&lt;/a&gt;2 资源请求&lt;/h2&gt;&lt;p&gt;了解 DNS 解析，充分利用&lt;br&gt;
     
     </summary>
     

@@ -7,7 +7,7 @@
       <title><![CDATA[Cookie和Session]]></title>
       <url>http://carryguan.com/2016/08/28/Cookie%E5%92%8CSession/</url>
       <content type="html"><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/2377897-144ce8776fdd3f93.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<h2 id="来由"><a href="#来由" class="headerlink" title="来由"></a>来由</h2><p>http协议是stateless的,一旦和后台响应了，就断开了和请求的连接，这时若我们想要了解哪个客户发来的请求，这就需要借助服务器端的session,和浏览器端的cookie  –（可以用express中间件）</p>
+<h2 id="来由"><a href="#来由" class="headerlink" title="来由"></a>来由</h2><p>http协议是stateless的,一旦和后台响应了，就断开了和请求的连接，这时若我们想要了解哪个客户发来的请求，这就需要借助服务器端的session,和浏览器端的cookie  –（可以用express中间件）<br><a id="more"></a></p>
 <h3 id="1：cookie-amp-session"><a href="#1：cookie-amp-session" class="headerlink" title="1：cookie&amp;session"></a>1：cookie&amp;session</h3><p><a href="http://blog.csdn.net/fangaoxin/article/details/6952954" target="_blank" rel="external">cookie,session</a>会话跟踪是Web程序中常用的技术，用来<strong>跟踪用户的整个会话</strong>。常用的会话跟踪技术是Cookie与Session。<strong>Cookie通过在客户端记录信息确定用户身份</strong>，<strong>Session通过在服务器端记录信息确定用户身份</strong>。</p>
 <h3 id="2：Cookie"><a href="#2：Cookie" class="headerlink" title="2：Cookie"></a>2：Cookie</h3><p>Cookie实际上是一小段的文本信息。客户端请求服务器，如果服务器需要记录该用户状态，就使用response向客户端浏览器颁发一个Cookie。客户端浏览器会把Cookie保存起来。当浏览器再请求该网站时，浏览器把请求的网址连同该Cookie一同提交给服务器。服务器检查该Cookie，以此来辨认用户状态。服务器还可以根据需要修改Cookie的内容。</p>
 <h3 id="3：-Session"><a href="#3：-Session" class="headerlink" title="3： Session"></a>3： Session</h3><p>Session是另一种记录客户状态的机制，不同的是Cookie保存在客户端浏览器中，而Session保存在服务器上。客户端浏览器访问服务器的时候，服务器把客户端信息以某种形式记录在服务器上。这就是Session。客户端浏览器再次访问时只需要从该Session中查找该客户的状态就可以了。<br>如果说Cookie机制是通过检查客户身上的“通行证”来确定客户身份的话，那么Session机制就是通过检查服务器上的“客户明细表”来确认客户身份。Session相当于程序在服务器上建立的一份客户档案，客户来访的时候只需要查询客户档案表就可以了。</p>
@@ -20,9 +20,9 @@
     <entry>
       <title><![CDATA[前端攻城狮的标准]]></title>
       <url>http://carryguan.com/2016/08/28/%E5%89%8D%E7%AB%AF%E6%94%BB%E5%9F%8E%E7%8B%AE%E7%9A%84%E6%A0%87%E5%87%86/</url>
-      <content type="html"><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/2377897-df83d5ec13fe30e8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+      <content type="html"><![CDATA[<p><img src="前端/1.jpg" alt="logo"></p>
 <h1 id="前端工程师该达到的要求"><a href="#前端工程师该达到的要求" class="headerlink" title="前端工程师该达到的要求"></a>前端工程师该达到的要求</h1><h2 id="1-基本功"><a href="#1-基本功" class="headerlink" title="1 基本功"></a>1 基本功</h2><p>HTML、CSS、JavaScript基本功，数学、算法、数据结构、操作系统、编译原理基本功。</p>
-<h2 id="2-资源请求"><a href="#2-资源请求" class="headerlink" title="2 资源请求"></a>2 资源请求</h2><p>了解 DNS 解析，充分利用 CDN，使用多个域名来完成资源的请求以缩短加载时间；</p>
+<h2 id="2-资源请求"><a href="#2-资源请求" class="headerlink" title="2 资源请求"></a>2 资源请求</h2><p>了解 DNS 解析，充分利用<br><a id="more"></a>CDN，使用多个域名来完成资源的请求以缩短加载时间；</p>
 <p>##3 http<br>设置 HTTP Headers（Expires, Cache-Control, If-Modified-Since）；</p>
 <h2 id="4-遵循hpw规则"><a href="#4-遵循hpw规则" class="headerlink" title="4 遵循hpw规则"></a>4 遵循hpw规则</h2><p>遵循 Steve Souders 给出的全部规则（High Performance Websites）</p>
 <h2 id="5-解决显示的问题"><a href="#5-解决显示的问题" class="headerlink" title="5 解决显示的问题"></a>5 解决显示的问题</h2><p>知道如何解决 PageSpeed、YSlow、Chrome Dev Tools Audit、Chrome Dev Tools Timeline 显示的所有问题；</p>
