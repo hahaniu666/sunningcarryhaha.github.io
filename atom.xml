@@ -55,11 +55,11 @@
     <link href="http://carryguan.com/2016/08/28/%E5%89%8D%E7%AB%AF%E6%94%BB%E5%9F%8E%E7%8B%AE%E7%9A%84%E6%A0%87%E5%87%86/"/>
     <id>http://carryguan.com/2016/08/28/前端攻城狮的标准/</id>
     <published>2016-08-28T12:47:25.000Z</published>
-    <updated>2016-09-03T06:39:38.685Z</updated>
+    <updated>2016-09-03T06:59:04.567Z</updated>
     
-    <content type="html">&lt;p&gt;&lt;img src=&quot;前端/1.jpg&quot; alt=&quot;logo&quot;&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-df83d5ec13fe30e8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;logo&quot;&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;前端工程师该达到的要求&quot;&gt;&lt;a href=&quot;#前端工程师该达到的要求&quot; class=&quot;headerlink&quot; title=&quot;前端工程师该达到的要求&quot;&gt;&lt;/a&gt;前端工程师该达到的要求&lt;/h1&gt;&lt;h2 id=&quot;1-基本功&quot;&gt;&lt;a href=&quot;#1-基本功&quot; class=&quot;headerlink&quot; title=&quot;1 基本功&quot;&gt;&lt;/a&gt;1 基本功&lt;/h2&gt;&lt;p&gt;HTML、CSS、JavaScript基本功，数学、算法、数据结构、操作系统、编译原理基本功。&lt;/p&gt;
-&lt;h2 id=&quot;2-资源请求&quot;&gt;&lt;a href=&quot;#2-资源请求&quot; class=&quot;headerlink&quot; title=&quot;2 资源请求&quot;&gt;&lt;/a&gt;2 资源请求&lt;/h2&gt;&lt;p&gt;了解 DNS 解析，充分利用&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;CDN，使用多个域名来完成资源的请求以缩短加载时间；&lt;/p&gt;
+&lt;h2 id=&quot;2-资源请求&quot;&gt;&lt;a href=&quot;#2-资源请求&quot; class=&quot;headerlink&quot; title=&quot;2 资源请求&quot;&gt;&lt;/a&gt;2 资源请求&lt;/h2&gt;&lt;p&gt;了解 DNS 解析，充分利用 CDN，使用多个域名来完成资源的请求以缩短加载时间；&lt;/p&gt;
 &lt;p&gt;##3 http&lt;br&gt;设置 HTTP Headers（Expires, Cache-Control, If-Modified-Since）；&lt;/p&gt;
 &lt;h2 id=&quot;4-遵循hpw规则&quot;&gt;&lt;a href=&quot;#4-遵循hpw规则&quot; class=&quot;headerlink&quot; title=&quot;4 遵循hpw规则&quot;&gt;&lt;/a&gt;4 遵循hpw规则&lt;/h2&gt;&lt;p&gt;遵循 Steve Souders 给出的全部规则（High Performance Websites）&lt;/p&gt;
 &lt;h2 id=&quot;5-解决显示的问题&quot;&gt;&lt;a href=&quot;#5-解决显示的问题&quot; class=&quot;headerlink&quot; title=&quot;5 解决显示的问题&quot;&gt;&lt;/a&gt;5 解决显示的问题&lt;/h2&gt;&lt;p&gt;知道如何解决 PageSpeed、YSlow、Chrome Dev Tools Audit、Chrome Dev Tools Timeline 显示的所有问题；&lt;/p&gt;
@@ -80,9 +80,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;前端/1.jpg&quot; alt=&quot;logo&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;前端工程师该达到的要求&quot;&gt;&lt;a href=&quot;#前端工程师该达到的要求&quot; class=&quot;headerlink&quot; title=&quot;前端工程师该达到的要求&quot;&gt;&lt;/a&gt;前端工程师该达到的要求&lt;/h1&gt;&lt;h2 id=&quot;1-基本功&quot;&gt;&lt;a href=&quot;#1-基本功&quot; class=&quot;headerlink&quot; title=&quot;1 基本功&quot;&gt;&lt;/a&gt;1 基本功&lt;/h2&gt;&lt;p&gt;HTML、CSS、JavaScript基本功，数学、算法、数据结构、操作系统、编译原理基本功。&lt;/p&gt;
-&lt;h2 id=&quot;2-资源请求&quot;&gt;&lt;a href=&quot;#2-资源请求&quot; class=&quot;headerlink&quot; title=&quot;2 资源请求&quot;&gt;&lt;/a&gt;2 资源请求&lt;/h2&gt;&lt;p&gt;了解 DNS 解析，充分利用&lt;br&gt;
+      &lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-df83d5ec13fe30e8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;logo&quot;&gt;&lt;br&gt;
     
     </summary>
     
