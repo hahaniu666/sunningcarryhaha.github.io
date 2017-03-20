@@ -264,6 +264,233 @@
             
               
                 
+                <a class="post-title-link" href="/2017/03/20/os/" itemprop="url">
+                  操作系统实验
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-03-20T22:34:54+08:00" content="2017-03-20">
+              2017-03-20
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/03/20/os/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/20/os/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="操作系统实验总结"><a href="#操作系统实验总结" class="headerlink" title="操作系统实验总结"></a>操作系统实验总结</h1><h2 id="实验源码"><a href="#实验源码" class="headerlink" title="实验源码"></a><a href="https://github.com/sunningcarryhaha">实验源码</a></h2><ul>
+<li>实验一 进程控制 processProject </li>
+<li>实验二  分页式存储管理 changeAdress</li>
+<li>实验三 页面置换算法 pageDispatch</li>
+<li>实验四  进程调度算法 dispachPro</li>
+</ul>
+<hr>
+<h2 id="实验一：进程调度-processProject"><a href="#实验一：进程调度-processProject" class="headerlink" title="实验一：进程调度 processProject"></a>实验一：进程调度 processProject</h2><p><img src="http://upload-images.jianshu.io/upload_images/2377897-b6aaedeba9ad2a15.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<h3 id="实验过程："><a href="#实验过程：" class="headerlink" title="实验过程："></a>实验过程：</h3><ul>
+<li>定义数据结构pcb和相应的队列（入，出，显示）操作</li>
+<li>编写函数：<pre><code>创建进程（-就绪），
+进程调度（就绪-执行），
+进程阻塞（执行-阻塞），
+进程激活（阻塞-就绪），
+时间片用完（执行-就绪）
+</code></pre></li>
+<li>输入相应的字母，进行相应操作</li>
+</ul>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/03/20/os/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/20/playFair/" itemprop="url">
+                  playFair算法-古典密码学
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-03-20T22:11:10+08:00" content="2017-03-20">
+              2017-03-20
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/03/20/playFair/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/20/playFair/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <blockquote>
+<p>Playfair密码（英文：Playfair cipher 或 Playfair square）是一种替换密码，1854年由查尔斯·惠斯通（Charles Wheatstone）的英国人发明。经莱昂·普莱费尔提倡在英国军地和政府使用。　</p>
+</blockquote>
+<p>   PlayFair算法是古典密码学中的多表代替算法.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># PlayFair算法分以下几步：</span><br><span class="line">1：将给出的密钥去重与26个字母拼接成后，生成5X5的矩阵也称作密码表（矩阵中I和J位置相同）</span><br><span class="line">2：将明文两个两个为一对儿</span><br><span class="line">3：利用加密方法来将明文加密</span><br></pre></td></tr></table></figure></p>
+<p>加密方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">P1、P2同行：</span><br><span class="line">对应的C1和C2分别是紧靠P1、P2右端的字母。其中第一列被看作是最后一列的右方。（解密时反向）</span><br><span class="line">P1、P2同列：</span><br><span class="line">对应的C1和C2分别是紧靠P1、P2下方的字母。其中第一行看作是最后一行的下方。（解密时反向）</span><br><span class="line">P1、P2不同行、不同列：</span><br><span class="line">C1和C2是由P1和P2确定的矩形的其它两角的字母，并且C1和P1、C2和P2同行。（解密时处理方法相同）</span><br><span class="line">P1＝P2：</span><br><span class="line">则插入一个字母于重复字母之间，并用前述方法处理</span><br><span class="line">若明文字母数为奇数时：</span><br><span class="line">则在明文的末端添加某个事先约定的字母作为填充</span><br></pre></td></tr></table></figure></p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/03/20/playFair/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/08/28/Cookie和Session/" itemprop="url">
                   Cookie和Session
                 </a>
@@ -1160,7 +1387,7 @@ show databases
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1170,7 +1397,7 @@ show databases
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">32</span>
+                <span class="site-state-item-count">44</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -1264,8 +1491,8 @@ show databases
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy; 
-  <span itemprop="copyrightYear">2016</span>
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

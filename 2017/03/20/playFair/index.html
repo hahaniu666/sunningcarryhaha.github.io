@@ -1,0 +1,833 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Javascript,Playfair,html,古典密码,对称密码," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="关凯丽的博客" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="Playfair密码（英文：Playfair cipher 或 Playfair square）是一种替换密码，1854年由查尔斯·惠斯通（Charles Wheatstone）的英国人发明。经莱昂·普莱费尔提倡在英国军地和政府使用。　
+
+   PlayFair算法是古典密码学中的多表代替算法.1234# PlayFair算法分以下几步：1：将给出的密钥去重与26个字母拼接成后，生成5X5的矩阵">
+<meta property="og:type" content="article">
+<meta property="og:title" content="playFair算法-古典密码学">
+<meta property="og:url" content="http://carryguan.com/2017/03/20/playFair/index.html">
+<meta property="og:site_name" content="关凯丽的博客">
+<meta property="og:description" content="Playfair密码（英文：Playfair cipher 或 Playfair square）是一种替换密码，1854年由查尔斯·惠斯通（Charles Wheatstone）的英国人发明。经莱昂·普莱费尔提倡在英国军地和政府使用。　
+
+   PlayFair算法是古典密码学中的多表代替算法.1234# PlayFair算法分以下几步：1：将给出的密钥去重与26个字母拼接成后，生成5X5的矩阵">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-12c2fb222130656b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2017-03-20T14:33:24.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="playFair算法-古典密码学">
+<meta name="twitter:description" content="Playfair密码（英文：Playfair cipher 或 Playfair square）是一种替换密码，1854年由查尔斯·惠斯通（Charles Wheatstone）的英国人发明。经莱昂·普莱费尔提倡在英国军地和政府使用。　
+
+   PlayFair算法是古典密码学中的多表代替算法.1234# PlayFair算法分以下几步：1：将给出的密钥去重与26个字母拼接成后，生成5X5的矩阵">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/2377897-12c2fb222130656b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"right","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 13817414,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://carryguan.com/2017/03/20/playFair/"/>
+
+  <title> playFair算法-古典密码学 | 关凯丽的博客 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?baa6059274e7d35050154321a77db806";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">关凯丽的博客</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">前端打杂</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about-me" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', '9swbp66zbunTR5mG6RnR','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                playFair算法-古典密码学
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-03-20T22:11:10+08:00" content="2017-03-20">
+              2017-03-20
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/03/20/playFair/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/20/playFair/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>Playfair密码（英文：Playfair cipher 或 Playfair square）是一种替换密码，1854年由查尔斯·惠斯通（Charles Wheatstone）的英国人发明。经莱昂·普莱费尔提倡在英国军地和政府使用。　</p>
+</blockquote>
+<p>   PlayFair算法是古典密码学中的多表代替算法.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># PlayFair算法分以下几步：</span><br><span class="line">1：将给出的密钥去重与26个字母拼接成后，生成5X5的矩阵也称作密码表（矩阵中I和J位置相同）</span><br><span class="line">2：将明文两个两个为一对儿</span><br><span class="line">3：利用加密方法来将明文加密</span><br></pre></td></tr></table></figure></p>
+<p>加密方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">P1、P2同行：</span><br><span class="line">对应的C1和C2分别是紧靠P1、P2右端的字母。其中第一列被看作是最后一列的右方。（解密时反向）</span><br><span class="line">P1、P2同列：</span><br><span class="line">对应的C1和C2分别是紧靠P1、P2下方的字母。其中第一行看作是最后一行的下方。（解密时反向）</span><br><span class="line">P1、P2不同行、不同列：</span><br><span class="line">C1和C2是由P1和P2确定的矩形的其它两角的字母，并且C1和P1、C2和P2同行。（解密时处理方法相同）</span><br><span class="line">P1＝P2：</span><br><span class="line">则插入一个字母于重复字母之间，并用前述方法处理</span><br><span class="line">若明文字母数为奇数时：</span><br><span class="line">则在明文的末端添加某个事先约定的字母作为填充</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<h1 id="举例说明"><a href="#举例说明" class="headerlink" title="举例说明"></a>举例说明</h1><p><img src="http://upload-images.jianshu.io/upload_images/2377897-12c2fb222130656b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<h2 id="这是demo-可以点击"><a href="#这是demo-可以点击" class="headerlink" title="这是demo,可以点击"></a>这是demo,可以点击</h2><h2 id="demo"><a href="#demo" class="headerlink" title="demo"></a><a href="http://carryguan.me/PlayFair/first.html" target="_blank" rel="external">demo</a></h2><h1 id="实验代码"><a href="#实验代码" class="headerlink" title="实验代码"></a>实验代码</h1><h2 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br></pre></td><td class="code"><pre><span class="line">var skid = document.getElementById(&quot;secretKey&quot;);</span><br><span class="line">var secretKey = &apos; &apos;;</span><br><span class="line">var arr = new Array();//拆分密钥字符串</span><br><span class="line">var sk = new Array();</span><br><span class="line">var keyTable = new Array();</span><br><span class="line">var ekid = document.getElementById(&quot;expressWords&quot;);</span><br><span class="line">var expressKey = ekid.value</span><br><span class="line">var arrEK = new Array();</span><br><span class="line">var secretWords = new Array();</span><br><span class="line">/*</span><br><span class="line">第一步：定义密钥一维数组，并将密钥去重</span><br><span class="line">*/</span><br><span class="line">//去重函数</span><br><span class="line">Array.prototype.unique = function()</span><br><span class="line">&#123;</span><br><span class="line">  var n = &#123;&#125;,r=[]; //n为键值对集合，r为临时数组</span><br><span class="line">  for(var i = 0; i &lt; this.length; i++) //遍历当前数组</span><br><span class="line">  &#123;</span><br><span class="line">    if (!n[this[i]]) //如果表中没有当前项</span><br><span class="line">    &#123;</span><br><span class="line">      n[this[i]] = true; //存入表</span><br><span class="line">      r.push(this[i]); //把当前数组的当前项push到临时数组里面</span><br><span class="line">      //console.log(n);</span><br><span class="line">      sk.push(this[i]);   </span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line">  return r;   </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/*</span><br><span class="line">第二步，创建密码表,用去重后的密钥和26个英文字母创建</span><br><span class="line">*/</span><br><span class="line">function createKey(sk)&#123;</span><br><span class="line">    //字母顺序数组</span><br><span class="line">    var allChars = [&apos;A&apos;,&apos;B&apos;,&apos;C&apos;,&apos;D&apos;,&apos;E&apos;,&apos;F&apos;,&apos;G&apos;,&apos;H&apos;,&apos;I&apos;||&apos;J&apos;,&apos;K&apos;,&apos;L&apos;,&apos;M&apos;,&apos;N&apos;,&apos;O&apos;,&apos;P&apos;,&apos;Q&apos;,&apos;R&apos;,&apos;S&apos;,&apos;T&apos;,&apos;U&apos;,&apos;V&apos;,&apos;W&apos;,&apos;X&apos;,&apos;Y&apos;,&apos;Z&apos;];</span><br><span class="line">    //删除去重后的密钥在26字母中的值</span><br><span class="line">    for(var i = 0 ;i&lt;sk.length;i++)&#123;</span><br><span class="line">        var index = allChars.indexOf(sk[i]);</span><br><span class="line">        if (index &gt; -1) &#123;</span><br><span class="line">            allChars.splice(index, 1);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    //将未出现过的26个字母与去重密钥合并成密码表一维数组</span><br><span class="line">    allChars = sk.concat(allChars);</span><br><span class="line">    //将一维数组转成二维</span><br><span class="line">    for(var i = 0 ; i&lt;5 ; i++)&#123;</span><br><span class="line">        keyTable[i] = new Array();</span><br><span class="line">        for(var j = 0;j&lt;5;j++)&#123;</span><br><span class="line">            keyTable[i][j] = allChars[i*5+j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">   // console.log(&apos;keyTablellll:&apos;+keyTable[3][3]);</span><br><span class="line">&#125;    </span><br><span class="line">/*</span><br><span class="line">第三步：处理明文  ，将明文两个两个为一对,并且将明文中的J换成I</span><br><span class="line">*/</span><br><span class="line">function produceExpress(e)&#123;</span><br><span class="line">    //console.log(&apos;e：&apos;+e);</span><br><span class="line">    var arr = e.split(&apos;&apos;);</span><br><span class="line">    if(arr.length%2==0)&#123;</span><br><span class="line">        for(var i=0 ; i&lt;arr.length;i++)&#123;</span><br><span class="line">          if(arr[i] == &apos;J&apos;)&#123;</span><br><span class="line">            arr[i] = &apos;I&apos;;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        for(var i=0 ; i&lt;arr.length;i++)&#123;</span><br><span class="line">          arrEK.push([arr[i],arr[i+1]]);</span><br><span class="line">          i = i+1;</span><br><span class="line">       &#125;</span><br><span class="line">    &#125;else&#123;</span><br><span class="line">        arrEK.push(&apos;X&apos;);</span><br><span class="line">    &#125;</span><br><span class="line">    for(var i = 0;i&lt;7;i++)&#123;</span><br><span class="line">        console.log(&apos;arrEKllll:&apos;+arrEK[i]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">/*</span><br><span class="line"> 第四步：利用playfair算法，求出密文</span><br><span class="line">*/</span><br><span class="line">function getSecret(a,b)&#123;</span><br><span class="line">    //a为密码表</span><br><span class="line">    //b为分组后的明文</span><br><span class="line">    var secretTable = [];</span><br><span class="line">    var express = [];</span><br><span class="line">    secretTable = a;</span><br><span class="line">    express = b;</span><br><span class="line">    var p1,p2,c1,c2;</span><br><span class="line">    var row1,col1,row2,col2;</span><br><span class="line">    for(var k =0;k&lt;express.length;k++)&#123;</span><br><span class="line">        for(var i = 0;i&lt;secretTable.length;i++)&#123;</span><br><span class="line">          for(var j=0;j&lt;secretTable[i].length;j++)&#123;</span><br><span class="line">            if(express[k][0] == secretTable[i][j])&#123;</span><br><span class="line">                row1=i;</span><br><span class="line">                col1=j;</span><br><span class="line">            &#125;</span><br><span class="line">            if(express[k][1] == secretTable[i][j])&#123;</span><br><span class="line">                row2=i;</span><br><span class="line">                col2=j;</span><br><span class="line">            &#125; </span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        if(row1 == row2)&#123;</span><br><span class="line">            secretWords.push(secretTable[row1][(col1+1)%5]);</span><br><span class="line">            secretWords.push(secretTable[row1][(col2+1)%5])</span><br><span class="line">        &#125;else if (col1 == col2)&#123;</span><br><span class="line">            secretWords.push(secretTable[(row1+1)%5][col1]);</span><br><span class="line">            secretWords.push(secretTable[(row2+1)%5][col1]);</span><br><span class="line"></span><br><span class="line">        &#125;else&#123;</span><br><span class="line">            //不同行不同列</span><br><span class="line">            secretWords.push(secretTable[row1][col2]);</span><br><span class="line">            secretWords.push(secretTable[row2][col1]);</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function main()&#123;</span><br><span class="line">    var a = document.getElementById(&apos;secretWords&apos;);</span><br><span class="line">    var btn = document.getElementById(&apos;button&apos;);</span><br><span class="line">    btn.addEventListener(&apos;click&apos;,function()&#123;</span><br><span class="line">        //a.value = secretWords.toString();</span><br><span class="line">        if(skid.value!= &apos; &apos;)&#123;</span><br><span class="line">           secretKey =  skid.value.toUpperCase();</span><br><span class="line">           arr = secretKey.split(&apos;&apos;);</span><br><span class="line">        &#125;</span><br><span class="line">        if(ekid.value!= &apos; &apos;)&#123;</span><br><span class="line">           expressKey = ekid.value.toUpperCase();</span><br><span class="line">        &#125;</span><br><span class="line">        arr.unique();</span><br><span class="line">        console.log(&apos;quchonghou:&apos;+sk);</span><br><span class="line">        //创建密码表为keyTable</span><br><span class="line">        createKey(sk);</span><br><span class="line">        console.log(&apos;-----------------------------&apos;);</span><br><span class="line">        for(var i = 0;i&lt;5;i++)&#123;</span><br><span class="line">           console.log(&apos;keyTable:&apos;+keyTable[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        console.log(&apos;-----------------------------&apos;);</span><br><span class="line">        //处理明文后为arrEK</span><br><span class="line">        produceExpress(expressKey);</span><br><span class="line">        console.log(&apos;mingwen:&apos;+arrEK);</span><br><span class="line">        //求密文secretWords</span><br><span class="line">        getSecret(keyTable,arrEK);</span><br><span class="line">        console.log(&apos;secretWords:&apos;+secretWords);</span><br><span class="line">        a.value = secretWords.toString();</span><br><span class="line"></span><br><span class="line">    &#125;);</span><br><span class="line">        </span><br><span class="line">&#125;</span><br><span class="line">main();</span><br></pre></td></tr></table></figure>
+<h2 id="html"><a href="#html" class="headerlink" title="html"></a>html</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html &gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;playfair加密算法&lt;/title&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">      body&#123;</span><br><span class="line">            font-family: &apos;Open Sans&apos;, sans-serif;</span><br><span class="line">            font-size: 20px;</span><br><span class="line">            line-height: 1.42857143;</span><br><span class="line">            color: #fff;</span><br><span class="line">            background-color: #F39D7C;</span><br><span class="line">      &#125;</span><br><span class="line">      #container&#123;</span><br><span class="line">        width: 500px;</span><br><span class="line">        height: 500px;</span><br><span class="line">        margin:0 auto;</span><br><span class="line">        background-color: #2A1106;</span><br><span class="line">        border-radius: 50px;</span><br><span class="line">        margin-top:100px;</span><br><span class="line">        box-shadow: 0 0 15px #F13006;</span><br><span class="line">        </span><br><span class="line">       &#125;</span><br><span class="line">       #container&#123;</span><br><span class="line">          display: flex;</span><br><span class="line">          flex-direction: column;</span><br><span class="line">          justify-content: space-between;</span><br><span class="line">          align-items: center;</span><br><span class="line">       &#125;</span><br><span class="line">       input&#123;</span><br><span class="line">        width: 200px;</span><br><span class="line">        height: 30px;</span><br><span class="line">       &#125;</span><br><span class="line">       #button&#123;</span><br><span class="line">        width: 80px;</span><br><span class="line">        height: 35px;</span><br><span class="line">        background: #ef9a79;</span><br><span class="line">        font-size: 15px;</span><br><span class="line">        border:none; </span><br><span class="line">        border-radius: 3px;</span><br><span class="line">       &#125;</span><br><span class="line">       #button:hover&#123;</span><br><span class="line">          background: #f47c20;</span><br><span class="line">       &#125;</span><br><span class="line">      </span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;!-- top-start --&gt;</span><br><span class="line">    &lt;div id=&quot;container&quot;&gt;</span><br><span class="line">        &lt;h1&gt;playFair加密算法&lt;/h1&gt;  </span><br><span class="line">        &lt;span&gt;输入密钥:&lt;/span&gt;&lt;input type=&quot;text&quot; id=&quot;secretKey&quot; name=&quot;secretKey&quot; value=&quot;&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;span&gt;输入明文:&lt;/span&gt;</span><br><span class="line">        &lt;input type=&quot;text&quot; id=&quot;expressWords&quot; name=&quot;expressWords&quot; value=&quot;&quot;&gt;</span><br><span class="line">        &lt;span&gt;输出密文:&lt;/span&gt;</span><br><span class="line">        &lt;input type=&quot;text&quot; id=&quot;secretWords&quot; name=&quot;secretWords&quot;value=&quot;&quot;&gt;</span><br><span class="line">        &lt;button id =&quot;button&quot; type=&quot;submit&quot; &gt;加密&lt;/button&gt;</span><br><span class="line">        &lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">     &lt;script src=&quot;first.js&quot; &gt;</span><br><span class="line"></span><br><span class="line">     &lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Javascript/" rel="tag">#Javascript</a>
+          
+            <a href="/tags/Playfair/" rel="tag">#Playfair</a>
+          
+            <a href="/tags/html/" rel="tag">#html</a>
+          
+            <a href="/tags/古典密码/" rel="tag">#古典密码</a>
+          
+            <a href="/tags/对称密码/" rel="tag">#对称密码</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/28/Cookie和Session/" rel="next" title="Cookie和Session">
+                <i class="fa fa-chevron-left"></i> Cookie和Session
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/20/os/" rel="prev" title="操作系统实验">
+                操作系统实验 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/03/20/playFair/"
+           data-title="playFair算法-古典密码学" data-url="http://carryguan.com/2017/03/20/playFair/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/me2.jpg"
+               alt="Carry Guan" />
+          <p class="site-author-name" itemprop="name">Carry Guan</p>
+          <p class="site-description motion-element" itemprop="description">写写代码，看看韩剧.好开心呀，又吃成长快乐了 ^~^.</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">10</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">44</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/sunningcarryhaha" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/5048785433/profile?topnav=1&wvr=6&is_all=1" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/guan-kai-li-88" target="_blank" title="ZhiHu">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  ZhiHu
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.betterwill.me" title="LiuXiaojian" target="_blank">LiuXiaojian</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://yuanguangxin.me" title="Yuanguangxin" target="_blank">Yuanguangxin</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://huangxuan.me" title="Nanshen" target="_blank">Nanshen</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#举例说明"><span class="nav-text">举例说明</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#这是demo-可以点击"><span class="nav-text">这是demo,可以点击</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#demo"><span class="nav-text">demo</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实验代码"><span class="nav-text">实验代码</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#JS"><span class="nav-text">JS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html"><span class="nav-text">html</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Carry Guan</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"carryguan"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      
+      <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js"></script>
+    
+  
+
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';                
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+                            
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').mousedown(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+  
+
+  
+
+  
+
+</body>
+</html>
