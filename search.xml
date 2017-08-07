@@ -4,6 +4,17 @@
   
     
     <entry>
+      <title><![CDATA[git常用命令]]></title>
+      <url>http://carryguan.com/2017/04/27/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+      <content type="html"><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/2377897-a8c62584774ba542.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="A7BB8518D944E893213CFB6274266A8D.JPG"></p>
+<h1 id="git-流程"><a href="#git-流程" class="headerlink" title="git 流程"></a>git 流程</h1><p>git status<br>git add .<br>git commit<br>git pull<br>git push origin branchName:refs/for/branchName<br>git pull<br><a id="more"></a></p>
+<h1 id="create-branch"><a href="#create-branch" class="headerlink" title="create branch"></a>create branch</h1><p>git checkout -b featureOne<br>git push —set-upstream origin featureOne<br>git add .<br>git commit -m ‘msg’<br>git pull<br>git push origin featureOne:refs/for/featureOne<br>git pull</p>
+<h1 id="merge-to-master"><a href="#merge-to-master" class="headerlink" title="merge to master"></a>merge to master</h1><p>git checkout master<br>git merge featureOne<br>git add .<br>git commit -m ‘merge’<br>git pull<br>git push origin master:refs/for/master<br>git pull</p>
+<p>done</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[操作系统实验]]></title>
       <url>http://carryguan.com/2017/03/20/os/</url>
       <content type="html"><![CDATA[<h1 id="操作系统实验总结"><a href="#操作系统实验总结" class="headerlink" title="操作系统实验总结"></a>操作系统实验总结</h1><h2 id="实验源码"><a href="#实验源码" class="headerlink" title="实验源码"></a><a href="https://github.com/sunningcarryhaha" target="_blank" rel="external">实验源码</a></h2><ul>
