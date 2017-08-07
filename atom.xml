@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://carryguan.com/"/>
-  <updated>2017-08-07T14:39:34.000Z</updated>
+  <updated>2017-08-07T14:55:12.650Z</updated>
   <id>http://carryguan.com/</id>
   
   <author>
@@ -16,20 +16,66 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>隐藏元素display与visibility的区别</title>
+    <link href="http://carryguan.com/2017/07/07/%E9%9A%90%E8%97%8F%E5%85%83%E7%B4%A0/"/>
+    <id>http://carryguan.com/2017/07/07/隐藏元素/</id>
+    <published>2017-07-07T04:50:21.000Z</published>
+    <updated>2017-08-07T14:55:12.650Z</updated>
+    
+    <content type="html">&lt;p&gt;最近项目中涉及到节点隐藏的问题，发现自己不太了解，趁热打铁，我们一起来学习一下吧！&lt;br&gt;着重讲一下 display和visibility在隐藏元素时候的区别:&lt;/p&gt;
+&lt;h1 id=&quot;属性说明&quot;&gt;&lt;a href=&quot;#属性说明&quot; class=&quot;headerlink&quot; title=&quot;属性说明&quot;&gt;&lt;/a&gt;属性说明&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;display:none&lt;br&gt;隐藏元素时：渲染树不构建元素，通俗说，页面没有这个节点，所以其不占位置空间&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;visibility:hidden&lt;br&gt; 隐藏元素时：渲染树构建元素（页面有这个节点）但是不渲染出来，页面上不可见这个元素，但是会占空间&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;例如&quot;&gt;&lt;a href=&quot;#例如&quot; class=&quot;headerlink&quot; title=&quot;例如&quot;&gt;&lt;/a&gt;例如&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-15007a1f549aa94e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;image.png&quot;&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;点击display-none-红色方块不见了&quot;&gt;&lt;a href=&quot;#点击display-none-红色方块不见了&quot; class=&quot;headerlink&quot; title=&quot;点击display:none,红色方块不见了&quot;&gt;&lt;/a&gt;点击display:none,红色方块不见了&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-8b5de54bf8f747c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;image.png&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;点击-visibility&quot;&gt;&lt;a href=&quot;#点击-visibility&quot; class=&quot;headerlink&quot; title=&quot;点击 visibility&quot;&gt;&lt;/a&gt;点击 visibility&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-71652ba59b060d9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;image.png&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;总结&quot;&gt;&lt;a href=&quot;#总结&quot; class=&quot;headerlink&quot; title=&quot;总结&quot;&gt;&lt;/a&gt;总结&lt;/h1&gt;&lt;p&gt;如果想让某一段代码在前台不显示，最简单的方法是用css的display:none,这样，下边的内容就自动填补这个空隙。但是在一些特殊的情况下，我们只需要隐藏这个元素，但它的位置不能被占用了，那么，visibility:hidden就可以实现这个要求。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;源码&quot;&gt;&lt;a href=&quot;#源码&quot; class=&quot;headerlink&quot; title=&quot;源码&quot;&gt;&lt;/a&gt;源码&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;62&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;63&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;64&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;65&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;66&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;67&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;68&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;69&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;70&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;71&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;72&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &amp;lt;html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;head&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;title&amp;gt;Hello, World&amp;lt;/title&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;/style.css&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      #one&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        background-color: pink;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      #two&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        background-color: red;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      #three&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        background-color: blue;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;       #four&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        background-color: green;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;       #five&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        background-color: orange;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      .wh&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        width: 100px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        height: 100px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        margin: 20px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;/style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;/head&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &amp;lt;div id = &amp;quot;one&amp;quot; class=&amp;quot;wh&amp;quot;&amp;gt;这是第一个&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &amp;lt;div id = &amp;quot;two&amp;quot; class=&amp;quot;wh&amp;quot;&amp;gt;被隐藏方式为：display = &amp;quot;none&amp;quot;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &amp;lt;div id = &amp;quot;three&amp;quot; class=&amp;quot;wh&amp;quot;&amp;gt;第三个&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &amp;lt;div id = &amp;quot;four&amp;quot; class=&amp;quot;wh&amp;quot;&amp;gt;被隐藏2方式为：visibility = &amp;quot;hidden&amp;quot;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &amp;lt;div id = &amp;quot;five&amp;quot; class=&amp;quot;wh&amp;quot;&amp;gt;第三个&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &amp;lt;button id = &amp;quot;btn1&amp;quot;&amp;gt;display:none&amp;lt;/button&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &amp;lt;button id = &amp;quot;btn2&amp;quot;&amp;gt;visibility:hidden&amp;lt;/button&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;/body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    var btn1 = document.getElementById(&amp;quot;btn1&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    var btn2 = document.getElementById(&amp;quot;btn2&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    var two = document.getElementById(&amp;quot;two&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    var four = document.getElementById(&amp;quot;four&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    btn1.onclick = function()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      if(two.style.display === &amp;quot;none&amp;quot;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        two.style.display = &amp;quot;block&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#125;else&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        two.style.display = &amp;quot;none&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    btn2.onclick = function()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      if(four.style.visibility === &amp;quot;visible&amp;quot;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        four.style.visibility = &amp;quot;hidden&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#125;else&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        four.style.visibility = &amp;quot;visible&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;/script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近项目中涉及到节点隐藏的问题，发现自己不太了解，趁热打铁，我们一起来学习一下吧！&lt;br&gt;着重讲一下 display和visibility在隐藏元素时候的区别:&lt;/p&gt;
+&lt;h1 id=&quot;属性说明&quot;&gt;&lt;a href=&quot;#属性说明&quot; class=&quot;headerlink&quot; title=&quot;属性说明&quot;&gt;&lt;/a&gt;属性说明&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;display:none&lt;br&gt;隐藏元素时：渲染树不构建元素，通俗说，页面没有这个节点，所以其不占位置空间&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;visibility:hidden&lt;br&gt; 隐藏元素时：渲染树构建元素（页面有这个节点）但是不渲染出来，页面上不可见这个元素，但是会占空间&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;例如&quot;&gt;&lt;a href=&quot;#例如&quot; class=&quot;headerlink&quot; title=&quot;例如&quot;&gt;&lt;/a&gt;例如&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-15007a1f549aa94e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;image.png&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="visible" scheme="http://carryguan.com/tags/visible/"/>
+    
+      <category term="display" scheme="http://carryguan.com/tags/display/"/>
+    
+  </entry>
+  
+  <entry>
     <title>动态生成dom事件失效</title>
-    <link href="http://carryguan.com/2017/08/07/%E5%8A%A8%E6%80%81%E7%94%9F%E6%88%90dom%E4%BA%8B%E4%BB%B6%E5%A4%B1%E6%95%88/"/>
-    <id>http://carryguan.com/2017/08/07/动态生成dom事件失效/</id>
-    <published>2017-08-07T14:37:09.000Z</published>
-    <updated>2017-08-07T14:39:34.000Z</updated>
+    <link href="http://carryguan.com/2017/06/03/%E5%8A%A8%E6%80%81%E7%94%9F%E6%88%90dom%E4%BA%8B%E4%BB%B6%E5%A4%B1%E6%95%88/"/>
+    <id>http://carryguan.com/2017/06/03/动态生成dom事件失效/</id>
+    <published>2017-06-03T07:37:09.000Z</published>
+    <updated>2017-08-07T14:53:08.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-6150a13b12b6623a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;image.png&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;问题来由&quot;&gt;&lt;a href=&quot;#问题来由&quot; class=&quot;headerlink&quot; title=&quot;问题来由&quot;&gt;&lt;/a&gt;问题来由&lt;/h2&gt;&lt;p&gt;最近在项目中有涉及到排序后回写按钮元素，按钮的事件失效。&lt;br&gt;这可以分为一类问题：重写元素/动态生成元素后，事件的失效。&lt;br&gt;想给每一行的 td&amp;gt;button添加点击事件&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;td class=&amp;quot;action&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     &amp;lt;button class=&amp;quot;mark&amp;quot; name=&amp;quot;ignore&amp;quot; &amp;gt; &amp;lt;/button&amp;gt;       &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;给表格数据排序后，表格中的按钮事件失效。追溯了一下原因，排序后，初始化事件无法获取到button.&lt;br&gt;类似问题：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;动态增加删除子节点&lt;/li&gt;
-&lt;li&gt;表格排序后的节点&lt;/li&gt;
+&lt;li&gt;表格排序后的节点&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;解决办法&quot;&gt;&lt;a href=&quot;#解决办法&quot; class=&quot;headerlink&quot; title=&quot;解决办法&quot;&gt;&lt;/a&gt;解决办法&lt;/h2&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;解决办法&quot;&gt;&lt;a href=&quot;#解决办法&quot; class=&quot;headerlink&quot; title=&quot;解决办法&quot;&gt;&lt;/a&gt;解决办法&lt;/h2&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
 &lt;p&gt;原理是利用冒泡实现事件委托，也就是给生成节点的父节点预先绑定事件。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&quot;jq的解决办法：&quot;&gt;&lt;a href=&quot;#jq的解决办法：&quot; class=&quot;headerlink&quot; title=&quot;jq的解决办法：&quot;&gt;&lt;/a&gt;jq的解决办法：&lt;/h3&gt;&lt;p&gt;$(‘.tablesort’).on(‘click’,’.mark’,function () {})&lt;br&gt;这里提一下：&lt;br&gt;早期对页面上后期加载的动态元素,赋事件或值的时候,是使用live的.&lt;br&gt; 由于效率比较低(其实数据不多也感觉不出来),后面使用delegate委托来代替了,&lt;br&gt;再后面,1.7以后使用on 来代替delegate了. live,delegate在新版本中都还可以用&lt;br&gt;网上有很多教程是利用 $(‘.action .mark’).live(‘click’,function () {})，但是现在不建议使用&lt;br&gt;&lt;a href=&quot;http://www.jb51.net/article/105869.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;参考&lt;/a&gt;&lt;/p&gt;
@@ -43,7 +89,12 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-6150a13b12b6623a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; 
+      &lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-6150a13b12b6623a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;image.png&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;问题来由&quot;&gt;&lt;a href=&quot;#问题来由&quot; class=&quot;headerlink&quot; title=&quot;问题来由&quot;&gt;&lt;/a&gt;问题来由&lt;/h2&gt;&lt;p&gt;最近在项目中有涉及到排序后回写按钮元素，按钮的事件失效。&lt;br&gt;这可以分为一类问题：重写元素/动态生成元素后，事件的失效。&lt;br&gt;想给每一行的 td&amp;gt;button添加点击事件&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;td class=&amp;quot;action&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     &amp;lt;button class=&amp;quot;mark&amp;quot; name=&amp;quot;ignore&amp;quot; &amp;gt; &amp;lt;/button&amp;gt;       &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;给表格数据排序后，表格中的按钮事件失效。追溯了一下原因，排序后，初始化事件无法获取到button.&lt;br&gt;类似问题：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;动态增加删除子节点&lt;/li&gt;
+&lt;li&gt;表格排序后的节点
     
     </summary>
     
@@ -193,10 +244,10 @@
   
   <entry>
     <title>playFair算法-古典密码学</title>
-    <link href="http://carryguan.com/2017/03/20/playFair/"/>
-    <id>http://carryguan.com/2017/03/20/playFair/</id>
-    <published>2017-03-20T14:11:10.000Z</published>
-    <updated>2017-03-20T14:33:24.000Z</updated>
+    <link href="http://carryguan.com/2017/02/20/playFair/"/>
+    <id>http://carryguan.com/2017/02/20/playFair/</id>
+    <published>2017-02-20T14:11:10.000Z</published>
+    <updated>2017-08-07T14:53:48.914Z</updated>
     
     <content type="html">&lt;blockquote&gt;
 &lt;p&gt;Playfair密码（英文：Playfair cipher 或 Playfair square）是一种替换密码，1854年由查尔斯·惠斯通（Charles Wheatstone）的英国人发明。经莱昂·普莱费尔提倡在英国军地和政府使用。　&lt;/p&gt;
