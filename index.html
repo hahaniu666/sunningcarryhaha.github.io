@@ -264,6 +264,123 @@
             
               
                 
+                <a class="post-title-link" href="/2017/08/07/动态生成dom事件失效/" itemprop="url">
+                  动态生成dom事件失效
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-08-07T22:37:09+08:00" content="2017-08-07">
+              2017-08-07
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/08/07/动态生成dom事件失效/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/08/07/动态生成dom事件失效/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="http://upload-images.jianshu.io/upload_images/2377897-6150a13b12b6623a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<h2 id="问题来由"><a href="#问题来由" class="headerlink" title="问题来由"></a>问题来由</h2><p>最近在项目中有涉及到排序后回写按钮元素，按钮的事件失效。<br>这可以分为一类问题：重写元素/动态生成元素后，事件的失效。<br>想给每一行的 td&gt;button添加点击事件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;td class=&quot;action&quot;&gt;</span><br><span class="line">     &lt;button class=&quot;mark&quot; name=&quot;ignore&quot; &gt; &lt;/button&gt;       </span><br><span class="line">&lt;/td&gt;</span><br></pre></td></tr></table></figure></p>
+<p>给表格数据排序后，表格中的按钮事件失效。追溯了一下原因，排序后，初始化事件无法获取到button.<br>类似问题：</p>
+<ul>
+<li>动态增加删除子节点</li>
+<li>表格排序后的节点</li>
+</ul>
+<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><blockquote>
+<p>原理是利用冒泡实现事件委托，也就是给生成节点的父节点预先绑定事件。</p>
+</blockquote>
+<h3 id="jq的解决办法："><a href="#jq的解决办法：" class="headerlink" title="jq的解决办法："></a>jq的解决办法：</h3><p>$(‘.tablesort’).on(‘click’,’.mark’,function () {})<br>这里提一下：<br>早期对页面上后期加载的动态元素,赋事件或值的时候,是使用live的.<br> 由于效率比较低(其实数据不多也感觉不出来),后面使用delegate委托来代替了,<br>再后面,1.7以后使用on 来代替delegate了. live,delegate在新版本中都还可以用<br>网上有很多教程是利用 $(‘.action .mark’).live(‘click’,function () {})，但是现在不建议使用<br><a href="http://www.jb51.net/article/105869.htm" target="_blank" rel="external">参考</a></p>
+<h3 id="原生js"><a href="#原生js" class="headerlink" title="原生js"></a>原生js</h3><p><a href="http://www.jianshu.com/p/88164e43d7b3" target="_blank" rel="external">http://www.jianshu.com/p/88164e43d7b3</a></p>
+<ul>
+<li>使用这个事件对象给父节点绑定事件</li>
+<li>当事件触发的时候判断事件源对象是否是按钮</li>
+<li>如果是按钮的话再执行事件行为</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2017/04/27/git常用命令/" itemprop="url">
                   git常用命令
                 </a>
@@ -1221,117 +1338,6 @@ show databases
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/15/github预览demo/" itemprop="url">
-                  Github预览demo
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-15T13:18:04+08:00" content="2016-07-15">
-              2016-07-15
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/07/15/github预览demo/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/15/github预览demo/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><img src="http://upload-images.jianshu.io/upload_images/2377897-fc915701514c515c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="young"></p>
-<ul>
-<li>问题所在？</li>
-<li>解决办法？</li>
-<li>博主建议？<br>(原谅博主carry比较变态，在博文加了歌曲，不想听歌的小胖友们可以到博文底部关闭 ^~^)<br>图片无法加载可以点击<a href="http://www.jianshu.com/p/75e30889e70a">图片爸爸</a></li>
-</ul>
-<hr>
-<h2 id="一：问题的所在"><a href="#一：问题的所在" class="headerlink" title="一：问题的所在"></a>一：问题的所在</h2><p>相信很多小胖友们在把自己的网页上传到github仓库中，都会有一个疑问？是什么呢？<br>那就是上传完网页后，自己的仓库中是这个样子的<img src="http://upload-images.jianshu.io/upload_images/2377897-44104fdfe222e566.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="">，点进去相应的html文件是出来的是代码<img src="http://upload-images.jianshu.io/upload_images/2377897-933438f6e1551351.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>可是自己想在网上看到自己仓库中的demo(也就是网页的效果)<br>下面博猪为您解答 (^~^)</p>
-<hr>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/07/15/github预览demo/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1377,7 +1383,7 @@ show databases
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">12</span>
+              <span class="site-state-item-count">13</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1387,7 +1393,7 @@ show databases
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">46</span>
+                <span class="site-state-item-count">49</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
