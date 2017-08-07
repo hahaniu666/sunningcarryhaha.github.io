@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://carryguan.com/"/>
-  <updated>2017-08-07T14:55:12.650Z</updated>
+  <updated>2017-08-07T14:57:49.000Z</updated>
   <id>http://carryguan.com/</id>
   
   <author>
@@ -20,18 +20,15 @@
     <link href="http://carryguan.com/2017/07/07/%E9%9A%90%E8%97%8F%E5%85%83%E7%B4%A0/"/>
     <id>http://carryguan.com/2017/07/07/隐藏元素/</id>
     <published>2017-07-07T04:50:21.000Z</published>
-    <updated>2017-08-07T14:55:12.650Z</updated>
+    <updated>2017-08-07T14:57:49.000Z</updated>
     
     <content type="html">&lt;p&gt;最近项目中涉及到节点隐藏的问题，发现自己不太了解，趁热打铁，我们一起来学习一下吧！&lt;br&gt;着重讲一下 display和visibility在隐藏元素时候的区别:&lt;/p&gt;
 &lt;h1 id=&quot;属性说明&quot;&gt;&lt;a href=&quot;#属性说明&quot; class=&quot;headerlink&quot; title=&quot;属性说明&quot;&gt;&lt;/a&gt;属性说明&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;display:none&lt;br&gt;隐藏元素时：渲染树不构建元素，通俗说，页面没有这个节点，所以其不占位置空间&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;visibility:hidden&lt;br&gt; 隐藏元素时：渲染树构建元素（页面有这个节点）但是不渲染出来，页面上不可见这个元素，但是会占空间&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;display:none&lt;br&gt;隐藏元素时：渲染树不构建元素，通俗说，页面没有这个节点，所以其不占位置空间&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;visibility:hidden&lt;br&gt; 隐藏元素时：渲染树构建元素（页面有这个节点）但是不渲染出来，页面上不可见这个元素，但是会占空间&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h1 id=&quot;例如&quot;&gt;&lt;a href=&quot;#例如&quot; class=&quot;headerlink&quot; title=&quot;例如&quot;&gt;&lt;/a&gt;例如&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-15007a1f549aa94e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;image.png&quot;&gt;&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;点击display-none-红色方块不见了&quot;&gt;&lt;a href=&quot;#点击display-none-红色方块不见了&quot; class=&quot;headerlink&quot; title=&quot;点击display:none,红色方块不见了&quot;&gt;&lt;/a&gt;点击display:none,红色方块不见了&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-8b5de54bf8f747c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;image.png&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;点击-visibility&quot;&gt;&lt;a href=&quot;#点击-visibility&quot; class=&quot;headerlink&quot; title=&quot;点击 visibility&quot;&gt;&lt;/a&gt;点击 visibility&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-71652ba59b060d9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;image.png&quot;&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -43,13 +40,7 @@
     
       &lt;p&gt;最近项目中涉及到节点隐藏的问题，发现自己不太了解，趁热打铁，我们一起来学习一下吧！&lt;br&gt;着重讲一下 display和visibility在隐藏元素时候的区别:&lt;/p&gt;
 &lt;h1 id=&quot;属性说明&quot;&gt;&lt;a href=&quot;#属性说明&quot; class=&quot;headerlink&quot; title=&quot;属性说明&quot;&gt;&lt;/a&gt;属性说明&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;display:none&lt;br&gt;隐藏元素时：渲染树不构建元素，通俗说，页面没有这个节点，所以其不占位置空间&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;visibility:hidden&lt;br&gt; 隐藏元素时：渲染树构建元素（页面有这个节点）但是不渲染出来，页面上不可见这个元素，但是会占空间&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;例如&quot;&gt;&lt;a href=&quot;#例如&quot; class=&quot;headerlink&quot; title=&quot;例如&quot;&gt;&lt;/a&gt;例如&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2377897-15007a1f549aa94e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;image.png&quot;&gt;&lt;/p&gt;
+&lt;li&gt;display:none&lt;br&gt;隐藏元素时：渲染树不构建元素，通俗说，页面没有这个节点，所以其不占位置空间
     
     </summary>
     

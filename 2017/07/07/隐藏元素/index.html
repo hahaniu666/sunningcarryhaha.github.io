@@ -62,29 +62,23 @@
 
 <meta name="description" content="最近项目中涉及到节点隐藏的问题，发现自己不太了解，趁热打铁，我们一起来学习一下吧！着重讲一下 display和visibility在隐藏元素时候的区别:
 属性说明
-display:none隐藏元素时：渲染树不构建元素，通俗说，页面没有这个节点，所以其不占位置空间
-
-visibility:hidden 隐藏元素时：渲染树构建元素（页面有这个节点）但是不渲染出来，页面上不可见这个元素，但是会占空间">
+display:none隐藏元素时：渲染树不构建元素，通俗说，页面没有这个节点，所以其不占位置空间">
 <meta property="og:type" content="article">
 <meta property="og:title" content="隐藏元素display与visibility的区别">
 <meta property="og:url" content="http://carryguan.com/2017/07/07/隐藏元素/index.html">
 <meta property="og:site_name" content="关凯丽的博客">
 <meta property="og:description" content="最近项目中涉及到节点隐藏的问题，发现自己不太了解，趁热打铁，我们一起来学习一下吧！着重讲一下 display和visibility在隐藏元素时候的区别:
 属性说明
-display:none隐藏元素时：渲染树不构建元素，通俗说，页面没有这个节点，所以其不占位置空间
-
-visibility:hidden 隐藏元素时：渲染树构建元素（页面有这个节点）但是不渲染出来，页面上不可见这个元素，但是会占空间">
+display:none隐藏元素时：渲染树不构建元素，通俗说，页面没有这个节点，所以其不占位置空间">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-15007a1f549aa94e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-8b5de54bf8f747c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-71652ba59b060d9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-08-07T14:55:12.650Z">
+<meta property="og:updated_time" content="2017-08-07T14:57:49.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="隐藏元素display与visibility的区别">
 <meta name="twitter:description" content="最近项目中涉及到节点隐藏的问题，发现自己不太了解，趁热打铁，我们一起来学习一下吧！着重讲一下 display和visibility在隐藏元素时候的区别:
 属性说明
-display:none隐藏元素时：渲染树不构建元素，通俗说，页面没有这个节点，所以其不占位置空间
-
-visibility:hidden 隐藏元素时：渲染树构建元素（页面有这个节点）但是不渲染出来，页面上不可见这个元素，但是会占空间">
+display:none隐藏元素时：渲染树不构建元素，通俗说，页面没有这个节点，所以其不占位置空间">
 <meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/2377897-15007a1f549aa94e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
@@ -327,14 +321,11 @@ visibility:hidden 隐藏元素时：渲染树构建元素（页面有这个节�
       
         <p>最近项目中涉及到节点隐藏的问题，发现自己不太了解，趁热打铁，我们一起来学习一下吧！<br>着重讲一下 display和visibility在隐藏元素时候的区别:</p>
 <h1 id="属性说明"><a href="#属性说明" class="headerlink" title="属性说明"></a>属性说明</h1><ul>
-<li><p>display:none<br>隐藏元素时：渲染树不构建元素，通俗说，页面没有这个节点，所以其不占位置空间</p>
-</li>
-<li><p>visibility:hidden<br> 隐藏元素时：渲染树构建元素（页面有这个节点）但是不渲染出来，页面上不可见这个元素，但是会占空间</p>
-</li>
+<li>display:none<br>隐藏元素时：渲染树不构建元素，通俗说，页面没有这个节点，所以其不占位置空间<a id="more"></a></li>
+<li>visibility:hidden<br> 隐藏元素时：渲染树构建元素（页面有这个节点）但是不渲染出来，页面上不可见这个元素，但是会占空间</li>
 </ul>
 <hr>
 <h1 id="例如"><a href="#例如" class="headerlink" title="例如"></a>例如</h1><p><img src="http://upload-images.jianshu.io/upload_images/2377897-15007a1f549aa94e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<a id="more"></a>
 <h2 id="点击display-none-红色方块不见了"><a href="#点击display-none-红色方块不见了" class="headerlink" title="点击display:none,红色方块不见了"></a>点击display:none,红色方块不见了</h2><p><img src="http://upload-images.jianshu.io/upload_images/2377897-8b5de54bf8f747c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
 <h2 id="点击-visibility"><a href="#点击-visibility" class="headerlink" title="点击 visibility"></a>点击 visibility</h2><p><img src="http://upload-images.jianshu.io/upload_images/2377897-71652ba59b060d9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
 <hr>
