@@ -135,108 +135,8 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Cookie和Session]]></title>
-      <url>http://carryguan.com/2016/08/28/Cookie%E5%92%8CSession/</url>
-      <content type="html"><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/2377897-144ce8776fdd3f93.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<h2 id="来由"><a href="#来由" class="headerlink" title="来由"></a>来由</h2><p>http协议是stateless的,一旦和后台响应了，就断开了和请求的连接，这时若我们想要了解哪个客户发来的请求，这就需要借助服务器端的session,和浏览器端的cookie  –（可以用express中间件）<br><a id="more"></a></p>
-<h3 id="1：cookie-amp-session"><a href="#1：cookie-amp-session" class="headerlink" title="1：cookie&amp;session"></a>1：cookie&amp;session</h3><p><a href="http://blog.csdn.net/fangaoxin/article/details/6952954" target="_blank" rel="external">cookie,session</a>会话跟踪是Web程序中常用的技术，用来<strong>跟踪用户的整个会话</strong>。常用的会话跟踪技术是Cookie与Session。<strong>Cookie通过在客户端记录信息确定用户身份</strong>，<strong>Session通过在服务器端记录信息确定用户身份</strong>。</p>
-<h3 id="2：Cookie"><a href="#2：Cookie" class="headerlink" title="2：Cookie"></a>2：Cookie</h3><p>Cookie实际上是一小段的文本信息。客户端请求服务器，如果服务器需要记录该用户状态，就使用response向客户端浏览器颁发一个Cookie。客户端浏览器会把Cookie保存起来。当浏览器再请求该网站时，浏览器把请求的网址连同该Cookie一同提交给服务器。服务器检查该Cookie，以此来辨认用户状态。服务器还可以根据需要修改Cookie的内容。</p>
-<h3 id="3：-Session"><a href="#3：-Session" class="headerlink" title="3： Session"></a>3： Session</h3><p>Session是另一种记录客户状态的机制，不同的是Cookie保存在客户端浏览器中，而Session保存在服务器上。客户端浏览器访问服务器的时候，服务器把客户端信息以某种形式记录在服务器上。这就是Session。客户端浏览器再次访问时只需要从该Session中查找该客户的状态就可以了。<br>如果说Cookie机制是通过检查客户身上的“通行证”来确定客户身份的话，那么Session机制就是通过检查服务器上的“客户明细表”来确认客户身份。Session相当于程序在服务器上建立的一份客户档案，客户来访的时候只需要查询客户档案表就可以了。</p>
-<hr>
-<p> #博主感想</p>
-<p>希望有更多小胖友提出宝贵意见,若有关于前端的问题，或者关于大学方面的感想可以私聊我(^~^)：<br><a href="http://carryguan.me/" target="_blank" rel="external">个人网站</a><br><a href="https://github.com/sunningcarryhaha" target="_blank" rel="external">github</a><br><a href="https://www.zhihu.com/people/guan-kai-li-88" target="_blank" rel="external">知乎</a><br><a href="http://www.jianshu.com/users/0293a04839f0/latest_articles" target="_blank" rel="external">简书</a><br><a href="http://weibo.com/u/5048785433/home?wvr=5" target="_blank" rel="external">微博</a></p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[前端攻城狮的标准]]></title>
-      <url>http://carryguan.com/2016/08/28/%E5%89%8D%E7%AB%AF%E6%94%BB%E5%9F%8E%E7%8B%AE%E7%9A%84%E6%A0%87%E5%87%86/</url>
-      <content type="html"><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/2377897-df83d5ec13fe30e8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="logo"><br><a id="more"></a></p>
-<h1 id="前端工程师该达到的要求"><a href="#前端工程师该达到的要求" class="headerlink" title="前端工程师该达到的要求"></a>前端工程师该达到的要求</h1><h2 id="1-基本功"><a href="#1-基本功" class="headerlink" title="1 基本功"></a>1 基本功</h2><p>HTML、CSS、JavaScript基本功，数学、算法、数据结构、操作系统、编译原理基本功。</p>
-<h2 id="2-资源请求"><a href="#2-资源请求" class="headerlink" title="2 资源请求"></a>2 资源请求</h2><p>了解 DNS 解析，充分利用 CDN，使用多个域名来完成资源的请求以缩短加载时间；</p>
-<p>##3 http<br>设置 HTTP Headers（Expires, Cache-Control, If-Modified-Since）；</p>
-<h2 id="4-遵循hpw规则"><a href="#4-遵循hpw规则" class="headerlink" title="4 遵循hpw规则"></a>4 遵循hpw规则</h2><p>遵循 Steve Souders 给出的全部规则（High Performance Websites）</p>
-<h2 id="5-解决显示的问题"><a href="#5-解决显示的问题" class="headerlink" title="5 解决显示的问题"></a>5 解决显示的问题</h2><p>知道如何解决 PageSpeed、YSlow、Chrome Dev Tools Audit、Chrome Dev Tools Timeline 显示的所有问题；</p>
-<h2 id="6-服务端与客户端"><a href="#6-服务端与客户端" class="headerlink" title="6 服务端与客户端"></a>6 服务端与客户端</h2><p>知道什么任务该放在服务端，什么任务该放在客户端；</p>
-<h2 id="7-缓存"><a href="#7-缓存" class="headerlink" title="7 缓存"></a>7 缓存</h2><p>知道使用缓存，DNS 预取和资源预加载技巧；</p>
-<h2 id="8-js良好学习与利用能力"><a href="#8-js良好学习与利用能力" class="headerlink" title="8 js良好学习与利用能力"></a>8 js良好学习与利用能力</h2><p>精通 JavaScript，知道何时自己写何时借组别人的框架或代码，优劣明辨；</p>
-<h2 id="9-框架，库，工具"><a href="#9-框架，库，工具" class="headerlink" title="9 框架，库，工具"></a>9 框架，库，工具</h2><p>熟练使用现代 MVC JavaScript 框架（例如 AngularJS EmberJS React 等），图形库（D3、SnapSVG 等），DOM 操作类库（jQuery、Zepto 等），惰性加载或者模块管理类库（例如 RequireJS、CommonJS 等），任务调用工具（例如 Grunt Gulp 等），包管理工具（Bower Componentjs）以及测试工具（Protractor、Selenium 等）；</p>
-<h2 id="10-图片"><a href="#10-图片" class="headerlink" title="10 图片"></a>10 图片</h2><p>掌握图片的格式，每种格式的优点，适用的场景；知道图片优化技巧以及加载策略（雪碧图、懒加载、缓存刷新以及 PNG 交错）；</p>
-<h2 id="11-css"><a href="#11-css" class="headerlink" title="11:css"></a>11:css</h2><p>熟悉 CSS 标准、最新的转换工具积极策略规范（比如 BEM、SMACSS、OOCSS 等）；</p>
-<h2 id="12：js-的计算机科学"><a href="#12：js-的计算机科学" class="headerlink" title="12：js 的计算机科学"></a>12：js 的计算机科学</h2><p>JavaScript 的计算机科学（内存管理、单进程特性、垃圾回收算法、定时器、作用域、提升以及设计模式）。</p>
-<h2 id="13-Web前端开发标准"><a href="#13-Web前端开发标准" class="headerlink" title="13 Web前端开发标准"></a>13 Web前端开发标准</h2><p><a href="http://codecloud.net/5622.html" target="_blank" rel="external">web前端开发标准</a></p>
-<hr>
-<p> #博主感想</p>
-<p>希望有更多小胖友提出宝贵意见,若有关于前端的问题，或者关于大学方面的感想可以私聊我(^~^)：<br><a href="http://carryguan.me/" target="_blank" rel="external">个人网站</a><br><a href="https://github.com/sunningcarryhaha" target="_blank" rel="external">github</a><br><a href="https://www.zhihu.com/people/guan-kai-li-88" target="_blank" rel="external">知乎</a><br><a href="http://www.jianshu.com/users/0293a04839f0/latest_articles" target="_blank" rel="external">简书</a><br><a href="http://weibo.com/u/5048785433/home?wvr=5" target="_blank" rel="external">微博</a></p>
-<hr>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=408332973&auto=1&height=66"></iframe>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[MyVocation]]></title>
-      <url>http://carryguan.com/2016/08/16/MyVocation/</url>
-      <content type="html"><![CDATA[<h1 id="一共四周："><a href="#一共四周：" class="headerlink" title="一共四周："></a>一共四周：</h1><p>第一周：了解一下做的是啥，学习mysql,node.js,coffeescript,socket<br>第二周 : 写了缺货提醒的接口(warehouse-coffee-lib–timer-newStocksInfor),获得缺货详细列表的接口(warehouse-coffee-lib-getStocksList)<br>第三周：写了获得缺货门店的信息接口(warehouse-coffee-lib-AreaLacks)<br>第四周：学express,node.js搭建网站，写后台<br><a id="more"></a></p>
-<h1 id="后台工作流程："><a href="#后台工作流程：" class="headerlink" title="后台工作流程："></a>后台工作流程：</h1><h2 id="一：搭建服务器"><a href="#一：搭建服务器" class="headerlink" title="一：搭建服务器"></a>一：搭建服务器</h2><h2 id="二：数据处理："><a href="#二：数据处理：" class="headerlink" title="二：数据处理："></a>二：数据处理：</h2><p>数据库（mysql）,redis,memcache</p>
-<h2 id="三：本机启动后台系统"><a href="#三：本机启动后台系统" class="headerlink" title="三：本机启动后台系统"></a>三：本机启动后台系统</h2><p>node main.js/supervisor main.js/NODE_ENV=DEV &amp;&amp;supervisor main.j</p>
-<h2 id="四：与客户端的连接"><a href="#四：与客户端的连接" class="headerlink" title="四：与客户端的连接"></a>四：与客户端的连接</h2><h3 id="1"><a href="#1" class="headerlink" title="1:"></a>1:</h3><p>此客户端可以为android,ios,web前台（前端）</p>
-<h3 id="2"><a href="#2" class="headerlink" title="2:"></a>2:</h3><p>客户端需要知道后台的ip,进行 ping连接</p>
-<h3 id="3"><a href="#3" class="headerlink" title="3:"></a>3:</h3><p>客户端也需要知道与后台进行交互的那个接口</p>
-<h2 id="五：和客户端的交互"><a href="#五：和客户端的交互" class="headerlink" title="五：和客户端的交互"></a>五：和客户端的交互</h2><p>后台需要写好接口功能，并把数据通过这个接口传输给客户端(socket.on)<br>后台自己定义好功能（一般是客户端的系统信息推送）自发起一个接口(socket.emit),客户端soket.on接口和数据</p>
-<h2 id="六：注意"><a href="#六：注意" class="headerlink" title="六：注意"></a>六：注意</h2><p>从github拽下来的文件，需要进入其跟目录进行npm install,原因是将package.json中的dependencies依赖包进行下载；</p>
-<h1 id="More"><a href="#More" class="headerlink" title="More"></a>More</h1><p>真的特别感谢公司给的这次机会，让我学到了好多新知识，还结交到了几位盆友，跟他们这样有多年开发经验的人沟通，了解了开发方式与模式，扩展了知识面</p>
-<hr>
-<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p><a href="http://www.jianshu.com/p/25e89c1ad4ab" target="_blank" rel="external">图片爸爸加载</a><br>放一张我男神BI照片来开心一下（原谅博主少女心）<br><img src="http://upload-images.jianshu.io/upload_images/2377897-895ca3735e03828e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>再放一张博主我的（表杀我，咩咩）<br><img src="http://upload-images.jianshu.io/upload_images/2377897-1e9289634631a1cc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[最流行的Javascript都能做什么？]]></title>
-      <url>http://carryguan.com/2016/08/08/%E6%9C%80%E7%81%AB%E7%9A%84Javascript%E9%83%BD%E8%83%BD%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F/</url>
-      <content type="html"><![CDATA[<p>JS的应用场景</p>
-<ul>
-<li><strong>数据可视化</strong></li>
-<li><strong>移动应用</strong></li>
-<li><strong>服务端</strong></li>
-<li><strong>桌面应用</strong></li>
-<li><strong>游戏</strong></li>
-<li><strong>VR</strong></li>
-<li><strong>AR</strong></li>
-<li><strong>物联网</strong></li>
-<li><strong>硬件</strong></li>
-<li><strong>操作系统</strong></li>
-</ul>
-<hr>
-<p>若图片无法加载请点击<a href="http://www.jianshu.com/p/66e05cc8201d" target="_blank" rel="external">图片爸爸</a><br><img src="http://upload-images.jianshu.io/upload_images/2377897-bc22cd5fcf7b236a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><a id="more"></a></p>
-<h1 id="数据可视化"><a href="#数据可视化" class="headerlink" title="数据可视化"></a>数据可视化</h1><h2 id="processing-js"><a href="#processing-js" class="headerlink" title="processing.js"></a>processing.js</h2><p>Processing.js作者是John Resig，这是继Jquery之后，他的第二个力作。<br>Processing.js使用JavaScript绘制形状sharp和操作HTML5 canvas元素产生图像动画。<br>Processing.js是轻量，易于了解掌握，并提出一个理想的工具，可视化的数据，创建用户界面和开发基于Web的游戏。<br><a href="http://blog.jobbole.com/1525/" target="_blank" rel="external">processing.js简介</a><br><a href="http://blog.csdn.net/bugknightyyp/article/details/8666831" target="_blank" rel="external">processing.js快速入门</a></p>
-<h2 id="D3-js"><a href="#D3-js" class="headerlink" title="D3.js"></a>D3.js</h2><p>D3.js是一个JavaScript库，它可以通过数据来操作文档。D3可以通过使用HTML、SVG和CSS把数据鲜活形象地展现出来。D3严格遵循Web标准，因而可以让你的程序轻松兼容现代主流浏览器并避免对特定框架的依赖。同时，它提供了强大的可视化组件，可以让使用者以数据驱动的方式去操作DOM。<br><a href="http://www.jianshu.com/p/c3800c61d2fb" target="_blank" rel="external">D3.js入门指南</a><br><a href="http://javascript.ruanyifeng.com/library/d3.html" target="_blank" rel="external">D3.js入门教程</a></p>
-<h1 id="移动应用"><a href="#移动应用" class="headerlink" title="移动应用"></a>移动应用</h1><h2 id="Cordova-phoneGap-ionic"><a href="#Cordova-phoneGap-ionic" class="headerlink" title="Cordova+phoneGap+ionic"></a>Cordova+phoneGap+ionic</h2><h3 id="Cordova"><a href="#Cordova" class="headerlink" title="Cordova"></a>Cordova</h3><p>Cordova提供了一组设备相关的API，通过这组API，移动应用能够以JavaScript访问原生的设备功能，如摄像头、麦克风等。<br>Cordova还提供了一组统一的JavaScript类库，以及为这些类库所用的设备相关的原生后台代码。<br><a href="http://www.zhoujingen.cn/blog/7027.html" target="_blank" rel="external"> Cordova教程</a></p>
-<h3 id="phoneGap"><a href="#phoneGap" class="headerlink" title="phoneGap"></a>phoneGap</h3><p>PhoneGap是一个用基于<a href="http://baike.baidu.com/view/692.htm" target="_blank" rel="external">HTML</a>，<a href="http://baike.baidu.com/subview/15916/5236733.htm" target="_blank" rel="external">CSS</a>和<a href="http://baike.baidu.com/view/16168.htm" target="_blank" rel="external">JavaScript</a>的，创建移动跨平台移动应用程序的<a href="http://baike.baidu.com/view/4112052.htm" target="_blank" rel="external">快速开发平台</a>。它使开发者能够利用<a href="http://baike.baidu.com/view/158983.htm" target="_blank" rel="external">IOS</a>，Android，<a href="http://baike.baidu.com/view/27225.htm" target="_blank" rel="external">Palm</a>，<a href="http://baike.baidu.com/view/10708.htm" target="_blank" rel="external">Symbian</a>,WP7,<a href="http://baike.baidu.com/view/7261507.htm" target="_blank" rel="external">WP8</a>,<a href="http://baike.baidu.com/subview/76548/9852892.htm" target="_blank" rel="external">Bada</a>和<a href="http://baike.baidu.com/view/88648.htm" target="_blank" rel="external">Blackberry</a>智能手机的核心功能——包括地理定位，加速器，联系人，声音和振动等，此外PhoneGap拥有丰富的<a href="http://baike.baidu.com/view/18979.htm" target="_blank" rel="external">插件</a>，可以调用。<br><a href="http://www.phonegap100.com/article-462-1.html" target="_blank" rel="external">PhoneGap官网以及教程</a></p>
-<h2 id="React-Native"><a href="#React-Native" class="headerlink" title="React Native"></a><strong>React Native</strong></h2><h1 id="服务端"><a href="#服务端" class="headerlink" title="服务端"></a>服务端</h1><h2 id="node-js"><a href="#node-js" class="headerlink" title="node.js"></a>node.js</h2><p>正是V8的性能将JavaScript带到了一个新的高度，于是Node.js诞生了——前端、后台都可以用JavaScript，一个JavaScript的全栈时代。<br><img src="http://upload-images.jianshu.io/upload_images/2377897-66ff0354fe02535a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<hr>
-<p>此篇文章依据<a href="https://www.zhihu.com/people/phodal" target="_blank" rel="external">phodal</a>大神的<a href="https://zhuanlan.zhihu.com/p/21911003" target="_blank" rel="external">文章</a></p>
-<h1 id="桌面应用"><a href="#桌面应用" class="headerlink" title="桌面应用"></a>桌面应用</h1><h2 id="NW-js"><a href="#NW-js" class="headerlink" title="NW.js"></a>NW.js</h2><p>NW.js 是基于 Chromium 和 Node.js 运行的， 它们可以让我们用HTML和JavaScript来制作桌面应用。</p>
-<h2 id="Electron"><a href="#Electron" class="headerlink" title="Electron"></a>Electron</h2><p>除了NW.js还有最近比较火的Electron，Atom编辑器的</p>
-<h2 id="全平台应用"><a href="#全平台应用" class="headerlink" title="全平台应用"></a>全平台应用</h2><p><img src="http://upload-images.jianshu.io/upload_images/2377897-7766c666972e76e0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><a href="http://www.jianshu.com/p/a7cb1d8cffa7/comments/1430104" target="_blank" rel="external">全平台应用</a></p>
-<h1 id="游戏"><a href="#游戏" class="headerlink" title="游戏"></a>游戏</h1><h2 id="WebGL"><a href="#WebGL" class="headerlink" title="WebGL"></a>WebGL</h2><p><a href="http://www.hewebgl.com/code/show/2.html" target="_blank" rel="external">炫酷的效果展示-旋转纽约</a><br><a href="http://www.hewebgl.com/code/show/4.html" target="_blank" rel="external">炫酷的效果展示-高科技感元素周期表</a><br><a href="http://hewebgl.com/" target="_blank" rel="external">webGL官网以及教程</a></p>
-<h1 id="VR"><a href="#VR" class="headerlink" title="VR"></a><strong>VR</strong></h1><p><a href="https://www.phodal.com/blog/why-javascript-will-use-vr-world/" target="_blank" rel="external">vr介绍</a></p>
-<h1 id="AR"><a href="#AR" class="headerlink" title="AR"></a>AR</h1><p><a href="http://www.tuicool.com/articles/EJfymiz" target="_blank" rel="external">介绍以及教程</a></p>
-<h1 id="物联网"><a href="#物联网" class="headerlink" title="物联网"></a><strong>物联网</strong></h1><p><a href="https://zhuanlan.zhihu.com/p/21911003" target="_blank" rel="external">js与物联网</a></p>
-<h1 id="硬件"><a href="#硬件" class="headerlink" title="硬件"></a>硬件</h1><p>这里不多介绍</p>
-<h1 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h1><p>也不错介绍</p>
-<hr>
-<p>本文基于<a href="https://zhuanlan.zhihu.com/phodal" target="_blank" rel="external">Phodal</a>大神的<a href="https://zhuanlan.zhihu.com/p/21911003" target="_blank" rel="external">文章</a></p>
-<hr>
-<p> #博主感想</p>
-<p>希望有更多小胖友提出宝贵意见,若有关于前端的问题，或者关于大学方面的感想可以私聊我(^~^)：<br><a href="http://carryguan.me/" target="_blank" rel="external">个人网站</a><br><a href="https://github.com/sunningcarryhaha" target="_blank" rel="external">github</a><br><a href="https://www.zhihu.com/people/guan-kai-li-88" target="_blank" rel="external">知乎</a><br><a href="http://www.jianshu.com/users/0293a04839f0/latest_articles" target="_blank" rel="external">简书</a><br><a href="http://weibo.com/u/5048785433/home?wvr=5" target="_blank" rel="external">微博</a></p>
-<hr>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=29436904&auto=1&height=66"></iframe>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[JS进阶以及重要知识点]]></title>
-      <url>http://carryguan.com/2016/08/05/js%E9%87%8D%E8%A6%81%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
+      <url>http://carryguan.com/2016/12/05/js%E9%87%8D%E8%A6%81%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
       <content type="html"><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/2377897-2a12c8caef6e4f37.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>(原谅博主carry比较变态，在博文加了歌曲，不想听歌的小胖友们可以到博文底部关闭 ^~^)</p>
 <h2 id="前端进阶-（以下是豪大大的干货）"><a href="#前端进阶-（以下是豪大大的干货）" class="headerlink" title="前端进阶: （以下是豪大大的干货）"></a>前端进阶: （以下是豪大大的干货）</h2><p><a href="http://www.cnblogs.com/jikey/p/3600308.html" target="_blank" rel="external">第一阶段</a><br><a href="http://www.cnblogs.com/jikey/p/3601666.html" target="_blank" rel="external">第二阶段</a><br><a href="http://www.cnblogs.com/jikey/p/3604459.html" target="_blank" rel="external">第三阶段</a><br><a href="http://www.cnblogs.com/jikey/p/3607133.html" target="_blank" rel="external">第四阶段</a><br><a href="http://www.cnblogs.com/jikey/p/3611394.html" target="_blank" rel="external">第五阶段</a><br><a href="http://www.cnblogs.com/jikey/p/3632392.html" target="_blank" rel="external">第六阶段</a><br><a id="more"></a></p>
 <hr>
@@ -273,7 +173,7 @@
     
     <entry>
       <title><![CDATA[Mysql-sql语法(入门)]]></title>
-      <url>http://carryguan.com/2016/07/21/mysql%E8%AF%AD%E6%B3%95/</url>
+      <url>http://carryguan.com/2016/11/21/mysql%E8%AF%AD%E6%B3%95/</url>
       <content type="html"><![CDATA[<p><img src="http://ww2.sinaimg.cn/large/005vGbJ7jw1f671ikpgnhj30s20as0v3.jpg" alt="young"></p>
 <ul>
 <li>mysql-sql 语句  </li>
@@ -340,6 +240,106 @@ delete from user where id=3;
 
 <h2 id="update-我可以随意更改-update-user-set-charct-where-…"><a href="#update-我可以随意更改-update-user-set-charct-where-…" class="headerlink" title="update (我可以随意更改 update user set charct where ….)"></a>update (我可以随意更改 update user set charct where ….)</h2><p><pre><code><br>update user set name=”billin” where id=1;<br>update user set id=5 where name=”billin”;<br></code></pre></p>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=5179544&auto=1&height=66"></iframe>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[前端攻城狮的标准]]></title>
+      <url>http://carryguan.com/2016/10/28/%E5%89%8D%E7%AB%AF%E6%94%BB%E5%9F%8E%E7%8B%AE%E7%9A%84%E6%A0%87%E5%87%86/</url>
+      <content type="html"><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/2377897-df83d5ec13fe30e8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="logo"><br><a id="more"></a></p>
+<h1 id="前端工程师该达到的要求"><a href="#前端工程师该达到的要求" class="headerlink" title="前端工程师该达到的要求"></a>前端工程师该达到的要求</h1><h2 id="1-基本功"><a href="#1-基本功" class="headerlink" title="1 基本功"></a>1 基本功</h2><p>HTML、CSS、JavaScript基本功，数学、算法、数据结构、操作系统、编译原理基本功。</p>
+<h2 id="2-资源请求"><a href="#2-资源请求" class="headerlink" title="2 资源请求"></a>2 资源请求</h2><p>了解 DNS 解析，充分利用 CDN，使用多个域名来完成资源的请求以缩短加载时间；</p>
+<p>##3 http<br>设置 HTTP Headers（Expires, Cache-Control, If-Modified-Since）；</p>
+<h2 id="4-遵循hpw规则"><a href="#4-遵循hpw规则" class="headerlink" title="4 遵循hpw规则"></a>4 遵循hpw规则</h2><p>遵循 Steve Souders 给出的全部规则（High Performance Websites）</p>
+<h2 id="5-解决显示的问题"><a href="#5-解决显示的问题" class="headerlink" title="5 解决显示的问题"></a>5 解决显示的问题</h2><p>知道如何解决 PageSpeed、YSlow、Chrome Dev Tools Audit、Chrome Dev Tools Timeline 显示的所有问题；</p>
+<h2 id="6-服务端与客户端"><a href="#6-服务端与客户端" class="headerlink" title="6 服务端与客户端"></a>6 服务端与客户端</h2><p>知道什么任务该放在服务端，什么任务该放在客户端；</p>
+<h2 id="7-缓存"><a href="#7-缓存" class="headerlink" title="7 缓存"></a>7 缓存</h2><p>知道使用缓存，DNS 预取和资源预加载技巧；</p>
+<h2 id="8-js良好学习与利用能力"><a href="#8-js良好学习与利用能力" class="headerlink" title="8 js良好学习与利用能力"></a>8 js良好学习与利用能力</h2><p>精通 JavaScript，知道何时自己写何时借组别人的框架或代码，优劣明辨；</p>
+<h2 id="9-框架，库，工具"><a href="#9-框架，库，工具" class="headerlink" title="9 框架，库，工具"></a>9 框架，库，工具</h2><p>熟练使用现代 MVC JavaScript 框架（例如 AngularJS EmberJS React 等），图形库（D3、SnapSVG 等），DOM 操作类库（jQuery、Zepto 等），惰性加载或者模块管理类库（例如 RequireJS、CommonJS 等），任务调用工具（例如 Grunt Gulp 等），包管理工具（Bower Componentjs）以及测试工具（Protractor、Selenium 等）；</p>
+<h2 id="10-图片"><a href="#10-图片" class="headerlink" title="10 图片"></a>10 图片</h2><p>掌握图片的格式，每种格式的优点，适用的场景；知道图片优化技巧以及加载策略（雪碧图、懒加载、缓存刷新以及 PNG 交错）；</p>
+<h2 id="11-css"><a href="#11-css" class="headerlink" title="11:css"></a>11:css</h2><p>熟悉 CSS 标准、最新的转换工具积极策略规范（比如 BEM、SMACSS、OOCSS 等）；</p>
+<h2 id="12：js-的计算机科学"><a href="#12：js-的计算机科学" class="headerlink" title="12：js 的计算机科学"></a>12：js 的计算机科学</h2><p>JavaScript 的计算机科学（内存管理、单进程特性、垃圾回收算法、定时器、作用域、提升以及设计模式）。</p>
+<h2 id="13-Web前端开发标准"><a href="#13-Web前端开发标准" class="headerlink" title="13 Web前端开发标准"></a>13 Web前端开发标准</h2><p><a href="http://codecloud.net/5622.html" target="_blank" rel="external">web前端开发标准</a></p>
+<hr>
+<p> #博主感想</p>
+<p>希望有更多小胖友提出宝贵意见,若有关于前端的问题，或者关于大学方面的感想可以私聊我(^~^)：<br><a href="http://carryguan.me/" target="_blank" rel="external">个人网站</a><br><a href="https://github.com/sunningcarryhaha" target="_blank" rel="external">github</a><br><a href="https://www.zhihu.com/people/guan-kai-li-88" target="_blank" rel="external">知乎</a><br><a href="http://www.jianshu.com/users/0293a04839f0/latest_articles" target="_blank" rel="external">简书</a><br><a href="http://weibo.com/u/5048785433/home?wvr=5" target="_blank" rel="external">微博</a></p>
+<hr>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=408332973&auto=1&height=66"></iframe>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[最流行的Javascript都能做什么？]]></title>
+      <url>http://carryguan.com/2016/09/08/%E6%9C%80%E7%81%AB%E7%9A%84Javascript%E9%83%BD%E8%83%BD%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F/</url>
+      <content type="html"><![CDATA[<p>JS的应用场景</p>
+<ul>
+<li><strong>数据可视化</strong></li>
+<li><strong>移动应用</strong></li>
+<li><strong>服务端</strong></li>
+<li><strong>桌面应用</strong></li>
+<li><strong>游戏</strong></li>
+<li><strong>VR</strong></li>
+<li><strong>AR</strong></li>
+<li><strong>物联网</strong></li>
+<li><strong>硬件</strong></li>
+<li><strong>操作系统</strong></li>
+</ul>
+<hr>
+<p>若图片无法加载请点击<a href="http://www.jianshu.com/p/66e05cc8201d" target="_blank" rel="external">图片爸爸</a><br><img src="http://upload-images.jianshu.io/upload_images/2377897-bc22cd5fcf7b236a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><a id="more"></a></p>
+<h1 id="数据可视化"><a href="#数据可视化" class="headerlink" title="数据可视化"></a>数据可视化</h1><h2 id="processing-js"><a href="#processing-js" class="headerlink" title="processing.js"></a>processing.js</h2><p>Processing.js作者是John Resig，这是继Jquery之后，他的第二个力作。<br>Processing.js使用JavaScript绘制形状sharp和操作HTML5 canvas元素产生图像动画。<br>Processing.js是轻量，易于了解掌握，并提出一个理想的工具，可视化的数据，创建用户界面和开发基于Web的游戏。<br><a href="http://blog.jobbole.com/1525/" target="_blank" rel="external">processing.js简介</a><br><a href="http://blog.csdn.net/bugknightyyp/article/details/8666831" target="_blank" rel="external">processing.js快速入门</a></p>
+<h2 id="D3-js"><a href="#D3-js" class="headerlink" title="D3.js"></a>D3.js</h2><p>D3.js是一个JavaScript库，它可以通过数据来操作文档。D3可以通过使用HTML、SVG和CSS把数据鲜活形象地展现出来。D3严格遵循Web标准，因而可以让你的程序轻松兼容现代主流浏览器并避免对特定框架的依赖。同时，它提供了强大的可视化组件，可以让使用者以数据驱动的方式去操作DOM。<br><a href="http://www.jianshu.com/p/c3800c61d2fb" target="_blank" rel="external">D3.js入门指南</a><br><a href="http://javascript.ruanyifeng.com/library/d3.html" target="_blank" rel="external">D3.js入门教程</a></p>
+<h1 id="移动应用"><a href="#移动应用" class="headerlink" title="移动应用"></a>移动应用</h1><h2 id="Cordova-phoneGap-ionic"><a href="#Cordova-phoneGap-ionic" class="headerlink" title="Cordova+phoneGap+ionic"></a>Cordova+phoneGap+ionic</h2><h3 id="Cordova"><a href="#Cordova" class="headerlink" title="Cordova"></a>Cordova</h3><p>Cordova提供了一组设备相关的API，通过这组API，移动应用能够以JavaScript访问原生的设备功能，如摄像头、麦克风等。<br>Cordova还提供了一组统一的JavaScript类库，以及为这些类库所用的设备相关的原生后台代码。<br><a href="http://www.zhoujingen.cn/blog/7027.html" target="_blank" rel="external"> Cordova教程</a></p>
+<h3 id="phoneGap"><a href="#phoneGap" class="headerlink" title="phoneGap"></a>phoneGap</h3><p>PhoneGap是一个用基于<a href="http://baike.baidu.com/view/692.htm" target="_blank" rel="external">HTML</a>，<a href="http://baike.baidu.com/subview/15916/5236733.htm" target="_blank" rel="external">CSS</a>和<a href="http://baike.baidu.com/view/16168.htm" target="_blank" rel="external">JavaScript</a>的，创建移动跨平台移动应用程序的<a href="http://baike.baidu.com/view/4112052.htm" target="_blank" rel="external">快速开发平台</a>。它使开发者能够利用<a href="http://baike.baidu.com/view/158983.htm" target="_blank" rel="external">IOS</a>，Android，<a href="http://baike.baidu.com/view/27225.htm" target="_blank" rel="external">Palm</a>，<a href="http://baike.baidu.com/view/10708.htm" target="_blank" rel="external">Symbian</a>,WP7,<a href="http://baike.baidu.com/view/7261507.htm" target="_blank" rel="external">WP8</a>,<a href="http://baike.baidu.com/subview/76548/9852892.htm" target="_blank" rel="external">Bada</a>和<a href="http://baike.baidu.com/view/88648.htm" target="_blank" rel="external">Blackberry</a>智能手机的核心功能——包括地理定位，加速器，联系人，声音和振动等，此外PhoneGap拥有丰富的<a href="http://baike.baidu.com/view/18979.htm" target="_blank" rel="external">插件</a>，可以调用。<br><a href="http://www.phonegap100.com/article-462-1.html" target="_blank" rel="external">PhoneGap官网以及教程</a></p>
+<h2 id="React-Native"><a href="#React-Native" class="headerlink" title="React Native"></a><strong>React Native</strong></h2><h1 id="服务端"><a href="#服务端" class="headerlink" title="服务端"></a>服务端</h1><h2 id="node-js"><a href="#node-js" class="headerlink" title="node.js"></a>node.js</h2><p>正是V8的性能将JavaScript带到了一个新的高度，于是Node.js诞生了——前端、后台都可以用JavaScript，一个JavaScript的全栈时代。<br><img src="http://upload-images.jianshu.io/upload_images/2377897-66ff0354fe02535a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<hr>
+<p>此篇文章依据<a href="https://www.zhihu.com/people/phodal" target="_blank" rel="external">phodal</a>大神的<a href="https://zhuanlan.zhihu.com/p/21911003" target="_blank" rel="external">文章</a></p>
+<h1 id="桌面应用"><a href="#桌面应用" class="headerlink" title="桌面应用"></a>桌面应用</h1><h2 id="NW-js"><a href="#NW-js" class="headerlink" title="NW.js"></a>NW.js</h2><p>NW.js 是基于 Chromium 和 Node.js 运行的， 它们可以让我们用HTML和JavaScript来制作桌面应用。</p>
+<h2 id="Electron"><a href="#Electron" class="headerlink" title="Electron"></a>Electron</h2><p>除了NW.js还有最近比较火的Electron，Atom编辑器的</p>
+<h2 id="全平台应用"><a href="#全平台应用" class="headerlink" title="全平台应用"></a>全平台应用</h2><p><img src="http://upload-images.jianshu.io/upload_images/2377897-7766c666972e76e0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><a href="http://www.jianshu.com/p/a7cb1d8cffa7/comments/1430104" target="_blank" rel="external">全平台应用</a></p>
+<h1 id="游戏"><a href="#游戏" class="headerlink" title="游戏"></a>游戏</h1><h2 id="WebGL"><a href="#WebGL" class="headerlink" title="WebGL"></a>WebGL</h2><p><a href="http://www.hewebgl.com/code/show/2.html" target="_blank" rel="external">炫酷的效果展示-旋转纽约</a><br><a href="http://www.hewebgl.com/code/show/4.html" target="_blank" rel="external">炫酷的效果展示-高科技感元素周期表</a><br><a href="http://hewebgl.com/" target="_blank" rel="external">webGL官网以及教程</a></p>
+<h1 id="VR"><a href="#VR" class="headerlink" title="VR"></a><strong>VR</strong></h1><p><a href="https://www.phodal.com/blog/why-javascript-will-use-vr-world/" target="_blank" rel="external">vr介绍</a></p>
+<h1 id="AR"><a href="#AR" class="headerlink" title="AR"></a>AR</h1><p><a href="http://www.tuicool.com/articles/EJfymiz" target="_blank" rel="external">介绍以及教程</a></p>
+<h1 id="物联网"><a href="#物联网" class="headerlink" title="物联网"></a><strong>物联网</strong></h1><p><a href="https://zhuanlan.zhihu.com/p/21911003" target="_blank" rel="external">js与物联网</a></p>
+<h1 id="硬件"><a href="#硬件" class="headerlink" title="硬件"></a>硬件</h1><p>这里不多介绍</p>
+<h1 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h1><p>也不错介绍</p>
+<hr>
+<p>本文基于<a href="https://zhuanlan.zhihu.com/phodal" target="_blank" rel="external">Phodal</a>大神的<a href="https://zhuanlan.zhihu.com/p/21911003" target="_blank" rel="external">文章</a></p>
+<hr>
+<p> #博主感想</p>
+<p>希望有更多小胖友提出宝贵意见,若有关于前端的问题，或者关于大学方面的感想可以私聊我(^~^)：<br><a href="http://carryguan.me/" target="_blank" rel="external">个人网站</a><br><a href="https://github.com/sunningcarryhaha" target="_blank" rel="external">github</a><br><a href="https://www.zhihu.com/people/guan-kai-li-88" target="_blank" rel="external">知乎</a><br><a href="http://www.jianshu.com/users/0293a04839f0/latest_articles" target="_blank" rel="external">简书</a><br><a href="http://weibo.com/u/5048785433/home?wvr=5" target="_blank" rel="external">微博</a></p>
+<hr>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=29436904&auto=1&height=66"></iframe>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Cookie和Session]]></title>
+      <url>http://carryguan.com/2016/08/28/Cookie%E5%92%8CSession/</url>
+      <content type="html"><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/2377897-144ce8776fdd3f93.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="来由"><a href="#来由" class="headerlink" title="来由"></a>来由</h2><p>http协议是stateless的,一旦和后台响应了，就断开了和请求的连接，这时若我们想要了解哪个客户发来的请求，这就需要借助服务器端的session,和浏览器端的cookie  –（可以用express中间件）<br><a id="more"></a></p>
+<h3 id="1：cookie-amp-session"><a href="#1：cookie-amp-session" class="headerlink" title="1：cookie&amp;session"></a>1：cookie&amp;session</h3><p><a href="http://blog.csdn.net/fangaoxin/article/details/6952954" target="_blank" rel="external">cookie,session</a>会话跟踪是Web程序中常用的技术，用来<strong>跟踪用户的整个会话</strong>。常用的会话跟踪技术是Cookie与Session。<strong>Cookie通过在客户端记录信息确定用户身份</strong>，<strong>Session通过在服务器端记录信息确定用户身份</strong>。</p>
+<h3 id="2：Cookie"><a href="#2：Cookie" class="headerlink" title="2：Cookie"></a>2：Cookie</h3><p>Cookie实际上是一小段的文本信息。客户端请求服务器，如果服务器需要记录该用户状态，就使用response向客户端浏览器颁发一个Cookie。客户端浏览器会把Cookie保存起来。当浏览器再请求该网站时，浏览器把请求的网址连同该Cookie一同提交给服务器。服务器检查该Cookie，以此来辨认用户状态。服务器还可以根据需要修改Cookie的内容。</p>
+<h3 id="3：-Session"><a href="#3：-Session" class="headerlink" title="3： Session"></a>3： Session</h3><p>Session是另一种记录客户状态的机制，不同的是Cookie保存在客户端浏览器中，而Session保存在服务器上。客户端浏览器访问服务器的时候，服务器把客户端信息以某种形式记录在服务器上。这就是Session。客户端浏览器再次访问时只需要从该Session中查找该客户的状态就可以了。<br>如果说Cookie机制是通过检查客户身上的“通行证”来确定客户身份的话，那么Session机制就是通过检查服务器上的“客户明细表”来确认客户身份。Session相当于程序在服务器上建立的一份客户档案，客户来访的时候只需要查询客户档案表就可以了。</p>
+<hr>
+<p> #博主感想</p>
+<p>希望有更多小胖友提出宝贵意见,若有关于前端的问题，或者关于大学方面的感想可以私聊我(^~^)：<br><a href="http://carryguan.me/" target="_blank" rel="external">个人网站</a><br><a href="https://github.com/sunningcarryhaha" target="_blank" rel="external">github</a><br><a href="https://www.zhihu.com/people/guan-kai-li-88" target="_blank" rel="external">知乎</a><br><a href="http://www.jianshu.com/users/0293a04839f0/latest_articles" target="_blank" rel="external">简书</a><br><a href="http://weibo.com/u/5048785433/home?wvr=5" target="_blank" rel="external">微博</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[MyVocation]]></title>
+      <url>http://carryguan.com/2016/08/16/MyVocation/</url>
+      <content type="html"><![CDATA[<h1 id="一共四周："><a href="#一共四周：" class="headerlink" title="一共四周："></a>一共四周：</h1><p>第一周：了解一下做的是啥，学习mysql,node.js,coffeescript,socket<br>第二周 : 写了缺货提醒的接口(warehouse-coffee-lib–timer-newStocksInfor),获得缺货详细列表的接口(warehouse-coffee-lib-getStocksList)<br>第三周：写了获得缺货门店的信息接口(warehouse-coffee-lib-AreaLacks)<br>第四周：学express,node.js搭建网站，写后台<br><a id="more"></a></p>
+<h1 id="后台工作流程："><a href="#后台工作流程：" class="headerlink" title="后台工作流程："></a>后台工作流程：</h1><h2 id="一：搭建服务器"><a href="#一：搭建服务器" class="headerlink" title="一：搭建服务器"></a>一：搭建服务器</h2><h2 id="二：数据处理："><a href="#二：数据处理：" class="headerlink" title="二：数据处理："></a>二：数据处理：</h2><p>数据库（mysql）,redis,memcache</p>
+<h2 id="三：本机启动后台系统"><a href="#三：本机启动后台系统" class="headerlink" title="三：本机启动后台系统"></a>三：本机启动后台系统</h2><p>node main.js/supervisor main.js/NODE_ENV=DEV &amp;&amp;supervisor main.j</p>
+<h2 id="四：与客户端的连接"><a href="#四：与客户端的连接" class="headerlink" title="四：与客户端的连接"></a>四：与客户端的连接</h2><h3 id="1"><a href="#1" class="headerlink" title="1:"></a>1:</h3><p>此客户端可以为android,ios,web前台（前端）</p>
+<h3 id="2"><a href="#2" class="headerlink" title="2:"></a>2:</h3><p>客户端需要知道后台的ip,进行 ping连接</p>
+<h3 id="3"><a href="#3" class="headerlink" title="3:"></a>3:</h3><p>客户端也需要知道与后台进行交互的那个接口</p>
+<h2 id="五：和客户端的交互"><a href="#五：和客户端的交互" class="headerlink" title="五：和客户端的交互"></a>五：和客户端的交互</h2><p>后台需要写好接口功能，并把数据通过这个接口传输给客户端(socket.on)<br>后台自己定义好功能（一般是客户端的系统信息推送）自发起一个接口(socket.emit),客户端soket.on接口和数据</p>
+<h2 id="六：注意"><a href="#六：注意" class="headerlink" title="六：注意"></a>六：注意</h2><p>从github拽下来的文件，需要进入其跟目录进行npm install,原因是将package.json中的dependencies依赖包进行下载；</p>
+<h1 id="More"><a href="#More" class="headerlink" title="More"></a>More</h1><p>真的特别感谢公司给的这次机会，让我学到了好多新知识，还结交到了几位盆友，跟他们这样有多年开发经验的人沟通，了解了开发方式与模式，扩展了知识面</p>
+<hr>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p><a href="http://www.jianshu.com/p/25e89c1ad4ab" target="_blank" rel="external">图片爸爸加载</a><br>放一张我男神BI照片来开心一下（原谅博主少女心）<br><img src="http://upload-images.jianshu.io/upload_images/2377897-895ca3735e03828e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>再放一张博主我的（表杀我，咩咩）<br><img src="http://upload-images.jianshu.io/upload_images/2377897-1e9289634631a1cc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 ]]></content>
     </entry>
     
