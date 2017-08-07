@@ -738,11 +738,11 @@ cd public
   </entry>
   
   <entry>
-    <title>ddddd</title>
+    <title>ms</title>
     <link href="http://carryguan.com/2016/06/27/ms/"/>
     <id>http://carryguan.com/2016/06/27/ms/</id>
     <published>2016-06-27T05:28:25.000Z</published>
-    <updated>2017-08-07T14:22:03.000Z</updated>
+    <updated>2017-08-07T14:25:41.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;HTML&quot;&gt;&lt;a href=&quot;#HTML&quot; class=&quot;headerlink&quot; title=&quot;HTML&quot;&gt;&lt;/a&gt;HTML&lt;/h1&gt;&lt;h2 id=&quot;锚点&quot;&gt;&lt;a href=&quot;#锚点&quot; class=&quot;headerlink&quot; title=&quot;锚点&quot;&gt;&lt;/a&gt;锚点&lt;/h2&gt;&lt;p&gt;html 锚点 到底是干吗的？&lt;br&gt;通俗简单地说，比如一篇很长的文章，你想按分段精确来看，那就可以用到锚点了&lt;br&gt;代码：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;a href=&amp;quot;#001&amp;quot;&amp;gt;跳到001&amp;lt;/a&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;...文字省略&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;a name=&amp;quot;001&amp;quot; id=&amp;quot;001&amp;quot; &amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;...文字省略&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;(兼容到ie8)&lt;br&gt;其实锚点只需name就可以可，加id是为了让它兼容性更好.&lt;br&gt;href的值要跟name \ i d 一致，前面必须加”#”，以上代码在ie6/7,ff中都可以兼容，但在ie8中就不行。&lt;br&gt;因为我们锚点的&lt;a&gt;&lt;/a&gt;值为空，为不影响美观我们加个空格就行了,&lt;/p&gt;
